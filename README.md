@@ -11,6 +11,6 @@ Datasets in kazakh language for different tasks.
 
 ## Speech
 
-| Date       | Dataset        | Paper Title                                                                                                           | Link                                      |
-| -----------| -------------- | --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------- |
+| Date       | Dataset        | Paper Title                                                                         | Link                                   | Task                                 |
+| -----------| -------------- | ----------------------------------------------------------------------------------- | -------------------------------------- | ------------------------------------ |
 | 6 Apr 2024 | Belebele-Fleurs   | -- | [HF](https://huggingface.co/datasets/WueNLP/belebele-fleurs) | Spoken Language Understanding (Listening Comprehension), <br>ASR |
