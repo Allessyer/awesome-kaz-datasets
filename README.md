@@ -5,13 +5,15 @@ Datasets in kazakh language for different tasks.
 
 | Date       | Dataset        | Title                                                                         | Link                                  | Task                                  |
 | -----------| -------------- | ----------------------------------------------------------------------------------- | --------------------------------------| --------------------------------------|
-| 6 Apr 2024 | KazQAD   | KazQAD: Kazakh Open-Domain Question Answering Dataset | [paper](https://arxiv.org/abs/2404.04487),<br>[HF](https://huggingface.co/datasets/issai/kazqad) | QA
+| 6 Apr 2024 | KazQAD   | KazQAD: Kazakh Open-Domain Question Answering Dataset | [paper](https://arxiv.org/abs/2404.04487),<br>[HF](https://huggingface.co/datasets/issai/kazqad) | QA | 
+| 28 Mar 2024 | KazParC   | KazParC: Kazakh Parallel Corpus for Machine Translation | [paper](https://arxiv.org/abs/2403.19399v2),<br>[Github](https://github.com/IS2AI/KazParC), <br> [HF](https://huggingface.co/datasets/issai/kazparc) | Machine Translation | 
 |       2024 | Kazakh dastur   | Kazakh dastur: Multiple choice benchmark | [HF](https://huggingface.co/datasets/kz-transformers/kazakh-dastur-mc) | QA |
 |       2024 | Kazakh constitution   | Kazakh constitution: Multiple choice benchmark | [HF](https://huggingface.co/datasets/kz-transformers/kazakh-constitution-mc) | QA |
 |       2024 | MDBKD   | Multi-Domain Bilingual Kazakh Dataset | [HF](https://huggingface.co/datasets/kz-transformers/multidomain-kazakh-dataset) | QA |
 |       2024 | Kazakh UNT   | Kazakh unified national testing: Multiple choice benchmark | [HF](https://huggingface.co/datasets/kz-transformers/kazakh-unified-national-testing-mc) | QA |
 |       2024 | Kazakh MMLU   | MMLU on kazakh language: Translated MMLU Benchmark | [HF](https://huggingface.co/datasets/kz-transformers/mmlu-translated-kk) | QA |
 |       2024 | Kazakh GSM8K   | Kazakh GSM8K: Translated Grade School Math 8K | [HF](https://huggingface.co/datasets/kz-transformers/gsm8k-kk-translated) | QA |
+
 
 
 
