@@ -22,3 +22,11 @@ Datasets in kazakh language for different tasks.
 | Date       | Dataset        | Title                                                                         | Link                                   | Task                                 |
 | -----------| -------------- | ----------------------------------------------------------------------------------- | -------------------------------------- | ------------------------------------ |
 | 2024 | Belebele-Fleurs   | The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122 Language Variants | [HF](https://huggingface.co/datasets/WueNLP/belebele-fleurs) | Spoken Language Understanding (Listening Comprehension), <br>ASR |
+| 26 Nov 2021 | KazNERD   | KazNERD: Kazakh Named Entity Recognition Dataset | [Github](https://github.com/IS2AI/KazNERD?tab=readme-ov-file#KazNerd) | NER |
+
+
+**Abbreviation**:
+- ASR - Automatic Speech Recognition
+- NER - Named Entity Recognition
+
+
