@@ -27,7 +27,7 @@ Datasets in kazakh language for different tasks.
 
 | Date       | Dataset        | Title                                                                         | Link                                   | Task                                 |
 | -----------| -------------- | ----------------------------------------------------------------------------------- | -------------------------------------- | ------------------------------------ |
-| 2024 | Belebele-Fleurs   | The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122 Language Variants | [HF](https://huggingface.co/datasets/WueNLP/belebele-fleurs) | Spoken Language Understanding (Listening Comprehension), <br>ASR |
+| 26 Nov 2024 | Belebele-Fleurs   | The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122 Language Variants | [HF](https://huggingface.co/datasets/WueNLP/belebele-fleurs) | Spoken Language Understanding (Listening Comprehension), <br>ASR |
 | 11 Jan 2024 | kaz text-speech parallel corpora ISSAI SKIMMED | Text-speech parallel corpora from [HF](https://huggingface.co/Dauren-Nur) | [HF](https://huggingface.co/datasets/Dauren-Nur/ISSAI_SKIMMED) | ASR, TTS |
 | 20 July 2023 | KAZNU Kazakh-ASR   |  Kazakh speech dataset for Automatic Speech Recognition from Al-Farabi KAZNU  | [paper](https://www.mdpi.com/2504-2289/7/3/132), <br> [HF](https://huggingface.co/datasets/farabi-lab/kazakh-stt) | ASR |
 | 26 Nov 2021 | KazNERD   | KazNERD: Kazakh Named Entity Recognition Dataset | [paper](https://arxiv.org/abs/2111.13419), <br> [Github](https://github.com/IS2AI/KazNERD?tab=readme-ov-file#KazNerd) | NER |
