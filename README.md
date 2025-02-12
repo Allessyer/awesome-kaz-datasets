@@ -5,24 +5,19 @@ Datasets in kazakh language for different tasks.
 
 | Date       | Dataset        | Title                                                                         | Link                                  | Task                                  |
 | -----------| -------------- | ----------------------------------------------------------------------------------- | --------------------------------------| --------------------------------------|
+| 27 Nov 2024 | Kazakh dastur   | Kazakh dastur: Multiple choice benchmark | [HF](https://huggingface.co/datasets/kz-transformers/kazakh-dastur-mc) | QA |
+| 27 Nov 2024 | Kazakh constitution   | Kazakh constitution: Multiple choice benchmark | [HF](https://huggingface.co/datasets/kz-transformers/kazakh-constitution-mc) | QA |
+| 27 Nov 2024 | Kazakh UNT   | Kazakh unified national testing: Multiple choice benchmark | [HF](https://huggingface.co/datasets/kz-transformers/kazakh-unified-national-testing-mc) | QA |
+| 19 Nov 2024 | Kazakh MMLU   | MMLU on kazakh language: Translated MMLU Benchmark | [HF](https://huggingface.co/datasets/kz-transformers/mmlu-translated-kk) | QA |
+| 19 Nov 2024 | Kazakh GSM8K   | Kazakh GSM8K: Translated Grade School Math 8K | [HF](https://huggingface.co/datasets/kz-transformers/gsm8k-kk-translated) | QA |
 | 6 Apr 2024 | KazQAD   | KazQAD: Kazakh Open-Domain Question Answering Dataset | [paper](https://arxiv.org/abs/2404.04487),<br>[HF](https://huggingface.co/datasets/issai/kazqad) | QA | 
 | 28 Mar 2024 | KazParC   | KazParC: Kazakh Parallel Corpus for Machine Translation | [paper](https://arxiv.org/abs/2403.19399v2),<br>[Github](https://github.com/IS2AI/KazParC), <br> [HF](https://huggingface.co/datasets/issai/kazparc) | Machine Translation | 
-|       2024 | Kazakh dastur   | Kazakh dastur: Multiple choice benchmark | [HF](https://huggingface.co/datasets/kz-transformers/kazakh-dastur-mc) | QA |
-|       2024 | Kazakh constitution   | Kazakh constitution: Multiple choice benchmark | [HF](https://huggingface.co/datasets/kz-transformers/kazakh-constitution-mc) | QA |
-|       2024 | MDBKD   | Multi-Domain Bilingual Kazakh Dataset | [HF](https://huggingface.co/datasets/kz-transformers/multidomain-kazakh-dataset) | QA |
-|       2024 | Kazakh UNT   | Kazakh unified national testing: Multiple choice benchmark | [HF](https://huggingface.co/datasets/kz-transformers/kazakh-unified-national-testing-mc) | QA |
-|       2024 | Kazakh MMLU   | MMLU on kazakh language: Translated MMLU Benchmark | [HF](https://huggingface.co/datasets/kz-transformers/mmlu-translated-kk) | QA |
-|       2024 | Kazakh GSM8K   | Kazakh GSM8K: Translated Grade School Math 8K | [HF](https://huggingface.co/datasets/kz-transformers/gsm8k-kk-translated) | QA |
 | 14 Mar 2024 | kaz_rus_parallel_corpora_KAZNU  | Text corpora by the researchers at Al-Farabi Kazakh National University  | [HF](https://huggingface.co/datasets/Dauren-Nur/kaz_rus_parallel_corpora_KAZNU) | Machine Translation |
 | 14 Mar 2024 | kaz_eng_parallel_corpora_KAZNU  | Law documents and news site by the researchers at Al-Farabi Kazakh National University  | [HF](https://huggingface.co/datasets/Dauren-Nur/kaz_eng_parallel) | Machine Translation |
+| 28 Apr 2023 | MDBKD   | Multi-Domain Bilingual Kazakh Dataset | [HF](https://huggingface.co/datasets/kz-transformers/multidomain-kazakh-dataset) | QA |
 
-
-
-
-
-
-
-
+**Abbreviation**:
+- QA - Question Answering
 
 
 ## Speech
