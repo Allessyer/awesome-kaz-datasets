@@ -3,8 +3,8 @@ Datasets in kazakh language for different tasks.
 
 ## Text - NLP/LLM
 
-| Date       | Dataset        | Title                                                                         | Link                                  | Task                                  |
-| -----------| -------------- | ----------------------------------------------------------------------------------- | --------------------------------------| --------------------------------------|
+| Date        | Dataset        | Title                                                                         | Link                                  | Task                                  |
+| ------------| -------------- | ----------------------------------------------------------------------------------- | --------------------------------------| --------------------------------------|
 | 27 Nov 2024 | Kazakh dastur   | Kazakh dastur: Multiple choice benchmark | [HF](https://huggingface.co/datasets/kz-transformers/kazakh-dastur-mc) | QA |
 | 27 Nov 2024 | Kazakh constitution   | Kazakh constitution: Multiple choice benchmark | [HF](https://huggingface.co/datasets/kz-transformers/kazakh-constitution-mc) | QA |
 | 27 Nov 2024 | Kazakh UNT   | Kazakh unified national testing: Multiple choice benchmark | [HF](https://huggingface.co/datasets/kz-transformers/kazakh-unified-national-testing-mc) | QA |
@@ -15,8 +15,8 @@ Datasets in kazakh language for different tasks.
 | 14 Mar 2024 | kaz_rus_parallel_corpora_KAZNU  | Text corpora by the researchers at Al-Farabi Kazakh National University  | [HF](https://huggingface.co/datasets/Dauren-Nur/kaz_rus_parallel_corpora_KAZNU) | Machine Translation |
 | 14 Mar 2024 | kaz_eng_parallel_corpora_KAZNU  | Law documents and news site by the researchers at Al-Farabi Kazakh National University  | [HF](https://huggingface.co/datasets/Dauren-Nur/kaz_eng_parallel) | Machine Translation |
 | 28 Apr 2023 | MDBKD   | Multi-Domain Bilingual Kazakh Dataset | [HF](https://huggingface.co/datasets/kz-transformers/multidomain-kazakh-dataset) | QA |
-| 18 December 2020 | KazNewsDataset   | Kazakhstani news corpus for social significance identification with topic modelling results | [Paper](https://www.mdpi.com/2306-5729/6/3/31) [Download](https://data.mendeley.com/datasets/hwj24p9gkh/1) | Text Corpora |
-| 18 December 2020 | KazRusNewsDataset   | Kazakhstani and Russian news corpus | [Paper](https://www.mdpi.com/2306-5729/6/3/31) [Download](https://data.mendeley.com/datasets/2vz7vtbhn2/1) | Text Corpora |
+| 18 Dec 2020 | KazNewsDataset   | Kazakhstani news corpus for social significance identification with topic modelling results | [Paper](https://www.mdpi.com/2306-5729/6/3/31) [Download](https://data.mendeley.com/datasets/hwj24p9gkh/1) | Text Corpora |
+| 18 Dec 2020 | KazRusNewsDataset   | Kazakhstani and Russian news corpus | [Paper](https://www.mdpi.com/2306-5729/6/3/31) [Download](https://data.mendeley.com/datasets/2vz7vtbhn2/1) | Text Corpora |
 
 
 **Abbreviation**:
