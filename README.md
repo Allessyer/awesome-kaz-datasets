@@ -13,7 +13,10 @@ Datasets in kazakh language for different tasks.
 |       2024 | Kazakh UNT   | Kazakh unified national testing: Multiple choice benchmark | [HF](https://huggingface.co/datasets/kz-transformers/kazakh-unified-national-testing-mc) | QA |
 |       2024 | Kazakh MMLU   | MMLU on kazakh language: Translated MMLU Benchmark | [HF](https://huggingface.co/datasets/kz-transformers/mmlu-translated-kk) | QA |
 |       2024 | Kazakh GSM8K   | Kazakh GSM8K: Translated Grade School Math 8K | [HF](https://huggingface.co/datasets/kz-transformers/gsm8k-kk-translated) | QA |
-|        | kaz_rus_parallel_corpora_KAZNU  | Kazakh GSM8K: Translated Grade School Math 8K | [HF](https://huggingface.co/datasets/Dauren-Nur/kaz_rus_parallel_corpora_KAZNU) | Machine Translation |
+| 14 Mar 2024 | kaz_rus_parallel_corpora_KAZNU  | Text corpora by the researchers at Al-Farabi Kazakh National University  | [HF](https://huggingface.co/datasets/Dauren-Nur/kaz_rus_parallel_corpora_KAZNU) | Machine Translation |
+| 14 Mar 2024 | kaz_eng_parallel_corpora_KAZNU  | Law documents and news site by the researchers at Al-Farabi Kazakh National University  | [HF](https://huggingface.co/datasets/Dauren-Nur/kaz_eng_parallel) | Machine Translation |
+
+
 
 
 
@@ -27,6 +30,7 @@ Datasets in kazakh language for different tasks.
 | Date       | Dataset        | Title                                                                         | Link                                   | Task                                 |
 | -----------| -------------- | ----------------------------------------------------------------------------------- | -------------------------------------- | ------------------------------------ |
 | 2024 | Belebele-Fleurs   | The Belebele Benchmark: a Parallel Reading Comprehension Dataset in 122 Language Variants | [HF](https://huggingface.co/datasets/WueNLP/belebele-fleurs) | Spoken Language Understanding (Listening Comprehension), <br>ASR |
+| 11 Jan 2024 | kaz text-speech parallel corpora ISSAI SKIMMED |  | [HF](https://huggingface.co/datasets/Dauren-Nur/ISSAI_SKIMMED) | ASR, TTS |
 | 20 July 2023 | KAZNU Kazakh-ASR   |  Kazakh speech dataset for Automatic Speech Recognition from Al-Farabi KAZNU  | [paper](https://www.mdpi.com/2504-2289/7/3/132), <br> [HF](https://huggingface.co/datasets/farabi-lab/kazakh-stt) | ASR |
 | 26 Nov 2021 | KazNERD   | KazNERD: Kazakh Named Entity Recognition Dataset | [paper](https://arxiv.org/abs/2111.13419), <br> [Github](https://github.com/IS2AI/KazNERD?tab=readme-ov-file#KazNerd) | NER |
 
