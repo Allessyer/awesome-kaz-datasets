@@ -1,5 +1,5 @@
 # awesome-kaz-datasets
-Datasets in kazakh language for different tasks.
+The collection of kazakh datasets for different tasks.
 
 ## Text - NLP/LLM
 
