@@ -37,5 +37,6 @@ The collection of kazakh datasets for different tasks.
 **Abbreviation**:
 - ASR - Automatic Speech Recognition
 - NER - Named Entity Recognition
+- TTS - Text to Speech
 
 
