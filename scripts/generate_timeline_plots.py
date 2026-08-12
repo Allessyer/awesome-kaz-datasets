@@ -54,10 +54,14 @@ def release_map(filename: str, title: str, rows):
     for date, name in rows:
         grouped[(int(date[:4]), int(date[5:]))].append(name)
 
-    cell_w, cell_h = 190, 92
+    cell_w = 190
+    row_heights = {
+        month: max(54, 16 + max(len(grouped[(year, month)]) for year in years) * 14)
+        for month in months
+    }
     left, top, right, bottom = 78, 120, 24, 28
     width = left + len(years) * cell_w + right
-    height = top + len(months) * cell_h + bottom
+    height = top + sum(row_heights.values()) + bottom
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
         '<rect width="100%" height="100%" fill="#fff"/>',
@@ -68,25 +72,30 @@ def release_map(filename: str, title: str, rows):
     for col, year in enumerate(years):
         x = left + col * cell_w
         parts.append(f'<text x="{x + cell_w/2}" y="{top-18}" text-anchor="middle" class="year">{year}</text>')
-        for row, month in enumerate(months):
-            y = top + row * cell_h
+        y = top
+        for month in months:
+            cell_h = row_heights[month]
             names = grouped.get((year, month), [])
             klass = "filled" if names else "empty"
             parts.append(f'<rect x="{x}" y="{y}" width="{cell_w}" height="{cell_h}" class="cell {klass}"/>')
             for idx, name in enumerate(names):
                 parts.append(f'<text x="{x+8}" y="{y+18+idx*14}" class="name">{escape(name)}</text>')
-    for row, month in enumerate(months):
-        y = top + (row + .5) * cell_h
-        parts.append(f'<text x="{left-12}" y="{y+4}" text-anchor="end" class="month">{MONTHS[month-1]}</text>')
+            y += cell_h
+    y = top
+    for month in months:
+        cell_h = row_heights[month]
+        y_label = y + cell_h / 2
+        parts.append(f'<text x="{left-12}" y="{y_label+4}" text-anchor="end" class="month">{MONTHS[month-1]}</text>')
+        y += cell_h
     parts.append('</svg>')
     (OUT / filename).write_text("\n".join(parts) + "\n")
 
 
 def main():
     OUT.mkdir(exist_ok=True)
-    release_map("nlp_timeline.svg", "Kazakh NLP and LLM dataset releases", NLP)
-    release_map("speech_timeline.svg", "Kazakh speech and audio dataset releases", SPEECH)
-    release_map("cv_timeline.svg", "Kazakh CV and multimodal dataset releases", CV)
+    release_map("nlp_release_calendar.svg", "Kazakh NLP and LLM dataset releases", NLP)
+    release_map("speech_release_calendar.svg", "Kazakh speech and audio dataset releases", SPEECH)
+    release_map("cv_release_calendar.svg", "Kazakh CV and multimodal dataset releases", CV)
 
 
 if __name__ == "__main__":
