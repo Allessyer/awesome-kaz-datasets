@@ -1,80 +1,82 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="820" viewBox="0 0 1500 820">
-<rect width="100%" height="100%" fill="#ffffff"/>
-<style>text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172033}.title{font-size:30px;font-weight:700}.sub{font-size:15px;fill:#5b6472}.axis{font-size:13px;fill:#5b6472}.label{font-size:12px;font-weight:600}.small{font-size:11px;fill:#5b6472}.grid{stroke:#dfe3e8;stroke-width:1}.axisline{stroke:#7b8492;stroke-width:1.3}</style>
-<text x="115" y="42" class="title">Kazakh CV datasets: release date and size</text>
-<text x="115" y="68" class="sub">Primary published media/example unit; labels retain the exact unit.</text>
-<line x1="115" y1="730.0" x2="1115" y2="730.0" class="grid"/>
-<text x="103" y="734.0" text-anchor="end" class="axis">10^2</text>
-<line x1="115" y1="572.5" x2="1115" y2="572.5" class="grid"/>
-<text x="103" y="576.5" text-anchor="end" class="axis">10^3</text>
-<line x1="115" y1="415.0" x2="1115" y2="415.0" class="grid"/>
-<text x="103" y="419.0" text-anchor="end" class="axis">10^4</text>
-<line x1="115" y1="257.5" x2="1115" y2="257.5" class="grid"/>
-<text x="103" y="261.5" text-anchor="end" class="axis">10^5</text>
-<line x1="115" y1="100.0" x2="1115" y2="100.0" class="grid"/>
-<text x="103" y="104.0" text-anchor="end" class="axis">10^6</text>
-<line x1="115.0" y1="100" x2="115.0" y2="730" class="grid"/>
-<text x="115.0" y="758" text-anchor="middle" class="axis">2020</text>
-<line x1="265.0" y1="100" x2="265.0" y2="730" class="grid"/>
-<text x="265.0" y="758" text-anchor="middle" class="axis">2021</text>
-<line x1="415.0" y1="100" x2="415.0" y2="730" class="grid"/>
-<text x="415.0" y="758" text-anchor="middle" class="axis">2022</text>
-<line x1="565.0" y1="100" x2="565.0" y2="730" class="grid"/>
-<text x="565.0" y="758" text-anchor="middle" class="axis">2023</text>
-<line x1="715.0" y1="100" x2="715.0" y2="730" class="grid"/>
-<text x="715.0" y="758" text-anchor="middle" class="axis">2024</text>
-<line x1="865.0" y1="100" x2="865.0" y2="730" class="grid"/>
-<text x="865.0" y="758" text-anchor="middle" class="axis">2025</text>
-<line x1="1015.0" y1="100" x2="1015.0" y2="730" class="grid"/>
-<text x="1015.0" y="758" text-anchor="middle" class="axis">2026</text>
-<line x1="115" y1="730" x2="1115" y2="730" class="axisline"/>
-<text transform="translate(28 415.0) rotate(-90)" text-anchor="middle" class="axis">Primary media/examples (log scale)</text>
-<circle cx="190.0" cy="549.5" r="6.1" fill="#2563eb" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>HKR — 2020-07 — 1,400+ forms</title></circle>
-<path d="M196.1,549.5 C225.0,549.5 1117.0,105.0 1131.0,105.0" fill="none" stroke="#2563eb" stroke-opacity="0.36"/>
-<text x="1137" y="103.0" class="label">HKR</text>
-<text x="1137" y="117.0" class="small">2020-07 · 1,400+ forms</text>
-<circle cx="377.5" cy="234.3" r="8.1" fill="#059669" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>KOHTD — 2021-10 — 140,335+ images</title></circle>
-<path d="M385.6,234.3 C412.5,234.3 1117.0,165.9 1131.0,165.9" fill="none" stroke="#059669" stroke-opacity="0.36"/>
-<text x="1137" y="163.9" class="label">KOHTD</text>
-<text x="1137" y="177.9" class="small">2021-10 · 140,335+ images</text>
-<circle cx="1002.5" cy="331.3" r="7.5" fill="#d97706" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>QazLip — 2025-12 — ≈34,000 videos</title></circle>
-<path d="M1010.0,331.3 C1037.5,331.3 1117.0,226.8 1131.0,226.8" fill="none" stroke="#d97706" stroke-opacity="0.36"/>
-<text x="1137" y="224.8" class="label">QazLip</text>
-<text x="1137" y="238.8" class="small">2025-12 · ≈34,000 videos</text>
-<circle cx="1002.5" cy="495.4" r="6.5" fill="#7c3aed" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>AI2D Kazakh — 2025-12 — 3,088 examples</title></circle>
-<path d="M1009.0,495.4 C1037.5,495.4 1117.0,287.7 1131.0,287.7" fill="none" stroke="#7c3aed" stroke-opacity="0.36"/>
-<text x="1137" y="285.7" class="label">AI2D Kazakh</text>
-<text x="1137" y="299.7" class="small">2025-12 · 3,088 examples</text>
-<circle cx="1002.5" cy="572.5" r="6.0" fill="#dc2626" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>MathVista Kazakh — 2025-12 — 1,000 examples</title></circle>
-<path d="M1008.5,572.5 C1037.5,572.5 1117.0,348.6 1131.0,348.6" fill="none" stroke="#dc2626" stroke-opacity="0.36"/>
-<text x="1137" y="346.6" class="label">MathVista Kazakh</text>
-<text x="1137" y="360.6" class="small">2025-12 · 1,000 examples</text>
-<circle cx="1002.5" cy="607.4" r="5.8" fill="#059669" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>KazakhOCR — 2025-12 — 600 images</title></circle>
-<path d="M1008.3,607.4 C1037.5,607.4 1117.0,409.5 1131.0,409.5" fill="none" stroke="#059669" stroke-opacity="0.36"/>
-<text x="1137" y="407.5" class="label">KazakhOCR</text>
-<text x="1137" y="421.5" class="small">2025-12 · 600 images</text>
-<circle cx="1002.5" cy="628.5" r="5.6" fill="#2563eb" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>OCRBench Kazakh — 2025-12 — 441 examples</title></circle>
-<path d="M1008.1,628.5 C1037.5,628.5 1117.0,470.5 1131.0,470.5" fill="none" stroke="#2563eb" stroke-opacity="0.36"/>
-<text x="1137" y="468.5" class="label">OCRBench Kazakh</text>
-<text x="1137" y="482.5" class="small">2025-12 · 441 examples</text>
-<circle cx="1040.0" cy="472.3" r="6.6" fill="#d97706" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>MMBench Kazakh — 2026-03 — 4,329 examples</title></circle>
-<path d="M1046.6,472.3 C1075.0,472.3 1117.0,531.4 1131.0,531.4" fill="none" stroke="#d97706" stroke-opacity="0.36"/>
-<text x="1137" y="529.4" class="label">MMBench Kazakh</text>
-<text x="1137" y="543.4" class="small">2026-03 · 4,329 examples</text>
-<circle cx="1040.0" cy="496.4" r="6.5" fill="#7c3aed" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>MathVision Kazakh — 2026-03 — 3,040 examples</title></circle>
-<path d="M1046.5,496.4 C1075.0,496.4 1117.0,592.3 1131.0,592.3" fill="none" stroke="#7c3aed" stroke-opacity="0.36"/>
-<text x="1137" y="590.3" class="label">MathVision Kazakh</text>
-<text x="1137" y="604.3" class="small">2026-03 · 3,040 examples</text>
-<circle cx="1052.5" cy="516.8" r="6.4" fill="#2563eb" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>SpokenMQA Kazakh — 2026-04 — 2,256 examples</title></circle>
-<path d="M1058.9,516.8 C1087.5,516.8 1117.0,653.2 1131.0,653.2" fill="none" stroke="#2563eb" stroke-opacity="0.36"/>
-<text x="1137" y="651.2" class="label">SpokenMQA Kazakh</text>
-<text x="1137" y="665.2" class="small">2026-04 · 2,256 examples</text>
-<circle cx="1052.5" cy="592.2" r="5.9" fill="#dc2626" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>BeyneleBench — 2026-04 — 750 examples</title></circle>
-<path d="M1058.4,592.2 C1087.5,592.2 1117.0,714.1 1131.0,714.1" fill="none" stroke="#dc2626" stroke-opacity="0.36"/>
-<text x="1137" y="712.1" class="label">BeyneleBench</text>
-<text x="1137" y="726.1" class="small">2026-04 · 750 examples</text>
-<circle cx="1077.5" cy="210.1" r="8.3" fill="#059669" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>Darmm Kazakh OCR — 2026-06 — 200,000 images</title></circle>
-<path d="M1085.8,210.1 C1112.5,210.1 1117.0,775.0 1131.0,775.0" fill="none" stroke="#059669" stroke-opacity="0.36"/>
-<text x="1137" y="773.0" class="label">Darmm Kazakh OCR</text>
-<text x="1137" y="787.0" class="small">2026-06 · 200,000 images</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="862" height="1252" viewBox="0 0 862 1252">
+<rect width="100%" height="100%" fill="#fff"/>
+<style>text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172033}.title{font-size:28px;font-weight:700}.year{font-size:17px;font-weight:700}.month{font-size:13px;fill:#5b6472}.name{font-size:11px;font-weight:600}.cell{stroke:#dfe3e8;stroke-width:1}.filled{fill:#eff6ff}.empty{fill:#fafbfc}</style>
+<text x="78" y="39" class="title">Kazakh CV and multimodal dataset releases</text>
+<text x="78" y="67" class="month">Year → · Month ↓ · Dataset names appear in their release cell</text>
+<text x="173.0" y="102" text-anchor="middle" class="year">2020</text>
+<rect x="78" y="120" width="190" height="92" class="cell empty"/>
+<rect x="78" y="212" width="190" height="92" class="cell empty"/>
+<rect x="78" y="304" width="190" height="92" class="cell empty"/>
+<rect x="78" y="396" width="190" height="92" class="cell empty"/>
+<rect x="78" y="488" width="190" height="92" class="cell empty"/>
+<rect x="78" y="580" width="190" height="92" class="cell empty"/>
+<rect x="78" y="672" width="190" height="92" class="cell filled"/>
+<text x="86" y="690" class="name">HKR</text>
+<rect x="78" y="764" width="190" height="92" class="cell empty"/>
+<rect x="78" y="856" width="190" height="92" class="cell empty"/>
+<rect x="78" y="948" width="190" height="92" class="cell empty"/>
+<rect x="78" y="1040" width="190" height="92" class="cell empty"/>
+<rect x="78" y="1132" width="190" height="92" class="cell empty"/>
+<text x="363.0" y="102" text-anchor="middle" class="year">2021</text>
+<rect x="268" y="120" width="190" height="92" class="cell empty"/>
+<rect x="268" y="212" width="190" height="92" class="cell empty"/>
+<rect x="268" y="304" width="190" height="92" class="cell empty"/>
+<rect x="268" y="396" width="190" height="92" class="cell empty"/>
+<rect x="268" y="488" width="190" height="92" class="cell empty"/>
+<rect x="268" y="580" width="190" height="92" class="cell empty"/>
+<rect x="268" y="672" width="190" height="92" class="cell empty"/>
+<rect x="268" y="764" width="190" height="92" class="cell empty"/>
+<rect x="268" y="856" width="190" height="92" class="cell empty"/>
+<rect x="268" y="948" width="190" height="92" class="cell filled"/>
+<text x="276" y="966" class="name">KOHTD</text>
+<rect x="268" y="1040" width="190" height="92" class="cell empty"/>
+<rect x="268" y="1132" width="190" height="92" class="cell empty"/>
+<text x="553.0" y="102" text-anchor="middle" class="year">2025</text>
+<rect x="458" y="120" width="190" height="92" class="cell empty"/>
+<rect x="458" y="212" width="190" height="92" class="cell empty"/>
+<rect x="458" y="304" width="190" height="92" class="cell empty"/>
+<rect x="458" y="396" width="190" height="92" class="cell empty"/>
+<rect x="458" y="488" width="190" height="92" class="cell empty"/>
+<rect x="458" y="580" width="190" height="92" class="cell empty"/>
+<rect x="458" y="672" width="190" height="92" class="cell empty"/>
+<rect x="458" y="764" width="190" height="92" class="cell empty"/>
+<rect x="458" y="856" width="190" height="92" class="cell empty"/>
+<rect x="458" y="948" width="190" height="92" class="cell empty"/>
+<rect x="458" y="1040" width="190" height="92" class="cell empty"/>
+<rect x="458" y="1132" width="190" height="92" class="cell filled"/>
+<text x="466" y="1150" class="name">QazLip</text>
+<text x="466" y="1164" class="name">AI2D Kazakh</text>
+<text x="466" y="1178" class="name">MathVista Kazakh</text>
+<text x="466" y="1192" class="name">OCRBench Kazakh</text>
+<text x="466" y="1206" class="name">KazakhOCR</text>
+<text x="743.0" y="102" text-anchor="middle" class="year">2026</text>
+<rect x="648" y="120" width="190" height="92" class="cell empty"/>
+<rect x="648" y="212" width="190" height="92" class="cell empty"/>
+<rect x="648" y="304" width="190" height="92" class="cell filled"/>
+<text x="656" y="322" class="name">MMBench Kazakh</text>
+<text x="656" y="336" class="name">MathVision Kazakh</text>
+<rect x="648" y="396" width="190" height="92" class="cell filled"/>
+<text x="656" y="414" class="name">BeyneleBench</text>
+<text x="656" y="428" class="name">SpokenMQA Kazakh</text>
+<rect x="648" y="488" width="190" height="92" class="cell empty"/>
+<rect x="648" y="580" width="190" height="92" class="cell filled"/>
+<text x="656" y="598" class="name">Darmm Kazakh OCR</text>
+<rect x="648" y="672" width="190" height="92" class="cell empty"/>
+<rect x="648" y="764" width="190" height="92" class="cell empty"/>
+<rect x="648" y="856" width="190" height="92" class="cell empty"/>
+<rect x="648" y="948" width="190" height="92" class="cell empty"/>
+<rect x="648" y="1040" width="190" height="92" class="cell empty"/>
+<rect x="648" y="1132" width="190" height="92" class="cell empty"/>
+<text x="66" y="170.0" text-anchor="end" class="month">Jan</text>
+<text x="66" y="262.0" text-anchor="end" class="month">Feb</text>
+<text x="66" y="354.0" text-anchor="end" class="month">Mar</text>
+<text x="66" y="446.0" text-anchor="end" class="month">Apr</text>
+<text x="66" y="538.0" text-anchor="end" class="month">May</text>
+<text x="66" y="630.0" text-anchor="end" class="month">Jun</text>
+<text x="66" y="722.0" text-anchor="end" class="month">Jul</text>
+<text x="66" y="814.0" text-anchor="end" class="month">Aug</text>
+<text x="66" y="906.0" text-anchor="end" class="month">Sep</text>
+<text x="66" y="998.0" text-anchor="end" class="month">Oct</text>
+<text x="66" y="1090.0" text-anchor="end" class="month">Nov</text>
+<text x="66" y="1182.0" text-anchor="end" class="month">Dec</text>
 </svg>
