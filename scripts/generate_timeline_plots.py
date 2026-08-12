@@ -50,13 +50,14 @@ MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", 
 def release_map(filename: str, title: str, rows):
     grouped = defaultdict(list)
     years = sorted({int(date[:4]) for date, _ in rows})
+    months = sorted({int(date[5:]) for date, _ in rows})
     for date, name in rows:
         grouped[(int(date[:4]), int(date[5:]))].append(name)
 
     cell_w, cell_h = 190, 92
     left, top, right, bottom = 78, 120, 24, 28
     width = left + len(years) * cell_w + right
-    height = top + 12 * cell_h + bottom
+    height = top + len(months) * cell_h + bottom
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
         '<rect width="100%" height="100%" fill="#fff"/>',
@@ -67,16 +68,16 @@ def release_map(filename: str, title: str, rows):
     for col, year in enumerate(years):
         x = left + col * cell_w
         parts.append(f'<text x="{x + cell_w/2}" y="{top-18}" text-anchor="middle" class="year">{year}</text>')
-        for month in range(1, 13):
-            y = top + (month - 1) * cell_h
+        for row, month in enumerate(months):
+            y = top + row * cell_h
             names = grouped.get((year, month), [])
             klass = "filled" if names else "empty"
             parts.append(f'<rect x="{x}" y="{y}" width="{cell_w}" height="{cell_h}" class="cell {klass}"/>')
             for idx, name in enumerate(names):
                 parts.append(f'<text x="{x+8}" y="{y+18+idx*14}" class="name">{escape(name)}</text>')
-    for month, label in enumerate(MONTHS, 1):
-        y = top + (month - .5) * cell_h
-        parts.append(f'<text x="{left-12}" y="{y+4}" text-anchor="end" class="month">{label}</text>')
+    for row, month in enumerate(months):
+        y = top + (row + .5) * cell_h
+        parts.append(f'<text x="{left-12}" y="{y+4}" text-anchor="end" class="month">{MONTHS[month-1]}</text>')
     parts.append('</svg>')
     (OUT / filename).write_text("\n".join(parts) + "\n")
 
