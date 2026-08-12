@@ -6,7 +6,7 @@ A curated list of public datasets that contain substantial Kazakh-language data.
 
 ## Text, NLP, and LLM
 
-![Calendar map of Kazakh NLP dataset releases, with year on the x-axis and month on the y-axis](assets/nlp_timeline.svg)
+![Calendar map of Kazakh NLP dataset releases, with year on the x-axis and month on the y-axis](assets/nlp_release_calendar.svg)
 
 | Released | Dataset | Description | Download | Storage | Scale | Task |
 |---|---|---|---|---:|---:|---|
@@ -38,7 +38,7 @@ A curated list of public datasets that contain substantial Kazakh-language data.
 
 ## Speech and audio
 
-![Calendar map of Kazakh speech dataset releases, with year on the x-axis and month on the y-axis](assets/speech_timeline.svg)
+![Calendar map of Kazakh speech dataset releases, with year on the x-axis and month on the y-axis](assets/speech_release_calendar.svg)
 
 | Released | Dataset | Description | Download | Storage | Scale | Task |
 |---|---|---|---|---:|---:|---|
@@ -60,7 +60,7 @@ A curated list of public datasets that contain substantial Kazakh-language data.
 
 ## Vision, OCR, and multimodal
 
-![Calendar map of Kazakh computer-vision and multimodal dataset releases, with year on the x-axis and month on the y-axis](assets/cv_timeline.svg)
+![Calendar map of Kazakh computer-vision and multimodal dataset releases, with year on the x-axis and month on the y-axis](assets/cv_release_calendar.svg)
 
 | Released | Dataset | Description | Download | Storage | Scale | Task |
 |---|---|---|---|---:|---:|---|
