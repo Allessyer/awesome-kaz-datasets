@@ -35,6 +35,7 @@ Counts are the number of rows/examples unless another unit is shown. For multili
 
 | Released | Dataset | Description | Download | Size | Task |
 |---|---|---|---|---:|---|
+| 2026 | YO-CPT-kk | [YouTube-oriented Kazakh continual-pretraining corpus (dataset card)](https://huggingface.co/datasets/NCSpeech/YO-CPT-kk) | [Files](https://huggingface.co/datasets/NCSpeech/YO-CPT-kk/tree/main) | 600 h; 156,903 utterances | TTS / ASR / speaker verification |
 | 2026 | Kazakh Speech Dataset (optimized KSC2) | [VAD-sliced and re-transcribed KSC2 derivative (dataset card)](https://huggingface.co/datasets/Flamme-VRM/kazakh-speech-dataset) | [Files](https://huggingface.co/datasets/Flamme-VRM/kazakh-speech-dataset/tree/main) | ≈726 h; 230,793 clips | ASR / TTS |
 | 2025 | Kazakh Speech Corpus 2 (KSC2) | [Large transcribed Kazakh corpus (dataset card)](https://huggingface.co/datasets/issai/Kazakh_Speech_Corpus_2) | [Files](https://huggingface.co/datasets/issai/Kazakh_Speech_Corpus_2/tree/main) | ≈1,200 h; 600,000+ utterances | ASR |
 | 2024 | Belebele-FLEURS | [Spoken reading-comprehension benchmark (paper)](https://arxiv.org/abs/2412.08274) | [Hugging Face](https://huggingface.co/datasets/WueNLP/belebele-fleurs) | 900 Kazakh audio questions | Spoken QA / ASR |
