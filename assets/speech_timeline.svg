@@ -1,27 +1,28 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1432" height="1252" viewBox="0 0 1432 1252">
 <rect width="100%" height="100%" fill="#fff"/>
 <style>text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172033}.title{font-size:28px;font-weight:700}.year{font-size:17px;font-weight:700}.month{font-size:13px;fill:#5b6472}.name{font-size:11px;font-weight:600}.cell{stroke:#dfe3e8;stroke-width:1}.filled{fill:#eff6ff}.empty{fill:#fafbfc}</style>
-<text x="78" y="39" class="title">Kazakh NLP and LLM dataset releases</text>
+<text x="78" y="39" class="title">Kazakh speech and audio dataset releases</text>
 <text x="78" y="67" class="month">Year → · Month ↓ · Dataset names appear in their release cell</text>
-<text x="173.0" y="102" text-anchor="middle" class="year">2015</text>
+<text x="173.0" y="102" text-anchor="middle" class="year">2020</text>
 <rect x="78" y="120" width="190" height="92" class="cell empty"/>
 <rect x="78" y="212" width="190" height="92" class="cell empty"/>
 <rect x="78" y="304" width="190" height="92" class="cell empty"/>
 <rect x="78" y="396" width="190" height="92" class="cell empty"/>
 <rect x="78" y="488" width="190" height="92" class="cell empty"/>
-<rect x="78" y="580" width="190" height="92" class="cell filled"/>
-<text x="86" y="598" class="name">UD Kazakh KTB</text>
+<rect x="78" y="580" width="190" height="92" class="cell empty"/>
 <rect x="78" y="672" width="190" height="92" class="cell empty"/>
 <rect x="78" y="764" width="190" height="92" class="cell empty"/>
-<rect x="78" y="856" width="190" height="92" class="cell empty"/>
+<rect x="78" y="856" width="190" height="92" class="cell filled"/>
+<text x="86" y="874" class="name">Kazakh Speech Corpus</text>
 <rect x="78" y="948" width="190" height="92" class="cell empty"/>
 <rect x="78" y="1040" width="190" height="92" class="cell empty"/>
 <rect x="78" y="1132" width="190" height="92" class="cell empty"/>
-<text x="363.0" y="102" text-anchor="middle" class="year">2020</text>
+<text x="363.0" y="102" text-anchor="middle" class="year">2021</text>
 <rect x="268" y="120" width="190" height="92" class="cell empty"/>
 <rect x="268" y="212" width="190" height="92" class="cell empty"/>
 <rect x="268" y="304" width="190" height="92" class="cell empty"/>
-<rect x="268" y="396" width="190" height="92" class="cell empty"/>
+<rect x="268" y="396" width="190" height="92" class="cell filled"/>
+<text x="276" y="414" class="name">KazakhTTS</text>
 <rect x="268" y="488" width="190" height="92" class="cell empty"/>
 <rect x="268" y="580" width="190" height="92" class="cell empty"/>
 <rect x="268" y="672" width="190" height="92" class="cell empty"/>
@@ -29,46 +30,44 @@
 <rect x="268" y="856" width="190" height="92" class="cell empty"/>
 <rect x="268" y="948" width="190" height="92" class="cell empty"/>
 <rect x="268" y="1040" width="190" height="92" class="cell empty"/>
-<rect x="268" y="1132" width="190" height="92" class="cell filled"/>
-<text x="276" y="1150" class="name">KazNewsDataset</text>
-<text x="276" y="1164" class="name">KazRusNewsDataset</text>
-<text x="553.0" y="102" text-anchor="middle" class="year">2021</text>
-<rect x="458" y="120" width="190" height="92" class="cell empty"/>
+<rect x="268" y="1132" width="190" height="92" class="cell empty"/>
+<text x="553.0" y="102" text-anchor="middle" class="year">2022</text>
+<rect x="458" y="120" width="190" height="92" class="cell filled"/>
+<text x="466" y="138" class="name">KazakhTTS2</text>
 <rect x="458" y="212" width="190" height="92" class="cell empty"/>
 <rect x="458" y="304" width="190" height="92" class="cell empty"/>
 <rect x="458" y="396" width="190" height="92" class="cell empty"/>
-<rect x="458" y="488" width="190" height="92" class="cell empty"/>
+<rect x="458" y="488" width="190" height="92" class="cell filled"/>
+<text x="466" y="506" class="name">Speech Commands</text>
 <rect x="458" y="580" width="190" height="92" class="cell empty"/>
 <rect x="458" y="672" width="190" height="92" class="cell empty"/>
 <rect x="458" y="764" width="190" height="92" class="cell empty"/>
-<rect x="458" y="856" width="190" height="92" class="cell empty"/>
+<rect x="458" y="856" width="190" height="92" class="cell filled"/>
+<text x="466" y="874" class="name">KSC2</text>
 <rect x="458" y="948" width="190" height="92" class="cell empty"/>
-<rect x="458" y="1040" width="190" height="92" class="cell filled"/>
-<text x="466" y="1058" class="name">KazNERD</text>
+<rect x="458" y="1040" width="190" height="92" class="cell empty"/>
 <rect x="458" y="1132" width="190" height="92" class="cell empty"/>
 <text x="743.0" y="102" text-anchor="middle" class="year">2023</text>
 <rect x="648" y="120" width="190" height="92" class="cell empty"/>
 <rect x="648" y="212" width="190" height="92" class="cell empty"/>
 <rect x="648" y="304" width="190" height="92" class="cell empty"/>
-<rect x="648" y="396" width="190" height="92" class="cell filled"/>
-<text x="656" y="414" class="name">MDBKD</text>
+<rect x="648" y="396" width="190" height="92" class="cell empty"/>
 <rect x="648" y="488" width="190" height="92" class="cell empty"/>
 <rect x="648" y="580" width="190" height="92" class="cell empty"/>
-<rect x="648" y="672" width="190" height="92" class="cell empty"/>
+<rect x="648" y="672" width="190" height="92" class="cell filled"/>
+<text x="656" y="690" class="name">KSD / SLR140</text>
 <rect x="648" y="764" width="190" height="92" class="cell empty"/>
 <rect x="648" y="856" width="190" height="92" class="cell empty"/>
 <rect x="648" y="948" width="190" height="92" class="cell empty"/>
 <rect x="648" y="1040" width="190" height="92" class="cell empty"/>
 <rect x="648" y="1132" width="190" height="92" class="cell empty"/>
 <text x="933.0" y="102" text-anchor="middle" class="year">2024</text>
-<rect x="838" y="120" width="190" height="92" class="cell empty"/>
-<rect x="838" y="212" width="190" height="92" class="cell filled"/>
-<text x="846" y="230" class="name">Kazakh–English KAZNU</text>
-<rect x="838" y="304" width="190" height="92" class="cell filled"/>
-<text x="846" y="322" class="name">Kazakh–Russian KAZNU</text>
-<text x="846" y="336" class="name">KazParC</text>
+<rect x="838" y="120" width="190" height="92" class="cell filled"/>
+<text x="846" y="138" class="name">ISSAI SKIMMED</text>
+<rect x="838" y="212" width="190" height="92" class="cell empty"/>
+<rect x="838" y="304" width="190" height="92" class="cell empty"/>
 <rect x="838" y="396" width="190" height="92" class="cell filled"/>
-<text x="846" y="414" class="name">KazQAD</text>
+<text x="846" y="414" class="name">KazEmoTTS</text>
 <rect x="838" y="488" width="190" height="92" class="cell empty"/>
 <rect x="838" y="580" width="190" height="92" class="cell empty"/>
 <rect x="838" y="672" width="190" height="92" class="cell empty"/>
@@ -76,45 +75,36 @@
 <rect x="838" y="856" width="190" height="92" class="cell empty"/>
 <rect x="838" y="948" width="190" height="92" class="cell empty"/>
 <rect x="838" y="1040" width="190" height="92" class="cell filled"/>
-<text x="846" y="1058" class="name">MMLU Translated KK</text>
-<text x="846" y="1072" class="name">GSM8K Translated KK</text>
-<text x="846" y="1086" class="name">Kazakh Dastur MC</text>
-<text x="846" y="1100" class="name">Kazakh Constitution MC</text>
-<text x="846" y="1114" class="name">Kazakh UNT</text>
+<text x="846" y="1058" class="name">Belebele-FLEURS</text>
 <rect x="838" y="1132" width="190" height="92" class="cell empty"/>
 <text x="1123.0" y="102" text-anchor="middle" class="year">2025</text>
-<rect x="1028" y="120" width="190" height="92" class="cell filled"/>
-<text x="1036" y="138" class="name">KazMMLU</text>
-<rect x="1028" y="212" width="190" height="92" class="cell filled"/>
-<text x="1036" y="230" class="name">Qorgau</text>
+<rect x="1028" y="120" width="190" height="92" class="cell empty"/>
+<rect x="1028" y="212" width="190" height="92" class="cell empty"/>
 <rect x="1028" y="304" width="190" height="92" class="cell empty"/>
-<rect x="1028" y="396" width="190" height="92" class="cell empty"/>
+<rect x="1028" y="396" width="190" height="92" class="cell filled"/>
+<text x="1036" y="414" class="name">MATERIAL Kazakh–English</text>
 <rect x="1028" y="488" width="190" height="92" class="cell empty"/>
 <rect x="1028" y="580" width="190" height="92" class="cell empty"/>
 <rect x="1028" y="672" width="190" height="92" class="cell empty"/>
 <rect x="1028" y="764" width="190" height="92" class="cell empty"/>
 <rect x="1028" y="856" width="190" height="92" class="cell empty"/>
-<rect x="1028" y="948" width="190" height="92" class="cell filled"/>
-<text x="1036" y="966" class="name">KazCulture</text>
+<rect x="1028" y="948" width="190" height="92" class="cell empty"/>
 <rect x="1028" y="1040" width="190" height="92" class="cell empty"/>
 <rect x="1028" y="1132" width="190" height="92" class="cell empty"/>
 <text x="1313.0" y="102" text-anchor="middle" class="year">2026</text>
-<rect x="1218" y="120" width="190" height="92" class="cell empty"/>
-<rect x="1218" y="212" width="190" height="92" class="cell empty"/>
+<rect x="1218" y="120" width="190" height="92" class="cell filled"/>
+<text x="1226" y="138" class="name">Optimized KSC2</text>
+<rect x="1218" y="212" width="190" height="92" class="cell filled"/>
+<text x="1226" y="230" class="name">Kazakh Songs ASR</text>
 <rect x="1218" y="304" width="190" height="92" class="cell filled"/>
-<text x="1226" y="322" class="name">RAGBench Kazakh</text>
-<text x="1226" y="336" class="name">IFBench Kazakh</text>
-<rect x="1218" y="396" width="190" height="92" class="cell filled"/>
-<text x="1226" y="414" class="name">Zerde-QA-50K</text>
+<text x="1226" y="322" class="name">Common Voice v25</text>
+<rect x="1218" y="396" width="190" height="92" class="cell empty"/>
 <rect x="1218" y="488" width="190" height="92" class="cell filled"/>
-<text x="1226" y="506" class="name">KazLawBench</text>
-<rect x="1218" y="580" width="190" height="92" class="cell filled"/>
-<text x="1226" y="598" class="name">Kazakh Open Retrieval</text>
-<text x="1226" y="612" class="name">FreshQA Kazakh</text>
-<text x="1226" y="626" class="name">DeFAn Kazakh</text>
-<rect x="1218" y="672" width="190" height="92" class="cell filled"/>
-<text x="1226" y="690" class="name">KazMix-3</text>
-<rect x="1218" y="764" width="190" height="92" class="cell empty"/>
+<text x="1226" y="506" class="name">KazEGA</text>
+<rect x="1218" y="580" width="190" height="92" class="cell empty"/>
+<rect x="1218" y="672" width="190" height="92" class="cell empty"/>
+<rect x="1218" y="764" width="190" height="92" class="cell filled"/>
+<text x="1226" y="782" class="name">YO-CPT-kk</text>
 <rect x="1218" y="856" width="190" height="92" class="cell empty"/>
 <rect x="1218" y="948" width="190" height="92" class="cell empty"/>
 <rect x="1218" y="1040" width="190" height="92" class="cell empty"/>
