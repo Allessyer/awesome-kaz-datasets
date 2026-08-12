@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="862" height="1252" viewBox="0 0 862 1252">
+<svg xmlns="http://www.w3.org/2000/svg" width="862" height="700" viewBox="0 0 862 700">
 <rect width="100%" height="100%" fill="#fff"/>
 <style>text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172033}.title{font-size:28px;font-weight:700}.year{font-size:17px;font-weight:700}.month{font-size:13px;fill:#5b6472}.name{font-size:11px;font-weight:600}.cell{stroke:#dfe3e8;stroke-width:1}.filled{fill:#eff6ff}.empty{fill:#fafbfc}</style>
 <text x="78" y="39" class="title">Kazakh CV and multimodal dataset releases</text>
@@ -7,76 +7,46 @@
 <rect x="78" y="120" width="190" height="92" class="cell empty"/>
 <rect x="78" y="212" width="190" height="92" class="cell empty"/>
 <rect x="78" y="304" width="190" height="92" class="cell empty"/>
-<rect x="78" y="396" width="190" height="92" class="cell empty"/>
+<rect x="78" y="396" width="190" height="92" class="cell filled"/>
+<text x="86" y="414" class="name">HKR</text>
 <rect x="78" y="488" width="190" height="92" class="cell empty"/>
 <rect x="78" y="580" width="190" height="92" class="cell empty"/>
-<rect x="78" y="672" width="190" height="92" class="cell filled"/>
-<text x="86" y="690" class="name">HKR</text>
-<rect x="78" y="764" width="190" height="92" class="cell empty"/>
-<rect x="78" y="856" width="190" height="92" class="cell empty"/>
-<rect x="78" y="948" width="190" height="92" class="cell empty"/>
-<rect x="78" y="1040" width="190" height="92" class="cell empty"/>
-<rect x="78" y="1132" width="190" height="92" class="cell empty"/>
 <text x="363.0" y="102" text-anchor="middle" class="year">2021</text>
 <rect x="268" y="120" width="190" height="92" class="cell empty"/>
 <rect x="268" y="212" width="190" height="92" class="cell empty"/>
 <rect x="268" y="304" width="190" height="92" class="cell empty"/>
 <rect x="268" y="396" width="190" height="92" class="cell empty"/>
-<rect x="268" y="488" width="190" height="92" class="cell empty"/>
+<rect x="268" y="488" width="190" height="92" class="cell filled"/>
+<text x="276" y="506" class="name">KOHTD</text>
 <rect x="268" y="580" width="190" height="92" class="cell empty"/>
-<rect x="268" y="672" width="190" height="92" class="cell empty"/>
-<rect x="268" y="764" width="190" height="92" class="cell empty"/>
-<rect x="268" y="856" width="190" height="92" class="cell empty"/>
-<rect x="268" y="948" width="190" height="92" class="cell filled"/>
-<text x="276" y="966" class="name">KOHTD</text>
-<rect x="268" y="1040" width="190" height="92" class="cell empty"/>
-<rect x="268" y="1132" width="190" height="92" class="cell empty"/>
 <text x="553.0" y="102" text-anchor="middle" class="year">2025</text>
 <rect x="458" y="120" width="190" height="92" class="cell empty"/>
 <rect x="458" y="212" width="190" height="92" class="cell empty"/>
 <rect x="458" y="304" width="190" height="92" class="cell empty"/>
 <rect x="458" y="396" width="190" height="92" class="cell empty"/>
 <rect x="458" y="488" width="190" height="92" class="cell empty"/>
-<rect x="458" y="580" width="190" height="92" class="cell empty"/>
-<rect x="458" y="672" width="190" height="92" class="cell empty"/>
-<rect x="458" y="764" width="190" height="92" class="cell empty"/>
-<rect x="458" y="856" width="190" height="92" class="cell empty"/>
-<rect x="458" y="948" width="190" height="92" class="cell empty"/>
-<rect x="458" y="1040" width="190" height="92" class="cell empty"/>
-<rect x="458" y="1132" width="190" height="92" class="cell filled"/>
-<text x="466" y="1150" class="name">QazLip</text>
-<text x="466" y="1164" class="name">AI2D Kazakh</text>
-<text x="466" y="1178" class="name">MathVista Kazakh</text>
-<text x="466" y="1192" class="name">OCRBench Kazakh</text>
-<text x="466" y="1206" class="name">KazakhOCR</text>
+<rect x="458" y="580" width="190" height="92" class="cell filled"/>
+<text x="466" y="598" class="name">QazLip</text>
+<text x="466" y="612" class="name">AI2D Kazakh</text>
+<text x="466" y="626" class="name">MathVista Kazakh</text>
+<text x="466" y="640" class="name">OCRBench Kazakh</text>
+<text x="466" y="654" class="name">KazakhOCR</text>
 <text x="743.0" y="102" text-anchor="middle" class="year">2026</text>
-<rect x="648" y="120" width="190" height="92" class="cell empty"/>
-<rect x="648" y="212" width="190" height="92" class="cell empty"/>
+<rect x="648" y="120" width="190" height="92" class="cell filled"/>
+<text x="656" y="138" class="name">MMBench Kazakh</text>
+<text x="656" y="152" class="name">MathVision Kazakh</text>
+<rect x="648" y="212" width="190" height="92" class="cell filled"/>
+<text x="656" y="230" class="name">BeyneleBench</text>
+<text x="656" y="244" class="name">SpokenMQA Kazakh</text>
 <rect x="648" y="304" width="190" height="92" class="cell filled"/>
-<text x="656" y="322" class="name">MMBench Kazakh</text>
-<text x="656" y="336" class="name">MathVision Kazakh</text>
-<rect x="648" y="396" width="190" height="92" class="cell filled"/>
-<text x="656" y="414" class="name">BeyneleBench</text>
-<text x="656" y="428" class="name">SpokenMQA Kazakh</text>
+<text x="656" y="322" class="name">Darmm Kazakh OCR</text>
+<rect x="648" y="396" width="190" height="92" class="cell empty"/>
 <rect x="648" y="488" width="190" height="92" class="cell empty"/>
-<rect x="648" y="580" width="190" height="92" class="cell filled"/>
-<text x="656" y="598" class="name">Darmm Kazakh OCR</text>
-<rect x="648" y="672" width="190" height="92" class="cell empty"/>
-<rect x="648" y="764" width="190" height="92" class="cell empty"/>
-<rect x="648" y="856" width="190" height="92" class="cell empty"/>
-<rect x="648" y="948" width="190" height="92" class="cell empty"/>
-<rect x="648" y="1040" width="190" height="92" class="cell empty"/>
-<rect x="648" y="1132" width="190" height="92" class="cell empty"/>
-<text x="66" y="170.0" text-anchor="end" class="month">Jan</text>
-<text x="66" y="262.0" text-anchor="end" class="month">Feb</text>
-<text x="66" y="354.0" text-anchor="end" class="month">Mar</text>
-<text x="66" y="446.0" text-anchor="end" class="month">Apr</text>
-<text x="66" y="538.0" text-anchor="end" class="month">May</text>
-<text x="66" y="630.0" text-anchor="end" class="month">Jun</text>
-<text x="66" y="722.0" text-anchor="end" class="month">Jul</text>
-<text x="66" y="814.0" text-anchor="end" class="month">Aug</text>
-<text x="66" y="906.0" text-anchor="end" class="month">Sep</text>
-<text x="66" y="998.0" text-anchor="end" class="month">Oct</text>
-<text x="66" y="1090.0" text-anchor="end" class="month">Nov</text>
-<text x="66" y="1182.0" text-anchor="end" class="month">Dec</text>
+<rect x="648" y="580" width="190" height="92" class="cell empty"/>
+<text x="66" y="170.0" text-anchor="end" class="month">Mar</text>
+<text x="66" y="262.0" text-anchor="end" class="month">Apr</text>
+<text x="66" y="354.0" text-anchor="end" class="month">Jun</text>
+<text x="66" y="446.0" text-anchor="end" class="month">Jul</text>
+<text x="66" y="538.0" text-anchor="end" class="month">Oct</text>
+<text x="66" y="630.0" text-anchor="end" class="month">Dec</text>
 </svg>
