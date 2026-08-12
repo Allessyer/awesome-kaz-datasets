@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="820" viewBox="0 0 1500 820">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172033}.title{font-size:30px;font-weight:700}.sub{font-size:15px;fill:#5b6472}.axis{font-size:13px;fill:#5b6472}.label{font-size:12px;font-weight:600}.small{font-size:11px;fill:#5b6472}.grid{stroke:#dfe3e8;stroke-width:1}.axisline{stroke:#7b8492;stroke-width:1.3}</style>
+<text x="115" y="42" class="title">Kazakh NLP datasets: release date and size</text>
+<text x="115" y="68" class="sub">All catalogued NLP/LLM datasets; size uses each dataset’s primary example unit.</text>
+<line x1="115" y1="730.0" x2="1115" y2="730.0" class="grid"/>
+<text x="103" y="734.0" text-anchor="end" class="axis">10^2</text>
+<line x1="115" y1="625.0" x2="1115" y2="625.0" class="grid"/>
+<text x="103" y="629.0" text-anchor="end" class="axis">10^3</text>
+<line x1="115" y1="520.0" x2="1115" y2="520.0" class="grid"/>
+<text x="103" y="524.0" text-anchor="end" class="axis">10^4</text>
+<line x1="115" y1="415.0" x2="1115" y2="415.0" class="grid"/>
+<text x="103" y="419.0" text-anchor="end" class="axis">10^5</text>
+<line x1="115" y1="310.0" x2="1115" y2="310.0" class="grid"/>
+<text x="103" y="314.0" text-anchor="end" class="axis">10^6</text>
+<line x1="115" y1="205.0" x2="1115" y2="205.0" class="grid"/>
+<text x="103" y="209.0" text-anchor="end" class="axis">10^7</text>
+<line x1="115" y1="100.0" x2="1115" y2="100.0" class="grid"/>
+<text x="103" y="104.0" text-anchor="end" class="axis">10^8</text>
+<line x1="115.0" y1="100" x2="115.0" y2="730" class="grid"/>
+<text x="115.0" y="758" text-anchor="middle" class="axis">2015</text>
+<line x1="200.7" y1="100" x2="200.7" y2="730" class="grid"/>
+<text x="200.7" y="758" text-anchor="middle" class="axis">2016</text>
+<line x1="286.4" y1="100" x2="286.4" y2="730" class="grid"/>
+<text x="286.4" y="758" text-anchor="middle" class="axis">2017</text>
+<line x1="372.1" y1="100" x2="372.1" y2="730" class="grid"/>
+<text x="372.1" y="758" text-anchor="middle" class="axis">2018</text>
+<line x1="457.9" y1="100" x2="457.9" y2="730" class="grid"/>
+<text x="457.9" y="758" text-anchor="middle" class="axis">2019</text>
+<line x1="543.6" y1="100" x2="543.6" y2="730" class="grid"/>
+<text x="543.6" y="758" text-anchor="middle" class="axis">2020</text>
+<line x1="629.3" y1="100" x2="629.3" y2="730" class="grid"/>
+<text x="629.3" y="758" text-anchor="middle" class="axis">2021</text>
+<line x1="715.0" y1="100" x2="715.0" y2="730" class="grid"/>
+<text x="715.0" y="758" text-anchor="middle" class="axis">2022</text>
+<line x1="800.7" y1="100" x2="800.7" y2="730" class="grid"/>
+<text x="800.7" y="758" text-anchor="middle" class="axis">2023</text>
+<line x1="886.4" y1="100" x2="886.4" y2="730" class="grid"/>
+<text x="886.4" y="758" text-anchor="middle" class="axis">2024</text>
+<line x1="972.1" y1="100" x2="972.1" y2="730" class="grid"/>
+<text x="972.1" y="758" text-anchor="middle" class="axis">2025</text>
+<line x1="1057.9" y1="100" x2="1057.9" y2="730" class="grid"/>
+<text x="1057.9" y="758" text-anchor="middle" class="axis">2026</text>
+<line x1="115" y1="730" x2="1115" y2="730" class="axisline"/>
+<text transform="translate(28 415.0) rotate(-90)" text-anchor="middle" class="axis">Primary examples (log scale)</text>
+<circle cx="150.7" cy="621.6" r="5.7" fill="#2563eb" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>UD Kazakh KTB — 2015-06 — 1,078 sentences</title></circle>
+<path d="M156.4,621.6 C185.7,621.6 1117.0,105.0 1131.0,105.0" fill="none" stroke="#2563eb" stroke-opacity="0.36"/>
+<text x="1137" y="103.0" class="label">UD Kazakh KTB</text>
+<text x="1137" y="117.0" class="small">2015-06 · 1,078 sentences</text>
+<circle cx="622.1" cy="487.5" r="6.5" fill="#d97706" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>KazRusNewsDataset — 2020-12 — 20,409 articles</title></circle>
+<path d="M628.7,487.5 C657.1,487.5 1117.0,132.9 1131.0,132.9" fill="none" stroke="#d97706" stroke-opacity="0.36"/>
+<text x="1137" y="130.9" class="label">KazRusNewsDataset</text>
+<text x="1137" y="144.9" class="small">2020-12 · 20,409 articles</text>
+<circle cx="622.1" cy="557.8" r="6.1" fill="#059669" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>KazNewsDataset — 2020-12 — 4,365 articles</title></circle>
+<path d="M628.2,557.8 C657.1,557.8 1117.0,160.8 1131.0,160.8" fill="none" stroke="#059669" stroke-opacity="0.36"/>
+<text x="1137" y="158.8" class="label">KazNewsDataset</text>
+<text x="1137" y="172.8" class="small">2020-12 · 4,365 articles</text>
+<circle cx="700.7" cy="409.5" r="7.0" fill="#7c3aed" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>KazNERD — 2021-11 — 112,702 sentences</title></circle>
+<path d="M707.7,409.5 C735.7,409.5 1117.0,188.8 1131.0,188.8" fill="none" stroke="#7c3aed" stroke-opacity="0.36"/>
+<text x="1137" y="186.8" class="label">KazNERD</text>
+<text x="1137" y="200.8" class="small">2021-11 · 112,702 sentences</text>
+<circle cx="822.1" cy="163.4" r="8.6" fill="#dc2626" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>MDBKD — 2023-04 — 24.9M texts</title></circle>
+<path d="M830.7,163.4 C857.1,163.4 1117.0,216.7 1131.0,216.7" fill="none" stroke="#dc2626" stroke-opacity="0.36"/>
+<text x="1137" y="214.7" class="label">MDBKD</text>
+<text x="1137" y="228.7" class="small">2023-04 · 24.9M texts</text>
+<circle cx="893.6" cy="354.5" r="7.4" fill="#2563eb" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>Kazakh–English KAZNU — 2024-02 — 377,044 pairs</title></circle>
+<path d="M901.0,354.5 C928.6,354.5 1117.0,244.6 1131.0,244.6" fill="none" stroke="#2563eb" stroke-opacity="0.36"/>
+<text x="1137" y="242.6" class="label">Kazakh–English KAZNU</text>
+<text x="1137" y="256.6" class="small">2024-02 · 377,044 pairs</text>
+<circle cx="900.7" cy="355.1" r="7.4" fill="#d97706" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>KazParC — 2024-03 — 372,000 pairs</title></circle>
+<path d="M908.1,355.1 C935.7,355.1 1117.0,272.5 1131.0,272.5" fill="none" stroke="#d97706" stroke-opacity="0.36"/>
+<text x="1137" y="270.5" class="label">KazParC</text>
+<text x="1137" y="284.5" class="small">2024-03 · 372,000 pairs</text>
+<circle cx="900.7" cy="421.6" r="7.0" fill="#059669" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>Kazakh–Russian KAZNU — 2024-03 — 86,453 pairs</title></circle>
+<path d="M907.7,421.6 C935.7,421.6 1117.0,300.4 1131.0,300.4" fill="none" stroke="#059669" stroke-opacity="0.36"/>
+<text x="1137" y="298.4" class="label">Kazakh–Russian KAZNU</text>
+<text x="1137" y="312.4" class="small">2024-03 · 86,453 pairs</text>
+<circle cx="907.9" cy="543.3" r="6.2" fill="#7c3aed" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>KazQAD — 2024-04 — 6,000 questions</title></circle>
+<path d="M914.0,543.3 C942.9,543.3 1117.0,328.3 1131.0,328.3" fill="none" stroke="#7c3aed" stroke-opacity="0.36"/>
+<text x="1137" y="326.3" class="label">KazQAD</text>
+<text x="1137" y="340.3" class="small">2024-04 · 6,000 questions</text>
+<circle cx="957.9" cy="499.0" r="6.5" fill="#dc2626" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>MMLU Translated KK — 2024-11 — 15,854 questions</title></circle>
+<path d="M964.3,499.0 C992.9,499.0 1117.0,356.2 1131.0,356.2" fill="none" stroke="#dc2626" stroke-opacity="0.36"/>
+<text x="1137" y="354.2" class="label">MMLU Translated KK</text>
+<text x="1137" y="368.2" class="small">2024-11 · 15,854 questions</text>
+<circle cx="957.9" cy="502.0" r="6.4" fill="#7c3aed" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>Kazakh UNT — 2024-11 — 14,850 questions</title></circle>
+<path d="M964.3,502.0 C992.9,502.0 1117.0,384.2 1131.0,384.2" fill="none" stroke="#7c3aed" stroke-opacity="0.36"/>
+<text x="1137" y="382.2" class="label">Kazakh UNT</text>
+<text x="1137" y="396.2" class="small">2024-11 · 14,850 questions</text>
+<circle cx="957.9" cy="525.9" r="6.3" fill="#2563eb" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>GSM8K Translated KK — 2024-11 — 8,792 questions</title></circle>
+<path d="M964.2,525.9 C992.9,525.9 1117.0,412.1 1131.0,412.1" fill="none" stroke="#2563eb" stroke-opacity="0.36"/>
+<text x="1137" y="410.1" class="label">GSM8K Translated KK</text>
+<text x="1137" y="424.1" class="small">2024-11 · 8,792 questions</text>
+<circle cx="957.9" cy="624.8" r="5.7" fill="#059669" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>Kazakh Dastur MC — 2024-11 — 1,005 questions</title></circle>
+<path d="M963.5,624.8 C992.9,624.8 1117.0,440.0 1131.0,440.0" fill="none" stroke="#059669" stroke-opacity="0.36"/>
+<text x="1137" y="438.0" class="label">Kazakh Dastur MC</text>
+<text x="1137" y="452.0" class="small">2024-11 · 1,005 questions</text>
+<circle cx="957.9" cy="665.2" r="5.4" fill="#d97706" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>Kazakh Constitution MC — 2024-11 — 414 questions</title></circle>
+<path d="M963.3,665.2 C992.9,665.2 1117.0,467.9 1131.0,467.9" fill="none" stroke="#d97706" stroke-opacity="0.36"/>
+<text x="1137" y="465.9" class="label">Kazakh Constitution MC</text>
+<text x="1137" y="479.9" class="small">2024-11 · 414 questions</text>
+<circle cx="972.1" cy="482.0" r="6.6" fill="#dc2626" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>KazMMLU — 2025-01 — 23,000 questions</title></circle>
+<path d="M978.7,482.0 C1007.1,482.0 1117.0,495.8 1131.0,495.8" fill="none" stroke="#dc2626" stroke-opacity="0.36"/>
+<text x="1137" y="493.8" class="label">KazMMLU</text>
+<text x="1137" y="507.8" class="small">2025-01 · 23,000 questions</text>
+<circle cx="979.3" cy="578.2" r="6.0" fill="#2563eb" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>Qorgau — 2025-02 — 2,790 prompts</title></circle>
+<path d="M985.2,578.2 C1014.3,578.2 1117.0,523.8 1131.0,523.8" fill="none" stroke="#2563eb" stroke-opacity="0.36"/>
+<text x="1137" y="521.8" class="label">Qorgau</text>
+<text x="1137" y="535.8" class="small">2025-02 · 2,790 prompts</text>
+<circle cx="1036.4" cy="498.2" r="6.5" fill="#059669" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>KazCulture — 2025-10 — 16,137 triplets</title></circle>
+<path d="M1042.9,498.2 C1071.4,498.2 1117.0,551.7 1131.0,551.7" fill="none" stroke="#059669" stroke-opacity="0.36"/>
+<text x="1137" y="549.7" class="label">KazCulture</text>
+<text x="1137" y="563.7" class="small">2025-10 · 16,137 triplets</text>
+<circle cx="1072.1" cy="513.9" r="6.4" fill="#7c3aed" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>RAGBench Kazakh — 2026-03 — 11,431 examples</title></circle>
+<path d="M1078.5,513.9 C1107.1,513.9 1117.0,579.6 1131.0,579.6" fill="none" stroke="#7c3aed" stroke-opacity="0.36"/>
+<text x="1137" y="577.6" class="label">RAGBench Kazakh</text>
+<text x="1137" y="591.6" class="small">2026-03 · 11,431 examples</text>
+<circle cx="1072.1" cy="662.0" r="5.4" fill="#dc2626" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>IFBench Kazakh — 2026-03 — 444 examples</title></circle>
+<path d="M1077.6,662.0 C1107.1,662.0 1117.0,607.5 1131.0,607.5" fill="none" stroke="#dc2626" stroke-opacity="0.36"/>
+<text x="1137" y="605.5" class="label">IFBench Kazakh</text>
+<text x="1137" y="619.5" class="small">2026-03 · 444 examples</text>
+<circle cx="1079.3" cy="445.3" r="6.8" fill="#d97706" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>Zerde-QA-50K — 2026-04 — 51,422 pairs</title></circle>
+<path d="M1086.1,445.3 C1114.3,445.3 1117.0,635.4 1131.0,635.4" fill="none" stroke="#d97706" stroke-opacity="0.36"/>
+<text x="1137" y="633.4" class="label">Zerde-QA-50K</text>
+<text x="1137" y="647.4" class="small">2026-04 · 51,422 pairs</text>
+<circle cx="1086.4" cy="573.4" r="6.0" fill="#7c3aed" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>KazLawBench — 2026-05 — 3,098 questions</title></circle>
+<path d="M1092.4,573.4 C1121.4,573.4 1117.0,663.3 1131.0,663.3" fill="none" stroke="#7c3aed" stroke-opacity="0.36"/>
+<text x="1137" y="661.3" class="label">KazLawBench</text>
+<text x="1137" y="675.3" class="small">2026-05 · 3,098 questions</text>
+<circle cx="1093.6" cy="572.3" r="6.0" fill="#059669" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>DeFAn Kazakh — 2026-06 — 3,178 questions</title></circle>
+<path d="M1099.6,572.3 C1128.6,572.3 1117.0,691.2 1131.0,691.2" fill="none" stroke="#059669" stroke-opacity="0.36"/>
+<text x="1137" y="689.2" class="label">DeFAn Kazakh</text>
+<text x="1137" y="703.2" class="small">2026-06 · 3,178 questions</text>
+<circle cx="1093.6" cy="648.3" r="5.5" fill="#2563eb" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>FreshQA Kazakh — 2026-06 — 600 questions</title></circle>
+<path d="M1099.1,648.3 C1128.6,648.3 1117.0,719.2 1131.0,719.2" fill="none" stroke="#2563eb" stroke-opacity="0.36"/>
+<text x="1137" y="717.2" class="label">FreshQA Kazakh</text>
+<text x="1137" y="731.2" class="small">2026-06 · 600 questions</text>
+<circle cx="1093.6" cy="679.9" r="5.3" fill="#dc2626" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>Kazakh Open Retrieval — 2026-06 — 300 queries</title></circle>
+<path d="M1098.9,679.9 C1128.6,679.9 1117.0,747.1 1131.0,747.1" fill="none" stroke="#dc2626" stroke-opacity="0.36"/>
+<text x="1137" y="745.1" class="label">Kazakh Open Retrieval</text>
+<text x="1137" y="759.1" class="small">2026-06 · 300 queries</text>
+<circle cx="1100.7" cy="419.9" r="7.0" fill="#d97706" fill-opacity="0.78" stroke="#fff" stroke-width="1.5"><title>KazMix-3 — 2026-07 — 89,775 examples</title></circle>
+<path d="M1107.7,419.9 C1135.7,419.9 1117.0,775.0 1131.0,775.0" fill="none" stroke="#d97706" stroke-opacity="0.36"/>
+<text x="1137" y="773.0" class="label">KazMix-3</text>
+<text x="1137" y="787.0" class="small">2026-07 · 89,775 examples</text>
+</svg>
