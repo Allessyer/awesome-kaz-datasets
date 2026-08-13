@@ -44,8 +44,6 @@ A curated list of public datasets that contain substantial Kazakh-language data.
 
 ![Grouped vertical bars comparing public speech-data hours for Kazakh, Russian, and English across ASR, TTS, speech translation, emotion, keyword spotting, and speaker verification](assets/speech_task_hours_comparison.svg)
 
-![Grouped vertical bars comparing public spoken-QA sample counts for Kazakh, Russian, and English](assets/spoken_qa_samples_comparison.svg)
-
 The bars are conservative lower bounds, not estimates of every dataset in existence. Subsets, mirrors, and known derivatives are excluded. For speaker verification (`*`), a broader speaker-presence rule counts complete multilingual corpora when they explicitly contain speakers of the language; these are **corpus-hours containing the language**, not language-only hours, and possible cross-corpus overlap remains. See the [full source-by-source audit](speech_language_comparison.md) for included datasets, arithmetic, overlaps, exclusions, access conditions, and uncertainty.
 
 | Released | Dataset | Description | Download | Storage | Scale | Task |
