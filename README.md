@@ -4,6 +4,28 @@ A curated list of public datasets that contain substantial Kazakh-language data.
 
 **Storage** is the downloadable or repository-hosted data volume; **Scale** is the number of samples, utterances, hours, or other published content unit. Hugging Face storage values reflect the files hosted in the linked repository and may include multiple configurations; qualifiers identify broader multilingual repositories. Values may change when a living dataset is updated, **≈** denotes a publisher estimate, and **Not reported** is used instead of guessing.
 
+## Cross-language scale comparison
+
+These plots compare one documented public **reference dataset** per language and task. They are not totals for everything available in English, Russian, or Kazakh: catalogs are incomplete, licenses differ, and many corpora overlap or are derived from one another. Exact values and dataset names are printed on the plots; logarithmic bar lengths keep smaller resources visible.
+
+### NLP: question answering
+
+![Reference QA dataset sizes for English, Russian, and Kazakh](assets/language_comparison_nlp.svg)
+
+Sources: [SQuAD 1.1 paper](https://aclanthology.org/D16-1264/), [Russian Jeopardy paper](https://arxiv.org/abs/2112.02325), and [Zerde-QA-50K](https://huggingface.co/datasets/kurumikz/Zerde-QA-50K).
+
+### Speech: ASR and TTS
+
+![Reference ASR and TTS dataset hours for English, Russian, and Kazakh](assets/language_comparison_speech.svg)
+
+Sources: [GigaSpeech](https://github.com/SpeechColab/GigaSpeech), [Russian Open STT](https://github.com/snakers4/open_stt), [KSC2](https://huggingface.co/datasets/issai/Kazakh_Speech_Corpus_2), [LibriTTS](https://www.openslr.org/60/), [YO-CPT-ru](https://huggingface.co/datasets/NCSpeech/YO-CPT-ru), and [YO-CPT-kk](https://huggingface.co/datasets/NCSpeech/YO-CPT-kk).
+
+### CV and multimodal: visual question answering
+
+![Reference visual-QA dataset sizes for English, Russian, and Kazakh](assets/language_comparison_cv.svg)
+
+Sources: [VQA v1](https://visualqa.org/), [ruCommonVQA](https://mera.a-ai.ru/en/multi/tasks/7), and [MMBench Kazakh](https://huggingface.co/datasets/issai/MMBench_Kazakh). These benchmarks have different image domains and difficulty, so the plot compares release scale rather than task quality.
+
 ## Text, NLP, and LLM
 
 ![Calendar map of Kazakh NLP dataset releases, with year on the x-axis and month on the y-axis](assets/nlp_release_calendar.svg)
