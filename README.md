@@ -1,4 +1,4 @@
-# Awesome Kazakh Datasets
+# 🇰🇿 Awesome Kazakh Datasets
 
 A curated list of public datasets that contain substantial Kazakh-language data. Links in **Description** lead to a paper, project page, or dataset card; links in **Download** lead directly to the data repository or archive.
 
