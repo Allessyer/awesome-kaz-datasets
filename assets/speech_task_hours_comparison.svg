@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1254" height="634" viewBox="0 0 1254 634">
+<rect width="100%" height="100%" fill="#fff"/>
+<style>text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172033}.title{font-size:25px;font-weight:700}.sub{font-size:11px;fill:#5b6472}.task{font-size:12px;font-weight:700}.lang{font-size:10px;font-weight:700}.value{font-size:10px;font-weight:700}.grid{stroke:#dfe3e8;stroke-width:1}.na{fill:#f3f4f6;stroke:#9ca3af;stroke-dasharray:4 3}</style>
+<text x="24" y="36" class="title">Public speech-data hours by task and language</text>
+<text x="24" y="61" class="sub">kz = Kazakh · ru = Russian · eng = English · exact corpus decisions are documented in speech_language_comparison.md</text>
+<text x="24" y="80" class="sub">Logarithmic y-axis; totals are conservative deduplicated lower bounds (hours).</text>
+<line x1="86" y1="538.0" x2="1226" y2="538.0" class="grid"/>
+<text x="77" y="542.0" text-anchor="end" class="sub">10^0</text>
+<line x1="86" y1="452.0" x2="1226" y2="452.0" class="grid"/>
+<text x="77" y="456.0" text-anchor="end" class="sub">10^1</text>
+<line x1="86" y1="366.0" x2="1226" y2="366.0" class="grid"/>
+<text x="77" y="370.0" text-anchor="end" class="sub">10^2</text>
+<line x1="86" y1="280.0" x2="1226" y2="280.0" class="grid"/>
+<text x="77" y="284.0" text-anchor="end" class="sub">10^3</text>
+<line x1="86" y1="194.0" x2="1226" y2="194.0" class="grid"/>
+<text x="77" y="198.0" text-anchor="end" class="sub">10^4</text>
+<line x1="86" y1="108.0" x2="1226" y2="108.0" class="grid"/>
+<text x="77" y="112.0" text-anchor="end" class="sub">10^5</text>
+<rect x="116.0" y="247.953314269972" width="38" height="290.046685730028" rx="3" fill="#0891b2"/>
+<text x="135.0" y="241.953314269972" text-anchor="middle" class="value">2.4K</text>
+<text x="135.0" y="556" text-anchor="middle" class="lang">kz</text>
+<rect x="162.0" y="165.35781444312403" width="38" height="372.642185556876" rx="3" fill="#dc2626"/>
+<text x="181.0" y="159.35781444312403" text-anchor="middle" class="value">21.5K</text>
+<text x="181.0" y="556" text-anchor="middle" class="lang">ru</text>
+<rect x="208.0" y="126.66423643481187" width="38" height="411.33576356518813" rx="3" fill="#2563eb"/>
+<text x="227.0" y="120.66423643481187" text-anchor="middle" class="value">60.7K</text>
+<text x="227.0" y="556" text-anchor="middle" class="lang">eng</text>
+<text x="181.0" y="581" text-anchor="middle" class="task">ASR</text>
+<rect x="306.0" y="282.0792849364948" width="38" height="255.9207150635052" rx="3" fill="#0891b2"/>
+<text x="325.0" y="276.0792849364948" text-anchor="middle" class="value">945.85</text>
+<text x="325.0" y="556" text-anchor="middle" class="lang">kz</text>
+<rect x="352.0" y="212.56586778418864" width="38" height="325.43413221581136" rx="3" fill="#dc2626"/>
+<text x="371.0" y="206.56586778418864" text-anchor="middle" class="value">6.1K</text>
+<text x="371.0" y="556" text-anchor="middle" class="lang">ru</text>
+<rect x="398.0" y="145.4387184743203" width="38" height="392.5612815256797" rx="3" fill="#2563eb"/>
+<text x="417.0" y="139.4387184743203" text-anchor="middle" class="value">36.7K</text>
+<text x="417.0" y="556" text-anchor="middle" class="lang">eng</text>
+<text x="371.0" y="581" text-anchor="middle" class="task">TTS</text>
+<rect x="496.0" y="386.99476241216576" width="38" height="151.00523758783427" rx="3" fill="#0891b2"/>
+<text x="515.0" y="380.99476241216576" text-anchor="middle" class="value">57</text>
+<text x="515.0" y="556" text-anchor="middle" class="lang">kz</text>
+<rect x="542.0" y="401.4568570083736" width="38" height="136.54314299162638" rx="3" fill="#dc2626"/>
+<text x="561.0" y="395.4568570083736" text-anchor="middle" class="value">38.7</text>
+<text x="561.0" y="556" text-anchor="middle" class="lang">ru</text>
+<rect x="588.0" y="192.14927448619318" width="38" height="345.8507255138068" rx="3" fill="#2563eb"/>
+<text x="607.0" y="186.14927448619318" text-anchor="middle" class="value">10.5K</text>
+<text x="607.0" y="556" text-anchor="middle" class="lang">eng</text>
+<text x="561.0" y="581" text-anchor="middle" class="task">Speech translation</text>
+<rect x="686.0" y="376.81950479759985" width="38" height="161.18049520240012" rx="3" fill="#0891b2"/>
+<text x="705.0" y="370.81950479759985" text-anchor="middle" class="value">74.85</text>
+<text x="705.0" y="556" text-anchor="middle" class="lang">kz</text>
+<rect x="732.0" y="319.2101481858763" width="38" height="218.7898518141237" rx="3" fill="#dc2626"/>
+<text x="751.0" y="313.2101481858763" text-anchor="middle" class="value">350</text>
+<text x="751.0" y="556" text-anchor="middle" class="lang">ru</text>
+<rect x="778.0" y="312.3117397581325" width="38" height="225.68826024186748" rx="3" fill="#2563eb"/>
+<text x="797.0" y="306.3117397581325" text-anchor="middle" class="value">421</text>
+<text x="797.0" y="556" text-anchor="middle" class="lang">eng</text>
+<text x="751.0" y="581" text-anchor="middle" class="task">Emotion</text>
+<rect x="876.0" y="535" width="38" height="3" rx="3" fill="#0891b2"/>
+<text x="895.0" y="529" text-anchor="middle" class="value">1</text>
+<text x="895.0" y="556" text-anchor="middle" class="lang">kz</text>
+<rect x="922.0" y="354.242031224549" width="38" height="183.75796877545096" rx="3" fill="#dc2626"/>
+<text x="941.0" y="348.242031224549" text-anchor="middle" class="value">137</text>
+<text x="941.0" y="556" text-anchor="middle" class="lang">ru</text>
+<rect x="968.0" y="254.36626323700028" width="38" height="283.6337367629997" rx="3" fill="#2563eb"/>
+<text x="987.0" y="248.36626323700028" text-anchor="middle" class="value">2.0K</text>
+<text x="987.0" y="556" text-anchor="middle" class="lang">eng</text>
+<text x="941.0" y="581" text-anchor="middle" class="task">Keyword spotting</text>
+<rect x="1066.0" y="299.07899246700663" width="38" height="238.92100753299334" rx="3" fill="#0891b2"/>
+<text x="1085.0" y="293.07899246700663" text-anchor="middle" class="value">600</text>
+<text x="1085.0" y="556" text-anchor="middle" class="lang">kz</text>
+<rect x="1112.0" y="164.46347339257807" width="38" height="373.53652660742193" rx="3" fill="#dc2626"/>
+<text x="1131.0" y="158.46347339257807" text-anchor="middle" class="value">22.1K</text>
+<text x="1131.0" y="556" text-anchor="middle" class="lang">ru</text>
+<rect x="1158.0" y="170.3691011913254" width="38" height="367.6308988086746" rx="3" fill="#2563eb"/>
+<text x="1177.0" y="164.3691011913254" text-anchor="middle" class="value">18.8K</text>
+<text x="1177.0" y="556" text-anchor="middle" class="lang">eng</text>
+<text x="1131.0" y="581" text-anchor="middle" class="task">Speaker verification*</text>
+</svg>

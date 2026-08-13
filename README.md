@@ -40,6 +40,14 @@ A curated list of public datasets that contain substantial Kazakh-language data.
 
 ![Calendar map of Kazakh speech dataset releases, with year on the x-axis and month on the y-axis](assets/speech_release_calendar.svg)
 
+### English–Russian–Kazakh comparison by speech task
+
+![Grouped vertical bars comparing public speech-data hours for Kazakh, Russian, and English across ASR, TTS, speech translation, emotion, keyword spotting, and speaker verification](assets/speech_task_hours_comparison.svg)
+
+![Grouped vertical bars comparing public spoken-QA sample counts for Kazakh, Russian, and English](assets/spoken_qa_samples_comparison.svg)
+
+The bars are conservative lower bounds, not estimates of every dataset in existence. Subsets, mirrors, and known derivatives are excluded. For speaker verification (`*`), a broader speaker-presence rule counts complete multilingual corpora when they explicitly contain speakers of the language; these are **corpus-hours containing the language**, not language-only hours, and possible cross-corpus overlap remains. See the [full source-by-source audit](speech_language_comparison.md) for included datasets, arithmetic, overlaps, exclusions, access conditions, and uncertainty.
+
 | Released | Dataset | Description | Download | Storage | Scale | Task |
 |---|---|---|---|---:|---:|---|
 | 2026-08 | YO-CPT-kk | [YouTube-oriented Kazakh continual-pretraining corpus (dataset card)](https://huggingface.co/datasets/NCSpeech/YO-CPT-kk) | [Files](https://huggingface.co/datasets/NCSpeech/YO-CPT-kk/tree/main) | 100.0 GB | 600 h; 156,903 utterances | TTS / ASR / speaker verification |

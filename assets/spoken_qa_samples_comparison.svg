@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="634" viewBox="0 0 760 634">
+<rect width="100%" height="100%" fill="#fff"/>
+<style>text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172033}.title{font-size:25px;font-weight:700}.sub{font-size:11px;fill:#5b6472}.task{font-size:12px;font-weight:700}.lang{font-size:10px;font-weight:700}.value{font-size:10px;font-weight:700}.grid{stroke:#dfe3e8;stroke-width:1}.na{fill:#f3f4f6;stroke:#9ca3af;stroke-dasharray:4 3}</style>
+<text x="24" y="36" class="title">Public spoken-QA samples by language</text>
+<text x="24" y="61" class="sub">Hours are not published consistently, so this panel compares documented question/example counts.</text>
+<text x="24" y="80" class="sub">Logarithmic y-axis; totals are conservative deduplicated lower bounds (samples).</text>
+<line x1="86" y1="538.0" x2="732" y2="538.0" class="grid"/>
+<text x="77" y="542.0" text-anchor="end" class="sub">10^0</text>
+<line x1="86" y1="430.5" x2="732" y2="430.5" class="grid"/>
+<text x="77" y="434.5" text-anchor="end" class="sub">10^1</text>
+<line x1="86" y1="323.0" x2="732" y2="323.0" class="grid"/>
+<text x="77" y="327.0" text-anchor="end" class="sub">10^2</text>
+<line x1="86" y1="215.5" x2="732" y2="215.5" class="grid"/>
+<text x="77" y="219.5" text-anchor="end" class="sub">10^3</text>
+<line x1="86" y1="108.0" x2="732" y2="108.0" class="grid"/>
+<text x="77" y="112.0" text-anchor="end" class="sub">10^4</text>
+<rect x="344.0" y="161.84277308723136" width="38" height="376.15722691276864" rx="3" fill="#0891b2"/>
+<text x="363.0" y="155.84277308723136" text-anchor="middle" class="value">3.2K</text>
+<text x="363.0" y="556" text-anchor="middle" class="lang">kz</text>
+<rect x="390.0" y="220.41893023527257" width="38" height="317.58106976472743" rx="3" fill="#dc2626"/>
+<text x="409.0" y="214.41893023527257" text-anchor="middle" class="value">900</text>
+<text x="409.0" y="556" text-anchor="middle" class="lang">ru</text>
+<rect x="436.0" y="220.41893023527257" width="38" height="317.58106976472743" rx="3" fill="#2563eb"/>
+<text x="455.0" y="214.41893023527257" text-anchor="middle" class="value">900</text>
+<text x="455.0" y="556" text-anchor="middle" class="lang">eng</text>
+<text x="409.0" y="581" text-anchor="middle" class="task">Spoken QA</text>
+</svg>
