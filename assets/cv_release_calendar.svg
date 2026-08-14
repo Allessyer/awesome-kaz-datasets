@@ -40,6 +40,7 @@
 <text x="656" y="206" class="name">SpokenMQA Kazakh</text>
 <rect x="648" y="228" width="190" height="54" class="cell filled"/>
 <text x="656" y="246" class="name">Darmm Kazakh OCR</text>
+<text x="656" y="260" class="name">TurkicOCR-Cyrillic</text>
 <rect x="648" y="282" width="190" height="54" class="cell empty"/>
 <rect x="648" y="336" width="190" height="54" class="cell empty"/>
 <rect x="648" y="390" width="190" height="86" class="cell empty"/>

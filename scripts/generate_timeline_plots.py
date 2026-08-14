@@ -42,6 +42,7 @@ CV = [
     ("2025-12", "KazakhOCR"), ("2026-03", "MMBench Kazakh"),
     ("2026-03", "MathVision Kazakh"), ("2026-04", "BeyneleBench"),
     ("2026-04", "SpokenMQA Kazakh"), ("2026-06", "Darmm Kazakh OCR"),
+    ("2026-06", "TurkicOCR-Cyrillic"),
 ]
 
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
@@ -88,7 +89,7 @@ def release_map(filename: str, title: str, rows):
         parts.append(f'<text x="{left-12}" y="{y_label+4}" text-anchor="end" class="month">{MONTHS[month-1]}</text>')
         y += cell_h
     parts.append('</svg>')
-    (OUT / filename).write_text("\n".join(parts) + "\n")
+    (OUT / filename).write_text("\n".join(parts) + "\n", encoding="utf-8")
 
 
 def main():
