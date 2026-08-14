@@ -65,7 +65,7 @@ def release_map(filename: str, title: str, rows):
     height = top + sum(row_heights.values()) + bottom
     parts = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
-        '<rect width="100%" height="100%" fill="#fff"/>',
+        f'<rect width="{width}" height="{height}" fill="#fff"/>',
         '<style>text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#172033}.title{font-size:28px;font-weight:700}.year{font-size:17px;font-weight:700}.month{font-size:13px;fill:#5b6472}.name{font-size:11px;font-weight:600}.cell{stroke:#dfe3e8;stroke-width:1}.filled{fill:#eff6ff}.empty{fill:#fafbfc}</style>',
         f'<text x="{left}" y="39" class="title">{escape(title)}</text>',
         f'<text x="{left}" y="67" class="month">Year → · Month ↓ · Dataset names appear in their release cell</text>',
