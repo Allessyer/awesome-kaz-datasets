@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="976" height="198" viewBox="0 0 976 198">
+<rect width="976" height="198" fill="#1a1a19"/>
+<style>text{font-family:"Segoe UI",Inter,Arial,sans-serif;fill:#ffffff}.title{font-size:22px;font-weight:700}.sub{font-size:12px;fill:#c3c2b7}.muted{font-size:11px;fill:#898781}.stat-label{font-size:12px;fill:#c3c2b7;font-weight:600}.stat-value{font-size:28px;font-weight:700}.axis{font-size:12px;fill:#898781}.grid{stroke:#2c2c2a;stroke-width:1}.legend{font-size:12px;fill:#c3c2b7}</style>
+<rect x="20" y="20" width="176" height="96" rx="10" fill="#1a1a19" stroke="#383835" stroke-width="1"/>
+<text x="108.0" y="64" text-anchor="middle" class="stat-value" fill="#ffffff">67</text>
+<text x="108.0" y="90" text-anchor="middle" class="stat-label">Datasets</text>
+<rect x="210" y="20" width="176" height="96" rx="10" fill="#1a1a19" stroke="#383835" stroke-width="1"/>
+<text x="298.0" y="64" text-anchor="middle" class="stat-value" fill="#0ca30c">78%</text>
+<text x="298.0" y="90" text-anchor="middle" class="stat-label">Open access</text>
+<rect x="400" y="20" width="176" height="96" rx="10" fill="#1a1a19" stroke="#383835" stroke-width="1"/>
+<text x="488.0" y="64" text-anchor="middle" class="stat-value" fill="#ffffff">45%</text>
+<text x="488.0" y="90" text-anchor="middle" class="stat-label">With a paper</text>
+<rect x="590" y="20" width="176" height="96" rx="10" fill="#1a1a19" stroke="#383835" stroke-width="1"/>
+<text x="678.0" y="64" text-anchor="middle" class="stat-value" fill="#ffffff">34</text>
+<text x="678.0" y="90" text-anchor="middle" class="stat-label">Tasks covered</text>
+<rect x="780" y="20" width="176" height="96" rx="10" fill="#1a1a19" stroke="#383835" stroke-width="1"/>
+<text x="868.0" y="64" text-anchor="middle" class="stat-value" fill="#ffffff">73%</text>
+<text x="868.0" y="90" text-anchor="middle" class="stat-label">Explicit license</text>
+<text x="20" y="150" class="stat-label">By section</text>
+<rect x="150" y="136" width="431.07462686567163" height="18" rx="4" fill="#3987e5"/>
+<rect x="583.0746268656717" y="136" width="214.53731343283582" height="18" rx="4" fill="#d95926"/>
+<rect x="799.6119402985075" y="136" width="154.38805970149255" height="18" rx="4" fill="#199e70"/>
+<rect x="150" y="159" width="9" height="9" rx="2" fill="#3987e5"/>
+<text x="163" y="168" class="legend">Text/NLP (36)</text>
+<rect x="261" y="159" width="9" height="9" rx="2" fill="#d95926"/>
+<text x="274" y="168" class="legend">Speech (18)</text>
+<rect x="358" y="159" width="9" height="9" rx="2" fill="#199e70"/>
+<text x="371" y="168" class="legend">Vision (13)</text>
+</svg>

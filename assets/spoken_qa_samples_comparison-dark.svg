@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="536" viewBox="0 0 760 536">
-<rect width="760" height="536" fill="#fcfcfb"/>
-<style>text{font-family:"Segoe UI",Inter,Arial,sans-serif;fill:#0b0b0b}.title{font-size:22px;font-weight:700}.sub{font-size:12px;fill:#52514e}.muted{font-size:11px;fill:#898781}.stat-label{font-size:12px;fill:#52514e;font-weight:600}.stat-value{font-size:28px;font-weight:700}.axis{font-size:12px;fill:#898781}.grid{stroke:#e1e0d9;stroke-width:1}.legend{font-size:12px;fill:#52514e}.task{font-size:12px;font-weight:700}.lang{font-size:10px;font-weight:700;fill:#898781}.value{font-size:10px;font-weight:700}.na{stroke-dasharray:4 3}</style>
+<rect width="760" height="536" fill="#1a1a19"/>
+<style>text{font-family:"Segoe UI",Inter,Arial,sans-serif;fill:#ffffff}.title{font-size:22px;font-weight:700}.sub{font-size:12px;fill:#c3c2b7}.muted{font-size:11px;fill:#898781}.stat-label{font-size:12px;fill:#c3c2b7;font-weight:600}.stat-value{font-size:28px;font-weight:700}.axis{font-size:12px;fill:#898781}.grid{stroke:#2c2c2a;stroke-width:1}.legend{font-size:12px;fill:#c3c2b7}.task{font-size:12px;font-weight:700}.lang{font-size:10px;font-weight:700;fill:#898781}.value{font-size:10px;font-weight:700}.na{stroke-dasharray:4 3}</style>
 <text x="20" y="20" class="muted">Hours are not published consistently, so this panel compares documented question/example counts.</text>
 <line x1="80" y1="460.0" x2="740" y2="460.0" class="grid"/>
 <text x="71" y="464.0" text-anchor="end" class="axis">10^0</text>
@@ -12,20 +12,20 @@
 <text x="71" y="164.0" text-anchor="end" class="axis">10^3</text>
 <line x1="80" y1="60.0" x2="740" y2="60.0" class="grid"/>
 <text x="71" y="64.0" text-anchor="end" class="axis">10^4</text>
-<rect x="353.0" y="110.08630054626173" width="34" height="349.9136994537383" rx="4" fill="#164a89"/>
+<rect x="353.0" y="110.08630054626173" width="34" height="349.9136994537383" rx="4" fill="#3987e5"/>
 <text x="370.0" y="104.08630054626173" text-anchor="middle" class="value">3.2K</text>
 <text x="370.0" y="478" text-anchor="middle" class="lang">kk</text>
-<rect x="393.0" y="164.57574905606754" width="34" height="295.42425094393246" rx="4" fill="#9a4422"/>
+<rect x="393.0" y="164.57574905606754" width="34" height="295.42425094393246" rx="4" fill="#d95926"/>
 <text x="410.0" y="158.57574905606754" text-anchor="middle" class="value">900</text>
 <text x="410.0" y="478" text-anchor="middle" class="lang">ru</text>
-<rect x="433.0" y="164.57574905606754" width="34" height="295.42425094393246" rx="4" fill="#127250"/>
+<rect x="433.0" y="164.57574905606754" width="34" height="295.42425094393246" rx="4" fill="#199e70"/>
 <text x="450.0" y="158.57574905606754" text-anchor="middle" class="value">900</text>
 <text x="450.0" y="478" text-anchor="middle" class="lang">eng</text>
 <text x="410.0" y="503" text-anchor="middle" class="task">Spoken QA</text>
-<rect x="440" y="22" width="10" height="10" rx="2" fill="#164a89"/>
+<rect x="440" y="22" width="10" height="10" rx="2" fill="#3987e5"/>
 <text x="454" y="31" class="legend">Kazakh</text>
-<rect x="540" y="22" width="10" height="10" rx="2" fill="#9a4422"/>
+<rect x="540" y="22" width="10" height="10" rx="2" fill="#d95926"/>
 <text x="554" y="31" class="legend">Russian</text>
-<rect x="640" y="22" width="10" height="10" rx="2" fill="#127250"/>
+<rect x="640" y="22" width="10" height="10" rx="2" fill="#199e70"/>
 <text x="654" y="31" class="legend">English</text>
 </svg>

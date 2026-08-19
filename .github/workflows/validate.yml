@@ -1,0 +1,41 @@
+name: Validate catalog
+
+on:
+  pull_request:
+    paths:
+      - "data/datasets.yaml"
+      - "scripts/**"
+      - "README.md"
+      - "assets/**"
+  push:
+    branches: [main]
+    paths:
+      - "data/datasets.yaml"
+      - "scripts/**"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install pyyaml
+
+      - name: Validate data/datasets.yaml
+        run: python scripts/validate_catalog.py
+
+      - name: Check README.md is generated from datasets.yaml
+        run: python scripts/generate_readme.py --check
+
+      - name: Check assets/*.svg are generated from datasets.yaml
+        run: |
+          python scripts/generate_visualizations.py
+          git diff --exit-code -- assets/ || {
+            echo "::error::assets/*.svg are stale. Run 'python scripts/generate_visualizations.py' and commit the result.";
+            exit 1;
+          }

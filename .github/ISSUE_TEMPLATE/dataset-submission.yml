@@ -1,0 +1,148 @@
+name: Dataset submission
+description: Suggest a Kazakh-language dataset to add to the catalog
+title: "[Dataset] "
+labels: ["dataset-submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting a dataset! Please read [CONTRIBUTING.md](../../blob/main/CONTRIBUTING.md)
+        first — it explains what does and doesn't belong in the catalog, and exactly
+        what "released" means. Fill in as much as you can verify; use "Not reported"
+        or leave a field blank rather than guessing.
+
+  - type: input
+    id: name
+    attributes:
+      label: Dataset name
+      description: The dataset's canonical/official name.
+    validations:
+      required: true
+
+  - type: input
+    id: dataset_url
+    attributes:
+      label: Canonical dataset URL
+      description: Link to the dataset card, repository, or archive (not a paper page).
+      placeholder: https://huggingface.co/datasets/...
+    validations:
+      required: true
+
+  - type: input
+    id: authors
+    attributes:
+      label: Authors
+      placeholder: "Firstname Lastname, Firstname Lastname"
+
+  - type: input
+    id: organization
+    attributes:
+      label: Organization / institution
+
+  - type: input
+    id: released
+    attributes:
+      label: Release date
+      description: >-
+        When this dataset/version became PUBLICLY AVAILABLE — not a paper
+        submission date, not a "last modified" timestamp. Use YYYY-MM or YYYY.
+      placeholder: "2026-03"
+    validations:
+      required: true
+
+  - type: textarea
+    id: kazakh_scope
+    attributes:
+      label: Kazakh scope
+      description: >-
+        Is this dataset Kazakh-specific, or a multilingual resource with an
+        identifiable Kazakh split/config? Name the exact split/config if
+        multilingual.
+    validations:
+      required: true
+
+  - type: input
+    id: tasks
+    attributes:
+      label: Task(s)
+      description: Comma-separated. Reuse an existing canonical task label if one fits.
+      placeholder: "Question answering, Retrieval / RAG"
+    validations:
+      required: true
+
+  - type: input
+    id: scale
+    attributes:
+      label: Scale
+      description: Number of samples, utterances, hours, pages, etc.
+      placeholder: "20,002 QA pairs"
+
+  - type: input
+    id: storage
+    attributes:
+      label: Storage (if known)
+      placeholder: "256.3 MB"
+
+  - type: dropdown
+    id: access
+    attributes:
+      label: Access
+      options:
+        - open
+        - gated
+        - application
+        - paid
+        - restricted
+        - unavailable
+        - not sure
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: License
+      placeholder: "CC-BY-4.0, or Not reported"
+
+  - type: input
+    id: paper_url
+    attributes:
+      label: Associated paper URL
+
+  - type: input
+    id: doi
+    attributes:
+      label: DOI
+
+  - type: input
+    id: code_url
+    attributes:
+      label: Code / project URL
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Original / translated / synthetic / derivative / multilingual
+      options:
+        - original
+        - benchmark
+        - translation
+        - derivative
+        - multilingual
+        - mirror
+        - not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason for inclusion
+      description: Why does this dataset add something the catalog doesn't already have?
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional notes

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="370" viewBox="0 0 1040 370">
+<rect width="1040" height="370" fill="#1a1a19"/>
+<style>text{font-family:"Segoe UI",Inter,Arial,sans-serif;fill:#ffffff}.title{font-size:22px;font-weight:700}.sub{font-size:12px;fill:#c3c2b7}.muted{font-size:11px;fill:#898781}.stat-label{font-size:12px;fill:#c3c2b7;font-weight:600}.stat-value{font-size:28px;font-weight:700}.axis{font-size:12px;fill:#898781}.grid{stroke:#2c2c2a;stroke-width:1}.legend{font-size:12px;fill:#c3c2b7}.endlabel{font-size:12px;font-weight:700}</style>
+<line x1="50" y1="330.0" x2="890" y2="330.0" class="grid"/>
+<text x="40" y="334.0" text-anchor="end" class="axis">0</text>
+<line x1="50" y1="259.4117647058823" x2="890" y2="259.4117647058823" class="grid"/>
+<text x="40" y="263.4117647058823" text-anchor="end" class="axis">8</text>
+<line x1="50" y1="180.0" x2="890" y2="180.0" class="grid"/>
+<text x="40" y="184.0" text-anchor="end" class="axis">17</text>
+<line x1="50" y1="100.58823529411765" x2="890" y2="100.58823529411765" class="grid"/>
+<text x="40" y="104.58823529411765" text-anchor="end" class="axis">26</text>
+<line x1="50" y1="30.0" x2="890" y2="30.0" class="grid"/>
+<text x="40" y="34.0" text-anchor="end" class="axis">34</text>
+<text x="50.0" y="352" text-anchor="middle" class="axis">2015</text>
+<text x="126.36363636363636" y="352" text-anchor="middle" class="axis">2016</text>
+<text x="202.72727272727272" y="352" text-anchor="middle" class="axis">2017</text>
+<text x="279.09090909090907" y="352" text-anchor="middle" class="axis">2018</text>
+<text x="355.45454545454544" y="352" text-anchor="middle" class="axis">2019</text>
+<text x="431.8181818181818" y="352" text-anchor="middle" class="axis">2020</text>
+<text x="508.18181818181813" y="352" text-anchor="middle" class="axis">2021</text>
+<text x="584.5454545454545" y="352" text-anchor="middle" class="axis">2022</text>
+<text x="660.9090909090909" y="352" text-anchor="middle" class="axis">2023</text>
+<text x="737.2727272727274" y="352" text-anchor="middle" class="axis">2024</text>
+<text x="813.6363636363636" y="352" text-anchor="middle" class="axis">2025</text>
+<text x="890.0" y="352" text-anchor="middle" class="axis">2026</text>
+<polyline points="50.0,321.1764705882353 126.36363636363636,321.1764705882353 202.72727272727272,321.1764705882353 279.09090909090907,321.1764705882353 355.45454545454544,312.3529411764706 431.8181818181818,294.70588235294116 508.18181818181813,285.88235294117646 584.5454545454545,277.05882352941177 660.9090909090909,259.4117647058823 737.2727272727274,162.35294117647058 813.6363636363636,100.58823529411765 890.0,30.0" fill="none" stroke="#3987e5" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="890.0" cy="30.0" r="4" fill="#3987e5" stroke="#1a1a19" stroke-width="2"/>
+<text x="900.0" y="34.0" class="endlabel" fill="#3987e5">Text/NLP (34)</text>
+<polyline points="50.0,330.0 126.36363636363636,330.0 202.72727272727272,330.0 279.09090909090907,330.0 355.45454545454544,330.0 431.8181818181818,321.1764705882353 508.18181818181813,312.3529411764706 584.5454545454545,294.70588235294116 660.9090909090909,277.05882352941177 737.2727272727274,250.58823529411765 813.6363636363636,232.94117647058823 890.0,171.1764705882353" fill="none" stroke="#d95926" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="890.0" cy="171.1764705882353" r="4" fill="#d95926" stroke="#1a1a19" stroke-width="2"/>
+<text x="900.0" y="175.1764705882353" class="endlabel" fill="#d95926">Speech (18)</text>
+<polyline points="50.0,330.0 126.36363636363636,330.0 202.72727272727272,330.0 279.09090909090907,330.0 355.45454545454544,330.0 431.8181818181818,321.1764705882353 508.18181818181813,312.3529411764706 584.5454545454545,312.3529411764706 660.9090909090909,312.3529411764706 737.2727272727274,312.3529411764706 813.6363636363636,268.2352941176471 890.0,215.29411764705884" fill="none" stroke="#199e70" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="890.0" cy="215.29411764705884" r="4" fill="#199e70" stroke="#1a1a19" stroke-width="2"/>
+<text x="900.0" y="219.29411764705884" class="endlabel" fill="#199e70">Vision (13)</text>
+</svg>
