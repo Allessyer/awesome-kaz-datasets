@@ -12,6 +12,8 @@ on:
     paths:
       - "data/datasets.yaml"
       - "scripts/**"
+      - "README.md"
+      - "assets/**"
 
 jobs:
   validate:

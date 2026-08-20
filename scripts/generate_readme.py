@@ -13,51 +13,37 @@ before regenerating so the new skeleton text actually takes effect.
 """
 
 import sys
-from collections import Counter
 from pathlib import Path
 
 import yaml
-
-from generate_visualizations import calendar_stems  # noqa: E402 (same directory, keeps chunking logic in one place)
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data" / "datasets.yaml"
 README = ROOT / "README.md"
 
 SECTIONS = ["Text, NLP, and LLM", "Speech and audio", "Vision, OCR, and multimodal"]
-SECTION_CALENDAR = {
-    "Text, NLP, and LLM": "nlp_release_calendar",
-    "Speech and audio": "speech_release_calendar",
-    "Vision, OCR, and multimodal": "cv_release_calendar",
-}
-SECTION_OVERVIEW_IMG = {
-    "Text, NLP, and LLM": "nlp_overview",
-    "Speech and audio": "speech_overview",
-    "Vision, OCR, and multimodal": "vision_overview",
+SECTION_HEATMAP = {
+    "Text, NLP, and LLM": "nlp_release_heatmap",
+    "Speech and audio": "speech_release_heatmap",
+    "Vision, OCR, and multimodal": "cv_release_heatmap",
 }
 
+# (name, reason, source url or None) — hand-maintained. A resource lands here when it's
+# announced but unreleased, described with no downloadable artifact, license-conflicted,
+# or not yet independently verifiable. See CONTRIBUTING.md.
 WATCHLIST = [
-    ("KazBench-KK",
-     "A 7,111-question cultural-knowledge benchmark introduced at the Fourth Workshop on NLP "
-     "Applications to Field Linguistics (August 2025). No public dataset download, GitHub "
-     "repository, or Hugging Face card could be located from the paper — only the "
-     "[ACL Anthology paper](https://aclanthology.org/2025.fieldmatters-1.4/) is verifiable."),
-    ("Zerde-QA-Wiki-20K",
-     "Referenced as a candidate Kazakh Wikipedia-QA release; no dataset card, repository, or "
-     "download under this name could be independently verified."),
-    ("TilQazyna collections",
-     "Numerous text and speech repositories appeared on Hugging Face in June-August 2026, but "
-     "several are gated and their cards do not yet provide stable totals or independent "
-     "documentation."),
     ("Kazakh Text Corpus / Speech Corpus / AI Evaluation Benchmark Suite",
-     "Announced in July 2026 as more than 10B text tokens and 10,000 speech hours (including "
-     "1,000 manually transcribed hours), but no public dataset download was identified."),
-    ("Multimedia Corpus of Modern Spoken Kazakh Language",
-     "The searchable project exists, but the first module's downloadable size and reuse terms "
-     "could not be confirmed."),
-    ("Aqbileq",
-     "Named as a candidate Kazakh resource; no dataset card, repository, or paper could be "
-     "independently located under this name."),
+     "Announced in 2026 as more than 10B text tokens and over 10,000 speech hours (including "
+     "1,000 manually transcribed \"gold standard\" hours) and a nine-dimension AI evaluation "
+     "benchmark suite, from a joint initiative between the Qazaq Tili Qogamy and OpenAI, but no "
+     "public dataset download was identified.",
+     "https://turkystan.kz/article/282605-10-milliard-token-10-myn-sagat-audio-qazaq-tili-qogamy-men-openai-biregei-ai-infraqurylymyn-tanystyrdy"),
+    ("National Corpus of the Kazakh Language (QazCorpus)",
+     "Official searchable Kazakh corpus ecosystem with multiple subcorpora. The Main Corpus "
+     "reports 31,105,900 word usages with morphological, semantic, lexical, phonetic, and "
+     "phonological annotation. No independently verified bulk-download artifact and reusable "
+     "dataset license could be confirmed, so it remains outside the main catalog.",
+     "https://qazcorpus.kz/indexen.php"),
 ]
 
 REPO = "Allessyer/awesome-kaz-datasets"
@@ -88,6 +74,7 @@ TASK_ABBREV = {
     "Math reasoning": "MR",
     "Dependency parsing / POS tagging": "POS",
     "Text deduplication / similarity": "STS",
+    "Morphological analysis": "MORPH",
     "Target-speaker ASR / speech separation": "TS-ASR",
     "Speaker verification": "SV",
     "Speech translation": "ST",
@@ -106,97 +93,69 @@ def task_tag(task):
     return TASK_ABBREV.get(task, task)
 
 
-def task_glossary(rows, cols=4):
+def task_glossary(rows, cols=6, label=True):
     used = sorted({t for d in rows for t in d.get("tasks", [])}, key=lambda t: task_tag(t).lower())
     # <strong>, not **bold** — this table is a multi-line HTML block, which GitHub
     # does not run markdown-inline parsing over (see the earlier badges bug).
-    entries = [f"<sub><strong>{task_tag(t)}</strong> — {t}</sub>" for t in used]
+    entries = [f"<strong>{task_tag(t)}</strong> — {t}" for t in used]
     rows_of_cells = [entries[i : i + cols] for i in range(0, len(entries), cols)]
     table_rows = []
     for row_cells in rows_of_cells:
         padded = row_cells + [""] * (cols - len(row_cells))
-        table_rows.append("<tr>" + "".join(f"<td>{c}</td>" for c in padded) + "</tr>")
-    return "**Abbreviations:**\n\n<table>\n" + "\n".join(table_rows) + "\n</table>"
+        table_rows.append("<tr>" + "".join(f'<td align="center" valign="middle">{c}</td>' for c in padded) + "</tr>")
+    prefix = "**Abbreviations:**\n\n" if label else ""
+    return prefix + '<table width="100%">\n' + "\n".join(table_rows) + "\n</table>"
 
 
-def picture(alt, base):
-    # width="100%" so every chart stretches to fill the README column at a
-    # consistent scale, instead of each rendering at its own native SVG pixel
-    # width (which made narrower charts, like the stat-tile overviews, look
-    # small and inconsistent next to the much wider calendar/comparison charts).
+def picture(alt, base, width="100%"):
+    # Wide charts (growth line, bar comparison) use width="100%" so they fill
+    # the README column. The heatmaps are inherently compact/dense — stretching
+    # them to the same full column width blows the cells up far past their
+    # native size, so those pass a fixed pixel width instead.
     return (
         '<picture>\n'
         f'  <source media="(prefers-color-scheme: dark)" srcset="assets/{base}-dark.svg">\n'
-        f'  <img src="assets/{base}.svg" alt="{alt}" width="100%">\n'
+        f'  <img src="assets/{base}.svg" alt="{alt}" width="{width}">\n'
         '</picture>'
     )
 
 
-DEFAULT_SKELETON = """<p align="center">
-  <img src="assets/banner.png" alt="Awesome Kazakh Datasets — catalogue of datasets for Kazakh AI: Text/LLM corpora and collections, Speech ASR/TTS datasets, Vision/OCR datasets" width="100%">
-</p>
-
-<h1 align="center">Awesome Kazakh Datasets</h1>
+DEFAULT_SKELETON = """<h1 align="center">
+  <img src="https://emojiassets.saruwakakun.design/a/lg/1f1f0_1f1ff_1o53s.webp" width="34" valign="middle" alt="Kazakhstan flag">
+  Awesome Kazakh Datasets
+  <img src="https://emojiassets.saruwakakun.design/a/lg/1f1f0_1f1ff_1o53s.webp" width="34" valign="middle" alt="Kazakhstan flag">
+</h1>
 
 <p align="center">
-  A curated, research-grade catalog of public datasets for Kazakh-language NLP, LLM,
-  speech, computer vision, OCR, and multimodal research.
+  A curated, verified catalog of public datasets for Kazakh-language NLP, LLM, speech, and vision research.
 </p>
 
 <!-- BADGES:START -->
 <!-- BADGES:END -->
 
 <p align="center">
-  <a href="#background">Background</a> ·
-  <a href="#dataset-landscape">Dataset landscape</a> ·
+  <a href="#about">About</a> ·
   <a href="#text-nlp-and-llm">Text &amp; NLP</a> ·
   <a href="#speech-and-audio">Speech</a> ·
   <a href="#vision-ocr-and-multimodal">Vision &amp; OCR</a> ·
   <a href="#watchlist--announced-resources">Watchlist</a> ·
-  <a href="#contributing">Contributing</a>
+  <a href="#contributing">Contributing</a> ·
+  <a href="#license">License</a>
 </p>
 
 ---
 
-## Background
+## About
 
-Kazakh is spoken by roughly 13 million people, but public, reusable datasets for
-it are scattered across Hugging Face, GitHub, institutional pages, and archives
-with no single map of what exists. Existing lists tend to link a dataset card and
-stop there — no verified release date, no access terms, no way to tell a genuinely
-open corpus from one that is merely described in an open-access paper. A
-low-resource language only gets sustained NLP, speech, and vision research when
-people can actually find and trust its data — a catalog that quietly links dead
-downloads or overstates access just costs everyone time.
+Kazakh is spoken by roughly 13 million people, yet reusable public datasets for it
+are scattered across Hugging Face, GitHub, institutional pages, and archives with
+no reliable map of what's actually downloadable today.
 
-This repository tries to fix that: every entry below is checked against its
-primary source (the dataset's own hosting platform, not just its rendered card;
-the repository; or the paper that introduced it), and its release date, access
-terms, and license are recorded rather than assumed. Where a dataset's actual
-public release date differs from its Hugging Face "last modified" timestamp or
-its paper's submission date — which happens more often than you'd expect — the
-primary source wins, and a fact that can't be verified is recorded as *Not
-reported* rather than guessed. Resources that are announced but not yet
-independently verifiable go in the [Watchlist](#watchlist--announced-resources)
-instead of the main tables, so "listed here" reliably means "you can actually get
-this data." See [CHANGELOG.md](CHANGELOG.md) for what's new and what was corrected
-and why.
-
-In each table, the **Dataset** name links to the dataset card, repository, or
-archive, and the **Author** name links to the paper (or the DOI, if there's no
-paper) when one is available. **Properties** lists storage — the downloadable or
-repository-hosted data volume — followed by scale: the number of samples,
-utterances, hours, pages, or other published content unit. Values may change when
-a living dataset is updated; **≈** denotes a publisher estimate. See
-[CONTRIBUTING.md](CONTRIBUTING.md) for the full inclusion policy, including the
-exact meaning of **released** and the access classification.
-
-### Catalog overview
-
-<!-- DASHBOARD:START -->
-<!-- DASHBOARD:END -->
-
-## Dataset landscape
+Every entry below is checked against its primary source, with release date, access
+terms, and license recorded rather than assumed. Resources that are announced but
+not yet independently verifiable go in the [Watchlist](#watchlist--announced-resources)
+instead of the main tables. See [CONTRIBUTING.md](CONTRIBUTING.md) for the full
+inclusion policy and [CHANGELOG.md](CHANGELOG.md) for what's new.
 
 <!-- LANDSCAPE:START -->
 <!-- LANDSCAPE:END -->
@@ -230,20 +189,16 @@ language**, not language-only hours, and possible cross-corpus overlap remains.
 
 Resources below are announced, described in a paper without a public artifact,
 license-conflicted, or not yet independently verifiable as usable Kazakh-language
-datasets. They are intentionally **not** part of the main catalog above.
+datasets. They are intentionally **not** part of the main catalog above. Where a
+source is known, the entry links to it.
 
 <!-- WATCHLIST:START -->
 <!-- WATCHLIST:END -->
 
-## Inclusion and maintenance
+## Abbreviations
 
-This catalog excludes model repositories, duplicate mirrors, tokenizer-format
-conversions, and tiny personal test files. Gated, application-only, and paid
-research datasets are still included as long as their contents are
-independently documented and their access status is clearly labeled.
-Multilingual resources are included only when they expose a genuinely
-accessible, identifiable Kazakh split. Full inclusion, exclusion, and
-verification rules are in [CONTRIBUTING.md](CONTRIBUTING.md).
+<!-- ABBREVIATIONS:START -->
+<!-- ABBREVIATIONS:END -->
 
 ## Contributing
 
@@ -252,12 +207,27 @@ Missing a Kazakh dataset, or spotted outdated metadata? Contributions are welcom
 - **Add a dataset** — [open a submission issue](../../issues/new?template=dataset-submission.yml)
   or send a PR directly.
 - **Fix or update an entry** — edit `data/datasets.yaml` and open a PR.
-- **Report a stale number** — Hugging Face row/download counts drift; flag it
-  with the current value from the
+- **Report a stale number** — Hugging Face row counts and reported storage
+  sizes may change over time; flag it with the current value from the
   [Dataset Server API](https://huggingface.co/docs/dataset-viewer/en/size).
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for the full inclusion criteria, required
 metadata, and PR format.
+
+## Contributors
+
+<p align="center">
+  <a href="https://github.com/REPO_PLACEHOLDER/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=REPO_PLACEHOLDER" alt="Contributors to awesome-kaz-datasets">
+  </a>
+</p>
+
+## License
+
+This catalog's own content — the repository structure, documentation, generated
+tables, and scripts — is released under the [MIT License](LICENSE). Datasets
+linked from this catalog remain under their own respective licenses (recorded
+per entry above); this MIT license does not extend to their contents.
 """
 
 DEFAULT_SKELETON = DEFAULT_SKELETON.replace(
@@ -268,7 +238,7 @@ DEFAULT_SKELETON = DEFAULT_SKELETON.replace(
         "verification",
         "speech_task_hours_comparison",
     ),
-)
+).replace("REPO_PLACEHOLDER", REPO)
 
 
 def load_datasets():
@@ -304,113 +274,100 @@ def author_and_org(d):
     return author_str, org_str
 
 
-def format_scale_storage(d):
-    # Storage (the dataset's "weight") first, then scale — stacked, dash-prefixed.
-    scale = d.get("scale") or {}
+def author_line(d):
+    # Individual/group author when known; falls back to the organization name
+    # only when no author is recorded at all (e.g. an org-attributed release
+    # like Til-Qazyna or Mozilla Foundation). Affiliation is not shown
+    # alongside a named author — keeps the Dataset cell to name + one
+    # attribution line, not name + author + affiliation.
+    author_str, org_str = author_and_org(d)
+    name = author_str or org_str
+    if not name:
+        return None
+    author_link = (d.get("links") or {}).get("paper") or (d.get("links") or {}).get("doi")
+    display = f"[{name}]({author_link})" if author_link and author_str else name
+    return f"<sub>{display}</sub>"
+
+
+def format_access(d):
+    # License is intentionally not surfaced in the table — it stays in
+    # data/datasets.yaml (the "properties") rather than in the display.
+    return (d.get("access") or "unavailable").capitalize()
+
+
+def format_storage(d):
     storage = d.get("storage") or {}
-    pieces = []
-    st_v = storage.get("value")
-    if st_v is not None:
-        unit = storage.get("unit") or ""
-        pieces.append(f"{st_v} {unit}".strip())
-    sv = scale.get("value")
-    if sv and sv != "Not reported":
-        pieces.append(str(sv))
-    if not pieces:
+    value = storage.get("value")
+    if value is None:
         return "Not reported"
-    return "<br>".join(f"– {p}" for p in pieces)
+    unit = storage.get("unit") or ""
+    return f"{value} {unit}".strip()
 
 
-def format_access_license(d):
-    access = (d.get("access") or "unavailable").capitalize()
-    license_ = d.get("license") or "Not reported"
-    return f"{access} · {license_}"
+def format_samples(d):
+    scale = d.get("scale") or {}
+    value = scale.get("value")
+    if not value or value == "Not reported":
+        return "Not reported"
+    return str(value)
 
 
-def dataset_row(d):
+def dataset_row(d, idx):
     tags = " · ".join(task_tag(t) for t in (d.get("tasks") or [])) or "Not reported"
     data_url = (d.get("links") or {}).get("dataset")
     display_name = f"[{d['name']}]({data_url})" if data_url else d["name"]
-    name_cell = f"**{display_name}**<br><sub>{tags}</sub><br><sub>{format_access_license(d)}</sub>"
 
-    author_str, org_str = author_and_org(d)
-    author_link = (d.get("links") or {}).get("paper") or (d.get("links") or {}).get("doi")
-    if author_str:
-        author_display = f"[{author_str}]({author_link})" if author_link else author_str
-        author_cell = f"**{author_display}**"
-        if org_str:
-            author_cell += f"<br><sub>{org_str}</sub>"
-    elif org_str:
-        author_cell = f"**{org_str}**"
-    else:
-        author_cell = "Not reported"
+    name_lines = [f"**{display_name}**"]
+    al = author_line(d)
+    if al:
+        name_lines.append(al)
+    name_lines.append(f"<sub>{format_access(d)}</sub>")
+    name_cell = "<br>".join(name_lines)
 
     released = d.get("released") or "Not reported"
-    return "| {released} | {name} | {desc} | {author} | {scale} |".format(
+    return "| {idx} | {released} | {name} | {task} | {desc} | {storage} | {samples} |".format(
+        idx=idx,
         released=released,
         name=name_cell,
+        task=tags,
         desc=d.get("description") or "",
-        author=author_cell,
-        scale=format_scale_storage(d),
+        storage=format_storage(d),
+        samples=format_samples(d),
     )
 
 
 def dataset_table(rows):
     header = (
-        "| Released | Dataset | Description | Author | Properties |\n"
-        "|---|---|---|---|---|"
+        "| ID | Released | Dataset | Task | Description | Storage | Samples |\n"
+        "|---:|---|---|---|---|---|---|"
     )
     ordered = sorted(rows, key=released_sort_key, reverse=True)
-    body = "\n".join(dataset_row(d) for d in ordered)
+    body = "\n".join(dataset_row(d, i + 1) for i, d in enumerate(ordered))
     return header + "\n" + body
 
 
 def build_section(datasets, section):
     rows = [d for d in datasets if d["section"] == section]
-    overview_base = SECTION_OVERVIEW_IMG[section]
-    lines = [picture(f"{section} dataset overview", overview_base), ""]
-
-    for stem, years in calendar_stems(rows, SECTION_CALENDAR[section]):
-        year_range = f"{years[0]}" if len(years) == 1 else f"{years[0]}-{years[-1]}"
-        lines.append(
-            picture(
-                f"Calendar map of {section} dataset releases, {year_range}, with year on the "
-                "x-axis and month on the y-axis",
-                stem,
-            )
-        )
-        lines.append("")
-
-    lines.append(task_glossary(rows))
-    lines.append("")
-    lines.append(dataset_table(rows))
+    heatmap_base = SECTION_HEATMAP[section]
+    lines = [
+        picture(
+            f"Heatmap of {section} dataset releases by year (rows) and month (columns); "
+            "darker cells mean more releases that month",
+            heatmap_base,
+        ),
+        "",
+        dataset_table(rows),
+    ]
     return "\n".join(lines)
-
-
-def build_dashboard(datasets):
-    return picture(
-        "Catalog overview: dataset count, open-access rate, paper coverage, task count, "
-        "and per-section breakdown",
-        "overview_dashboard",
-    )
-
-
-def build_task_summary(datasets):
-    counts = Counter(t for d in datasets for t in d.get("tasks", []))
-    chips = " · ".join(f"{task} ({count})" for task, count in counts.most_common())
-    return f"<sub>**Datasets per task** — {chips}</sub>"
 
 
 def build_landscape(datasets):
-    # Plain markdown, not wrapped in a <p>/<sub> block: a multi-line HTML block
-    # is not markdown-parsed by GitHub, so bold task names would render as
-    # literal "**text**" instead of bold (the same bug the badges had).
-    lines = [
-        picture("Cumulative Kazakh dataset releases over time, by section", "dataset_growth"),
-        "",
-        build_task_summary(datasets),
-    ]
-    return "\n".join(lines)
+    caption = "<sub>Cumulative Kazakh dataset releases over time, by section.</sub>"
+    return picture("Cumulative Kazakh dataset releases over time, by section", "dataset_growth") + "\n\n" + caption
+
+
+def build_abbreviations(datasets):
+    return task_glossary(datasets, cols=6, label=False)
 
 
 def build_badges(datasets):
@@ -426,8 +383,8 @@ def build_badges(datasets):
     )
     badges = [
         ("Datasets", str(n), "2a78d6"),
-        ("Last verified", "2026--08--19", "1baf7a"),
         ("Open access", f"{open_pct}%25", "2ea44f"),
+        ("Last verified", "2026--08--20", "1baf7a"),
     ]
     parts = [stars] + [
         f'<img alt="{label}" src="https://img.shields.io/badge/{label.replace(" ", "_")}-{value}-{color}">'
@@ -437,17 +394,21 @@ def build_badges(datasets):
 
 
 def build_watchlist():
-    return "\n".join(f"- **{name}** — {reason}" for name, reason in WATCHLIST)
+    lines = []
+    for name, reason, url in WATCHLIST:
+        title = f"**[{name}]({url})**" if url else f"**{name}**"
+        lines.append(f"- {title} — {reason}")
+    return "\n".join(lines)
 
 
 BLOCKS = {
     "BADGES": build_badges,
-    "DASHBOARD": build_dashboard,
     "LANDSCAPE": build_landscape,
     "NLP_SECTION": lambda datasets: build_section(datasets, "Text, NLP, and LLM"),
     "SPEECH_SECTION": lambda datasets: build_section(datasets, "Speech and audio"),
     "VISION_SECTION": lambda datasets: build_section(datasets, "Vision, OCR, and multimodal"),
     "WATCHLIST": lambda datasets: build_watchlist(),
+    "ABBREVIATIONS": lambda datasets: build_abbreviations(datasets),
 }
 
 
@@ -469,8 +430,9 @@ def main():
     datasets = load_datasets()
 
     base = README.read_text(encoding="utf-8") if README.exists() else DEFAULT_SKELETON
-    # If the existing file predates markers, fall back to the skeleton.
-    if "<!-- DASHBOARD:START -->" not in base:
+    # If the existing file predates this marker set (e.g. the pre-redesign layout
+    # with DASHBOARD/per-section overview cards), fall back to the skeleton.
+    if "<!-- ABBREVIATIONS:START -->" not in base:
         base = DEFAULT_SKELETON
 
     new_content = apply_blocks(base, datasets)

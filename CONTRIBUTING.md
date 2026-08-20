@@ -129,8 +129,8 @@ machine-translated benchmark, it is `kind: translation`, `origin:
 ## Canonical task labels
 
 Use an existing task label from `data/datasets.yaml` whenever your dataset's task
-matches one already in use (check "Datasets per task" in the README's Dataset
-landscape section) instead of inventing a near-synonym (e.g. reuse
+matches one already in use (check the README's Abbreviations section, or search
+`data/datasets.yaml` for the label) instead of inventing a near-synonym (e.g. reuse
 `Question answering`, don't add "QA" or "Open-domain QA" as a separate label
 unless the distinction is genuinely load-bearing). If you must introduce a new
 label, keep it short and sentence-case.
@@ -161,8 +161,11 @@ A resource goes in the README's Watchlist (not `datasets.yaml`) when it's
 announced but unreleased, described in a paper with no downloadable artifact,
 license-conflicted, of unclear provenance, temporarily inaccessible, or its
 Kazakh presence isn't yet sufficiently verified. Watchlist entries are
-hand-maintained text in `scripts/generate_readme.py` (`WATCHLIST` list) — add a
-short, factual reason, not a guess about when it might become available.
+hand-maintained tuples in `scripts/generate_readme.py` (`WATCHLIST` list):
+`(name, reason, url)`. Add a short, factual reason, not a guess about when it
+might become available, and a source `url` when one exists (the project page,
+announcement, or paper you found it through) so a reader can look into it
+themselves — use `None` only when no such source could be found.
 
 ## PR format
 

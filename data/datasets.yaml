@@ -907,9 +907,459 @@ datasets:
     added_to_catalog: "2026-08-19"
     last_verified: "2026-08-19"
 
+  - id: hplt-3-kazakh
+    name: HPLT 3.0 Kazakh
+    released: "2025-07"
+    authors:
+      - name: HPLT project
+    organization:
+      - name: HPLT
+        url: https://hplt-project.org/
+    description: Kazakh Cyrillic subset of HPLT 3.0, a large multilingual web-crawl corpus for language-model pretraining.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk]
+    scale: {value: "≈5.12M documents; ≈100.6M segments; ≈7.34B tokens", unit: mixed, scope: "kaz_Cyrl config"}
+    storage: {value: null, unit: null, scope: "Kazakh-config storage not reported"}
+    access: open
+    license: CC0-1.0
+    kind: multilingual
+    origin: [web-crawl]
+    links:
+      dataset: https://huggingface.co/datasets/HPLT/HPLT3.0
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Included because kaz_Cyrl is an explicitly published Kazakh artifact; global HPLT totals are not reused as Kazakh-only storage. Document/segment/token counts independently confirmed via the dataset card's own Kazakh-language statistics table."
+
+  - id: culturax-kazakh
+    name: CulturaX Kazakh
+    released: "2023-09"
+    authors:
+      - name: CulturaX authors
+    organization:
+      - name: University of Oregon NLP
+    description: Kazakh subset of CulturaX, a cleaned and deduplicated multilingual web corpus for language-model pretraining.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk]
+    scale: {value: "2,733,982 documents; 2,802,485,195 tokens", unit: mixed, scope: "kk config"}
+    storage: {value: null, unit: null, scope: "Kazakh-config storage not reported"}
+    access: gated
+    license: "Not reported"
+    kind: multilingual
+    origin: [web-crawl]
+    links:
+      dataset: https://huggingface.co/datasets/uonlp/CulturaX
+      paper: https://arxiv.org/abs/2309.09400
+    paper: {title: "CulturaX: Cleaned, Enormous, and Public Multilingual Dataset for Large Language Models", venue: arXiv, year: 2023}
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "The card points to source-dataset (mC4 + OSCAR) terms rather than a single repository-wide SPDX license, so license is not inferred. Document/token counts independently confirmed via the dataset card's per-language statistics table."
+
+  - id: cc100-kazakh
+    name: CC-100 Kazakh
+    released: "2020"
+    authors:
+      - name: CC-Net / XLM-R team
+    organization:
+      - name: Meta AI
+    description: Explicit Kazakh (kk) monolingual subset of CC-100 reconstructed from Common Crawl for multilingual language modelling.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk]
+    scale: {value: "Not reported", unit: null, scope: "kk config; exact row count not reported"}
+    storage: {value: null, unit: null, scope: "Kazakh-config storage not reported"}
+    access: open
+    license: "Not reported"
+    kind: multilingual
+    origin: [web-crawl]
+    links:
+      dataset: https://huggingface.co/datasets/statmt/cc100
+      paper: https://arxiv.org/abs/1911.02116
+    paper: {title: "Unsupervised Cross-lingual Representation Learning at Scale", venue: ACL, year: 2020}
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Hugging Face card lists the license as unknown; the dataset uses a loading script (not a Parquet conversion), so an exact Kazakh-only row count could not be independently confirmed via the Datasets Server API. No figure is guessed."
+
+  - id: moscar-kazakh
+    name: mOSCAR Kazakh
+    released: "2024-06"
+    authors:
+      - name: OSCAR project
+    organization:
+      - name: OSCAR corpus
+    description: Kazakh Cyrillic configuration of mOSCAR, the multimodal multilingual OSCAR web-crawl release.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk]
+    scale: {value: "248,403 documents", unit: documents, scope: "kaz_Cyrl config"}
+    storage: {value: 548.6, unit: MB, scope: "kaz_Cyrl config, Parquet size"}
+    access: open
+    license: CC-BY-4.0
+    kind: multilingual
+    origin: [web-crawl]
+    links:
+      dataset: https://huggingface.co/datasets/oscar-corpus/mOSCAR
+      paper: https://arxiv.org/abs/2406.08707
+    paper: {title: "mOSCAR: A Large-scale Multilingual and Multimodal Document-level Corpus", venue: arXiv, year: 2024}
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Canonical OSCAR-family entry for this catalog pass. Row count and Parquet size independently confirmed via the Hugging Face Datasets Server size API; global mOSCAR repository size is intentionally not reported as Kazakh-only storage."
+
+  - id: sib200-kazakh
+    name: SIB-200 Kazakh
+    released: "2023-09"
+    authors:
+      - name: David Ifeoluwa Adelani
+    organization:
+      - name: SIB-200 / Masakhane
+    description: Kazakh topic-classification configuration of SIB-200, derived from FLORES-200 and covering seven news topics.
+    section: Text, NLP, and LLM
+    tasks: [Text classification]
+    languages: [kk]
+    scale: {value: "1,004 examples (701 train; 99 validation; 204 test)", unit: examples, scope: "kaz_Cyrl config"}
+    storage: {value: 0.14, unit: MB, scope: "kaz_Cyrl config, Parquet size"}
+    access: open
+    license: CC-BY-SA-4.0
+    kind: derivative
+    derivative_of: flores200-kazakh
+    origin: [human-translated]
+    links:
+      dataset: https://huggingface.co/datasets/Davlan/sib200
+      paper: https://arxiv.org/abs/2309.07445
+    paper: {title: "SIB-200: A Simple, Inclusive, and Big Evaluation Dataset for Topic Classification in 200+ Languages and Dialects", venue: arXiv, year: 2023}
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Row counts and Parquet size independently confirmed via the Hugging Face Datasets Server size API. Catalogued as a derivative of the existing flores200-kazakh entry rather than a new FLORES artifact."
+
+  - id: kazbench-kk
+    name: KazBench-KK
+    released: "2025"
+    authors:
+      - name: KazBench-KK authors
+    organization:
+      - name: kz-transformers
+    description: Culturally grounded Kazakh multiple-choice benchmark spanning 17 domains of traditions, society, history, and contemporary knowledge.
+    section: Text, NLP, and LLM
+    tasks: [Cultural QA, Multiple-choice QA]
+    languages: [kk]
+    scale: {value: "7,111 questions", unit: questions, scope: null}
+    storage: {value: 2.35, unit: MB, scope: null}
+    access: open
+    license: CC-BY-4.0
+    kind: benchmark
+    origin: [native, human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/kz-transformers/kk-socio-cultural-bench-mc
+      paper: https://aclanthology.org/2025.fieldmatters-1.4/
+    paper: {title: "KazBench-KK", venue: "Field Matters", year: 2025}
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Moved from Watchlist after the public Hugging Face artifact (kz-transformers/kk-socio-cultural-bench-mc) was independently verified as open access."
+
+  - id: til-corpus
+    name: Til-Corpus
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Kazakh-centered, quality-tiered text corpus for language-model pretraining, with Russian, English, and mixed-language material.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk, ru, en]
+    scale: {value: "58,850,639 documents", unit: documents, scope: null}
+    storage: {value: 204.20, unit: GB, scope: null}
+    access: gated
+    license: Apache-2.0
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Corpus
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+
+  - id: til-instruct
+    name: Til-Instruct
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Unified, model-judged and quality-tiered Kazakh-focused instruction-tuning collection assembled from TilQazyna SFT sources.
+    section: Text, NLP, and LLM
+    tasks: [Instruction tuning]
+    languages: [kk, ru, en]
+    scale: {value: "2,563,966 raw; 2,114,016 clean; 1,581,787 premium (≈6.26M rows total)", unit: rows, scope: "tier configs"}
+    storage: {value: 8.35, unit: GB, scope: null}
+    access: gated
+    license: Apache-2.0
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Instruct
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+
+  - id: til-books
+    name: Til-Books
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Two-layer full-text book corpus with exact extraction/OCR and cleaned reading text for Kazakh language modelling.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk, ru, en]
+    scale: {value: "16,847 books; 13,194 Kazakh", unit: books, scope: null}
+    storage: {value: 2.02, unit: GB, scope: null}
+    access: gated
+    license: CC-BY-4.0
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Books
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Canonical book-family entry; source-specific Til-Books shards are excluded as constituent/duplicate packaging. Repo-detail API calls returned 401 during this pass (gated-tier restriction), but book count and storage were independently cross-checked against the TilQazyna organization's own repository listing."
+
+  - id: til-parallel
+    name: Til-Parallel
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Large quality-tiered multilingual corpus centered on Kazakh, with Russian and English material.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk, ru, en]
+    scale: {value: "23,294,865 rows", unit: rows, scope: null}
+    storage: {value: 72.16, unit: GB, scope: null}
+    access: gated
+    license: Apache-2.0
+    kind: multilingual
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Parallel
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Catalogued as multilingual pretraining text rather than machine translation because the verified card does not establish aligned source-target translation pairs."
+
+  - id: til-morphology
+    name: Til-Morphology
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Kazakh morphological-analysis collection with word segmentation and morpheme-count fields, quality-tiered by model judging.
+    section: Text, NLP, and LLM
+    tasks: [Morphological analysis]
+    languages: [kk]
+    scale: {value: "3,767,518 analyses", unit: rows, scope: null}
+    storage: {value: 207.8, unit: MB, scope: null}
+    access: gated
+    license: Apache-2.0
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Morphology
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+
+  - id: til-classification
+    name: Til-Classification
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Quality-tiered Kazakh-focused text-classification collection with labels, tasks, provenance, and model-judge scores.
+    section: Text, NLP, and LLM
+    tasks: [Text classification]
+    languages: [kk, ru, en]
+    scale: {value: "91,766 rows", unit: rows, scope: null}
+    storage: {value: 15.1, unit: MB, scope: null}
+    access: gated
+    license: Apache-2.0
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Classification
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+
+  - id: til-terminology
+    name: Til-Terminology
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Quality-tiered terminology-focused text collection for Kazakh language research and text generation/pretraining.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk, ru, en]
+    scale: {value: "317,277 rows", unit: rows, scope: null}
+    storage: {value: 5.7, unit: MB, scope: null}
+    access: gated
+    license: Apache-2.0
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Terminology
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+
+  - id: til-web-raw-kk-v1
+    name: Til-Web-Raw-KK-v1
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Raw HTML mirror of two Kazakh educational and Q&A websites (bilim-all.kz, surak.baribar.kz) — server-rendered pages, images, and attachments collected before text extraction/cleaning, as source material for the Til foundation-model program.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk]
+    scale: {value: "≈222,890 pages", unit: pages, scope: "raw mirror, before extraction/cleaning"}
+    storage: {value: 19.50, unit: GB, scope: null}
+    access: gated
+    license: "custom (non-commercial research use only)"
+    kind: original
+    origin: [web-crawl]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Web-Raw-KK-v1
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Previously a Watchlist entry as \"Til-Web-KK\" after a 401 on anonymous access; found and re-verified this pass as the actual public (gated) collection entry TilQazyna/Til-Web-Raw-KK-v1 — createdAt 2026-06-22 via the HF API. License tag is \"other\" on Hugging Face; recorded here per the dataset card's stated non-commercial research-use restriction rather than left unlabeled."
+
+  - id: farabi-kz-rag-single-docs
+    name: Kazakh Analytical RAG (Single-Document)
+    released: "2026-02"
+    authors:
+      - name: N. Kadyrbek
+      - name: Z. Tuimebayev
+      - name: M. Mansurova
+      - name: V. Viegas
+    organization:
+      - name: Al-Farabi Kazakh National University
+    description: High-density Kazakh analytical question-answering collection with single-document context, for retrieval-augmented generation research.
+    section: Text, NLP, and LLM
+    tasks: [Retrieval / RAG, Question answering]
+    languages: [kk]
+    scale: {value: "4,522 examples; ≈5.98M words", unit: mixed, scope: null}
+    storage: {value: 33.4, unit: MB, scope: null}
+    access: gated
+    license: MIT
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/farabi-lab/KZ-RAG-single-docs-final-gold
+      paper: https://doi.org/10.3390/bdcc9050137
+    paper: {title: "The Development of Small-Scale Language Models for Low-Resource Languages, with a Focus on Kazakh and Direct Preference Optimization", venue: "Big Data and Cognitive Computing (MDPI)", year: 2025}
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Storage and access independently confirmed via the Hugging Face repo file-listing API (33.4 MB Parquet, gated: manual); the dataset card's own summary figures otherwise matched."
+
+  - id: farabi-content-moderation-safety
+    name: Content Moderation and Safety — Kazakh
+    released: "2026-02"
+    authors:
+      - name: N. Kadyrbek
+      - name: Z. Tuimebayev
+      - name: M. Mansurova
+      - name: V. Viegas
+    organization:
+      - name: Al-Farabi Kazakh National University
+    description: Kazakh content-moderation and safety dataset with toxicity categories, severity labels, domain tags, and constructive de-escalating responses.
+    section: Text, NLP, and LLM
+    tasks: [Safety evaluation, Text classification]
+    languages: [kk]
+    scale: {value: "17,827 examples; ≈1.67M words", unit: mixed, scope: null}
+    storage: {value: 9.3, unit: MB, scope: null}
+    access: gated
+    license: CC-BY-NC-4.0
+    kind: original
+    origin: [human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/farabi-lab/Content-Moderation-and-Safety
+      paper: https://doi.org/10.3390/bdcc9050137
+    paper: {title: "The Development of Small-Scale Language Models for Low-Resource Languages, with a Focus on Kazakh and Direct Preference Optimization", venue: "Big Data and Cognitive Computing (MDPI)", year: 2025}
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "A smaller farabi-lab safety-dataset variant (Content_Moderation_and_Safety_Kazakh_Context) is not separately listed to avoid a near-duplicate catalog row. Example count, storage, and access independently confirmed via the Hugging Face repo file-listing API (17,827 rows; 9.3 MB; gated: manual)."
+
+  - id: farabi-multistep-reasoning-kazakh
+    name: Multi-Step Reasoning for Kazakh Context
+    released: "2026-02"
+    authors:
+      - name: N. Kadyrbek
+      - name: Z. Tuimebayev
+      - name: M. Mansurova
+      - name: V. Viegas
+    organization:
+      - name: Al-Farabi Kazakh National University
+    description: Kazakh question-answering and instruction collection centered on complex multi-step reasoning and culturally grounded analysis.
+    section: Text, NLP, and LLM
+    tasks: [Question answering]
+    languages: [kk]
+    scale: {value: "10,981 examples; ≈6.65M words", unit: mixed, scope: null}
+    storage: {value: 39.0, unit: MB, scope: null}
+    access: gated
+    license: MIT
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/farabi-lab/multi_step_reasoning_kazakh_context
+      paper: https://doi.org/10.3390/bdcc9050137
+    paper: {title: "The Development of Small-Scale Language Models for Low-Resource Languages, with a Focus on Kazakh and Direct Preference Optimization", venue: "Big Data and Cognitive Computing (MDPI)", year: 2025}
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Storage independently confirmed via the Hugging Face repo file-listing API at 39.0 MB (a preliminary read had this at 407.8 MB, off by 10x; the API-confirmed figure is used here)."
+
   # ---------------------------------------------------------------------
   # Speech and audio
   # ---------------------------------------------------------------------
+
+  - id: mcskl-module-1
+    name: Multimedia Corpus of Modern Spoken Kazakh Language (Module 1)
+    released: "2026-02"
+    authors:
+      - name: Giorgia Troiani
+      - name: John W. Du Bois
+      - name: Andrey Filchenko
+    organization:
+      - name: Nazarbayev University
+        url: https://research.nu.edu.kz/en/projects/multimedia-corpus-of-modern-spoken-kazakh-language
+    description: First module of a corpus of naturally occurring spoken Kazakh conversations (2021-2023), with WAV audio, ELAN/EAF time-aligned transcriptions, verticalized TSV and linearized text, plus participant and speech-event metadata.
+    section: Speech and audio
+    tasks: [Automatic speech recognition (ASR)]
+    languages: [kk, ru]
+    scale: {value: "≈12 h; 33 speech events; 78 participants", unit: hours, scope: "Module 1"}
+    storage: {value: null, unit: null, scope: null}
+    access: open
+    license: CC-BY-NC-SA-4.0
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://github.com/gtroiani/MultCorSKL
+      paper: https://doi.org/10.5334/johd.529
+    paper: {title: "Introducing the First Module of the Multimedia Corpus of Spoken Kazakh Language", venue: Journal of Open Humanities Data, year: 2026}
+    added_to_catalog: null
+    last_verified: "2026-08-20"
+    notes: "Moved from the Watchlist after finding the actual downloadable Module 1 artifact (audio + EAF/TSV/linear transcriptions) on GitHub at github.com/gtroiani/MultCorSKL, under CC-BY-NC-SA-4.0 per its LICENSE.md — the dataset's own license, distinct from the JOHD paper's article-level CC-BY-4.0 license."
 
   - id: kazmix-3
     name: KazMix-3
@@ -1363,6 +1813,30 @@ datasets:
     paper: null
     added_to_catalog: "2026-08-19"
     last_verified: "2026-08-19"
+
+  - id: til-audio
+    name: Til-Audio
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Kazakh audio-and-transcript collection for speech recognition, speech synthesis, and audio classification.
+    section: Speech and audio
+    tasks: [Automatic speech recognition (ASR), Text-to-speech (TTS)]
+    languages: [kk]
+    scale: {value: "380,068 audio/transcript rows", unit: rows, scope: "current default config"}
+    storage: {value: 249.77, unit: GB, scope: null}
+    access: gated
+    license: CC-BY-4.0
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Audio
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Uses the current ~380k-row release rather than an older ~248k-row figure still present in some descriptive text; row count and storage independently confirmed via the TilQazyna organization's own repository listing."
 
   # ---------------------------------------------------------------------
   # Vision, OCR, and multimodal

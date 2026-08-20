@@ -66,10 +66,14 @@ def main():
         access = d.get("access")
         if access and access not in ACCESS_VALUES:
             fail(errors, f"{where}: invalid access '{access}'")
+        if access == "unavailable":
+            fail(errors, f"{where}: access=unavailable belongs in the Watchlist, not the main catalog")
 
         kind = d.get("kind")
         if kind and kind not in KIND_VALUES:
             fail(errors, f"{where}: invalid kind '{kind}'")
+        if kind == "mirror":
+            fail(errors, f"{where}: kind=mirror is excluded from the main catalog")
 
         origin = d.get("origin") or []
         for o in origin:

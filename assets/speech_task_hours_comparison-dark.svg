@@ -1,79 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="536" viewBox="0 0 1240 536">
-<rect width="1240" height="536" fill="#1a1a19"/>
-<style>text{font-family:"Segoe UI",Inter,Arial,sans-serif;fill:#ffffff}.title{font-size:22px;font-weight:700}.sub{font-size:12px;fill:#c3c2b7}.muted{font-size:11px;fill:#898781}.stat-label{font-size:12px;fill:#c3c2b7;font-weight:600}.stat-value{font-size:28px;font-weight:700}.axis{font-size:12px;fill:#898781}.grid{stroke:#2c2c2a;stroke-width:1}.legend{font-size:12px;fill:#c3c2b7}.task{font-size:12px;font-weight:700}.lang{font-size:10px;font-weight:700;fill:#898781}.value{font-size:10px;font-weight:700}.na{stroke-dasharray:4 3}</style>
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="476" viewBox="0 0 1240 476">
+<rect width="1240" height="476" fill="#1a1a19"/>
+<style>text{font-family:"Segoe UI",Inter,Arial,sans-serif;fill:#ffffff}.title{font-size:22px;font-weight:700}.sub{font-size:12px;fill:#c3c2b7}.muted{font-size:11px;fill:#898781}.axis{font-size:12px;fill:#898781}.grid{stroke:#2c2c2a;stroke-width:1}.legend{font-size:12px;fill:#c3c2b7}.task{font-size:12px;font-weight:700}.lang{font-size:10px;font-weight:700;fill:#898781}.value{font-size:10px;font-weight:700}.na{stroke-dasharray:4 3}</style>
 <text x="20" y="20" class="muted">Conservative, deduplicated lower bounds; not a claim about every corpus in existence.</text>
-<line x1="80" y1="460.0" x2="1220" y2="460.0" class="grid"/>
-<text x="71" y="464.0" text-anchor="end" class="axis">10^0</text>
-<line x1="80" y1="380.0" x2="1220" y2="380.0" class="grid"/>
-<text x="71" y="384.0" text-anchor="end" class="axis">10^1</text>
-<line x1="80" y1="300.0" x2="1220" y2="300.0" class="grid"/>
-<text x="71" y="304.0" text-anchor="end" class="axis">10^2</text>
-<line x1="80" y1="220.0" x2="1220" y2="220.0" class="grid"/>
-<text x="71" y="224.0" text-anchor="end" class="axis">10^3</text>
-<line x1="80" y1="140.0" x2="1220" y2="140.0" class="grid"/>
-<text x="71" y="144.0" text-anchor="end" class="axis">10^4</text>
+<line x1="80" y1="400.0" x2="1220" y2="400.0" class="grid"/>
+<text x="71" y="404.0" text-anchor="end" class="axis">10^0</text>
+<line x1="80" y1="332.0" x2="1220" y2="332.0" class="grid"/>
+<text x="71" y="336.0" text-anchor="end" class="axis">10^1</text>
+<line x1="80" y1="264.0" x2="1220" y2="264.0" class="grid"/>
+<text x="71" y="268.0" text-anchor="end" class="axis">10^2</text>
+<line x1="80" y1="196.0" x2="1220" y2="196.0" class="grid"/>
+<text x="71" y="200.0" text-anchor="end" class="axis">10^3</text>
+<line x1="80" y1="128.0" x2="1220" y2="128.0" class="grid"/>
+<text x="71" y="132.0" text-anchor="end" class="axis">10^4</text>
 <line x1="80" y1="60.0" x2="1220" y2="60.0" class="grid"/>
 <text x="71" y="64.0" text-anchor="end" class="axis">10^5</text>
-<rect x="118.0" y="190.18912955346235" width="34" height="269.81087044653765" rx="4" fill="#3987e5"/>
-<text x="135.0" y="184.18912955346235" text-anchor="middle" class="value">2.4K</text>
-<text x="135.0" y="478" text-anchor="middle" class="lang">kk</text>
-<rect x="158.0" y="113.35610645872003" width="34" height="346.64389354127997" rx="4" fill="#d95926"/>
-<text x="175.0" y="107.35610645872003" text-anchor="middle" class="value">21.5K</text>
-<text x="175.0" y="478" text-anchor="middle" class="lang">ru</text>
-<rect x="198.0" y="77.36208040447616" width="34" height="382.63791959552384" rx="4" fill="#199e70"/>
-<text x="215.0" y="71.36208040447616" text-anchor="middle" class="value">60.7K</text>
-<text x="215.0" y="478" text-anchor="middle" class="lang">eng</text>
-<text x="175.0" y="503" text-anchor="middle" class="task">ASR</text>
-<rect x="308.0" y="221.93421854557656" width="34" height="238.06578145442344" rx="4" fill="#3987e5"/>
-<text x="325.0" y="215.93421854557656" text-anchor="middle" class="value">945.85</text>
-<text x="325.0" y="478" text-anchor="middle" class="lang">kk</text>
-<rect x="348.0" y="157.27057468296618" width="34" height="302.7294253170338" rx="4" fill="#d95926"/>
-<text x="365.0" y="151.27057468296618" text-anchor="middle" class="value">6.1K</text>
-<text x="365.0" y="478" text-anchor="middle" class="lang">ru</text>
-<rect x="388.0" y="94.8267148598328" width="34" height="365.1732851401672" rx="4" fill="#199e70"/>
-<text x="405.0" y="88.8267148598328" text-anchor="middle" class="value">36.7K</text>
-<text x="405.0" y="478" text-anchor="middle" class="lang">eng</text>
-<text x="365.0" y="503" text-anchor="middle" class="task">TTS</text>
-<rect x="498.0" y="319.5300115462007" width="34" height="140.46998845379932" rx="4" fill="#3987e5"/>
-<text x="515.0" y="313.5300115462007" text-anchor="middle" class="value">57</text>
-<text x="515.0" y="478" text-anchor="middle" class="lang">kk</text>
-<rect x="538.0" y="332.9831227984871" width="34" height="127.01687720151291" rx="4" fill="#d95926"/>
-<text x="555.0" y="326.9831227984871" text-anchor="middle" class="value">38.7</text>
-<text x="555.0" y="478" text-anchor="middle" class="lang">ru</text>
-<rect x="578.0" y="138.27839487087738" width="34" height="321.7216051291226" rx="4" fill="#199e70"/>
-<text x="595.0" y="132.27839487087738" text-anchor="middle" class="value">10.5K</text>
-<text x="595.0" y="478" text-anchor="middle" class="lang">eng</text>
-<text x="555.0" y="503" text-anchor="middle" class="task">Speech translation</text>
-<rect x="688.0" y="310.0646556256743" width="34" height="149.9353443743257" rx="4" fill="#3987e5"/>
-<text x="705.0" y="304.0646556256743" text-anchor="middle" class="value">74.85</text>
-<text x="705.0" y="478" text-anchor="middle" class="lang">kk</text>
-<rect x="728.0" y="256.47455645197795" width="34" height="203.52544354802205" rx="4" fill="#d95926"/>
-<text x="745.0" y="250.47455645197795" text-anchor="middle" class="value">350</text>
-<text x="745.0" y="478" text-anchor="middle" class="lang">ru</text>
-<rect x="768.0" y="250.05743233314655" width="34" height="209.94256766685345" rx="4" fill="#199e70"/>
-<text x="785.0" y="244.05743233314655" text-anchor="middle" class="value">421</text>
-<text x="785.0" y="478" text-anchor="middle" class="lang">eng</text>
-<text x="745.0" y="503" text-anchor="middle" class="task">Emotion</text>
-<rect x="878.0" y="457" width="34" height="3" rx="4" fill="#3987e5"/>
-<text x="895.0" y="451" text-anchor="middle" class="value">1</text>
-<text x="895.0" y="478" text-anchor="middle" class="lang">kk</text>
-<rect x="918.0" y="289.0623546274875" width="34" height="170.93764537251252" rx="4" fill="#d95926"/>
-<text x="935.0" y="283.0623546274875" text-anchor="middle" class="value">137</text>
-<text x="935.0" y="478" text-anchor="middle" class="lang">ru</text>
-<rect x="958.0" y="196.15466347627938" width="34" height="263.8453365237206" rx="4" fill="#199e70"/>
-<text x="975.0" y="190.15466347627938" text-anchor="middle" class="value">2.0K</text>
-<text x="975.0" y="478" text-anchor="middle" class="lang">eng</text>
-<text x="935.0" y="503" text-anchor="middle" class="task">Keyword spotting</text>
-<rect x="1068.0" y="237.74789996930852" width="34" height="222.25210003069148" rx="4" fill="#3987e5"/>
-<text x="1085.0" y="231.74789996930852" text-anchor="middle" class="value">600</text>
-<text x="1085.0" y="478" text-anchor="middle" class="lang">kk</text>
-<rect x="1108.0" y="112.5241612954215" width="34" height="347.4758387045785" rx="4" fill="#d95926"/>
-<text x="1125.0" y="106.5241612954215" text-anchor="middle" class="value">22.1K</text>
-<text x="1125.0" y="478" text-anchor="middle" class="lang">ru</text>
-<rect x="1148.0" y="118.01776855007017" width="34" height="341.9822314499298" rx="4" fill="#199e70"/>
-<text x="1165.0" y="112.01776855007017" text-anchor="middle" class="value">18.8K</text>
-<text x="1165.0" y="478" text-anchor="middle" class="lang">eng</text>
-<text x="1125.0" y="503" text-anchor="middle" class="task">Speaker verification*</text>
+<rect x="118.0" y="170.66076012044297" width="34" height="229.33923987955703" rx="4" fill="#3987e5"/>
+<text x="135.0" y="164.66076012044297" text-anchor="middle" class="value">2.4K</text>
+<text x="135.0" y="418" text-anchor="middle" class="lang">kk</text>
+<rect x="158.0" y="105.35269048991199" width="34" height="294.647309510088" rx="4" fill="#d95926"/>
+<text x="175.0" y="99.35269048991199" text-anchor="middle" class="value">21.5K</text>
+<text x="175.0" y="418" text-anchor="middle" class="lang">ru</text>
+<rect x="198.0" y="74.75776834380474" width="34" height="325.24223165619526" rx="4" fill="#199e70"/>
+<text x="215.0" y="70" text-anchor="middle" class="value">60.7K</text>
+<text x="215.0" y="418" text-anchor="middle" class="lang">eng</text>
+<text x="175.0" y="443" text-anchor="middle" class="task">ASR</text>
+<rect x="308.0" y="197.64408576374007" width="34" height="202.35591423625993" rx="4" fill="#3987e5"/>
+<text x="325.0" y="191.64408576374007" text-anchor="middle" class="value">945.85</text>
+<text x="325.0" y="418" text-anchor="middle" class="lang">kk</text>
+<rect x="348.0" y="142.67998848052122" width="34" height="257.3200115194788" rx="4" fill="#d95926"/>
+<text x="365.0" y="136.67998848052122" text-anchor="middle" class="value">6.1K</text>
+<text x="365.0" y="418" text-anchor="middle" class="lang">ru</text>
+<rect x="388.0" y="89.60270763085788" width="34" height="310.3972923691421" rx="4" fill="#199e70"/>
+<text x="405.0" y="83.60270763085788" text-anchor="middle" class="value">36.7K</text>
+<text x="405.0" y="418" text-anchor="middle" class="lang">eng</text>
+<text x="365.0" y="443" text-anchor="middle" class="task">TTS</text>
+<rect x="498.0" y="280.6005098142706" width="34" height="119.39949018572942" rx="4" fill="#3987e5"/>
+<text x="515.0" y="274.6005098142706" text-anchor="middle" class="value">57</text>
+<text x="515.0" y="418" text-anchor="middle" class="lang">kk</text>
+<rect x="538.0" y="292.035654378714" width="34" height="107.96434562128597" rx="4" fill="#d95926"/>
+<text x="555.0" y="286.035654378714" text-anchor="middle" class="value">38.7</text>
+<text x="555.0" y="418" text-anchor="middle" class="lang">ru</text>
+<rect x="578.0" y="126.53663564024578" width="34" height="273.4633643597542" rx="4" fill="#199e70"/>
+<text x="595.0" y="120.53663564024578" text-anchor="middle" class="value">10.5K</text>
+<text x="595.0" y="418" text-anchor="middle" class="lang">eng</text>
+<text x="555.0" y="443" text-anchor="middle" class="task">Speech translation</text>
+<rect x="688.0" y="272.55495728182314" width="34" height="127.44504271817684" rx="4" fill="#3987e5"/>
+<text x="705.0" y="266.55495728182314" text-anchor="middle" class="value">74.85</text>
+<text x="705.0" y="418" text-anchor="middle" class="lang">kk</text>
+<rect x="728.0" y="227.00337298418125" width="34" height="172.99662701581875" rx="4" fill="#d95926"/>
+<text x="745.0" y="221.00337298418125" text-anchor="middle" class="value">350</text>
+<text x="745.0" y="418" text-anchor="middle" class="lang">ru</text>
+<rect x="768.0" y="221.54881748317456" width="34" height="178.45118251682544" rx="4" fill="#199e70"/>
+<text x="785.0" y="215.54881748317456" text-anchor="middle" class="value">421</text>
+<text x="785.0" y="418" text-anchor="middle" class="lang">eng</text>
+<text x="745.0" y="443" text-anchor="middle" class="task">Emotion</text>
+<rect x="878.0" y="397" width="34" height="3" rx="4" fill="#3987e5"/>
+<text x="895.0" y="391" text-anchor="middle" class="value">1</text>
+<text x="895.0" y="418" text-anchor="middle" class="lang">kk</text>
+<rect x="918.0" y="254.70300143336436" width="34" height="145.29699856663564" rx="4" fill="#d95926"/>
+<text x="935.0" y="248.70300143336436" text-anchor="middle" class="value">137</text>
+<text x="935.0" y="418" text-anchor="middle" class="lang">ru</text>
+<rect x="958.0" y="175.73146395483747" width="34" height="224.26853604516253" rx="4" fill="#199e70"/>
+<text x="975.0" y="169.73146395483747" text-anchor="middle" class="value">2.0K</text>
+<text x="975.0" y="418" text-anchor="middle" class="lang">eng</text>
+<text x="935.0" y="443" text-anchor="middle" class="task">Keyword spotting</text>
+<rect x="1068.0" y="211.08571497391225" width="34" height="188.91428502608775" rx="4" fill="#3987e5"/>
+<text x="1085.0" y="205.08571497391225" text-anchor="middle" class="value">600</text>
+<text x="1085.0" y="418" text-anchor="middle" class="lang">kk</text>
+<rect x="1108.0" y="104.64553710110823" width="34" height="295.35446289889177" rx="4" fill="#d95926"/>
+<text x="1125.0" y="98.64553710110823" text-anchor="middle" class="value">22.1K</text>
+<text x="1125.0" y="418" text-anchor="middle" class="lang">ru</text>
+<rect x="1148.0" y="109.3151032675596" width="34" height="290.6848967324404" rx="4" fill="#199e70"/>
+<text x="1165.0" y="103.3151032675596" text-anchor="middle" class="value">18.8K</text>
+<text x="1165.0" y="418" text-anchor="middle" class="lang">eng</text>
+<text x="1125.0" y="443" text-anchor="middle" class="task">Speaker verification*</text>
 <rect x="920" y="22" width="10" height="10" rx="2" fill="#3987e5"/>
 <text x="934" y="31" class="legend">Kazakh</text>
 <rect x="1020" y="22" width="10" height="10" rx="2" fill="#d95926"/>

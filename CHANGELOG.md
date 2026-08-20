@@ -1,7 +1,196 @@
 # Changelog
 
-This changelog starts from the 2026-08-19 catalog overhaul (migration to
-`data/datasets.yaml` as the source of truth). Earlier history is in the git log.
+Notable changes to this project, newest first. Entries before the 2026-08-19
+catalog overhaul predate `data/datasets.yaml` and the generator pipeline;
+they're reconstructed from the git history for context, not from a
+contemporaneous changelog.
+
+## 2026-08-20 — README redesign, Watchlist audit
+
+### Changed — README presentation redesign
+
+Full rebuild of the README/visualization presentation, aimed at fast scanning
+over narrative:
+
+- Header made compact: the Kazakhstan flag sits either side of the `<h1>`
+  title instead of a full-width banner image above it; the long Background
+  narrative was cut down to a short About section.
+- The separate "Dataset landscape" heading was dropped — its growth chart now
+  sits directly in About, with a one-line caption instead of a heading and a
+  wall-of-text "Datasets per task" chip list.
+- Badges trimmed to Stars / Datasets / Open access / Last verified (dropped
+  the License badge from the top; License stays as its own section at the
+  bottom) and reordered so Last verified is last.
+- The dense, name-in-cell release calendars were replaced with compact year x
+  month release **heatmaps** — color intensity only, no dataset names crammed
+  into cells. Went through several rounds of sizing (native pixel size read as
+  too small; widened into a landscape strip with rectangular, not square,
+  cells; settled on stretching to the full README column width off a larger
+  baseline size so sparse sections don't get blown up into oversized cells)
+  and color tuning. Dark theme's ramp direction is reversed from light
+  theme on purpose: going *darker* for "more releases" made the busiest
+  cells nearly invisible against the near-black surface, so dark theme goes
+  brighter instead.
+
+  The legend went through three designs before landing: numbers printed on
+  top of each swatch with per-swatch adaptive text color (correct by
+  contrast math, but a mixed dark/light row at 16px didn't read as legible
+  as it measured); a single fixed text color per theme (simpler, but broke
+  on whichever step of the ramp was closest to that theme's surface color);
+  a palette capped to a narrow luminance-safe subrange so a fixed color
+  always worked (fixed the text, but compressed the 5 steps enough that they
+  got hard to tell apart). It settled on the simplest fix: count labels sit
+  *below* each swatch, in the theme's normal text color on the plain
+  surface, never printed on top of a fill — no text-contrast constraint on
+  the palette at all, so the ramps went back to their more distinct,
+  wider-range colors.
+- `overview_dashboard.svg` and the three per-section `*_overview.svg`
+  stat-tile images removed — they duplicated the badges and the tables.
+- Dataset tables restructured to `ID | Released | Dataset | Task |
+  Description | Storage | Samples`: a stable per-section row number added;
+  author moved under the dataset name (organization/affiliation dropped from
+  display); task tags and storage/sample scale broken out of the old combined
+  "Properties" cell into their own columns; license dropped from the visible
+  table (it stays recorded in `data/datasets.yaml`, just not surfaced as a
+  table cell).
+- The three per-section abbreviation glossaries consolidated into one
+  Abbreviations section near the bottom.
+- Removed the "Inclusion and maintenance" section — its exclusion criteria
+  were a shorter preview of the same rules already spelled out in
+  [CONTRIBUTING.md](CONTRIBUTING.md), which the About section already links to.
+- Added a Contributors section (contrib.rocks avatar grid) above License.
+- All of the above (plus the dataset moves below) was squashed into one
+  commit on top of the 2026-08-19 catalog overhaul for a clean history.
+
+### Added
+
+- **Multimedia Corpus of Modern Spoken Kazakh Language (Module 1)** — moved from
+  the Watchlist to the main catalog (Speech and audio) after finding the actual
+  downloadable Module 1 artifact on GitHub (`gtroiani/MultCorSKL`): ≈12 h of
+  naturally occurring spoken Kazakh across 33 speech events, with WAV audio and
+  EAF/TSV/linear transcriptions, licensed CC-BY-NC-SA-4.0 per its `LICENSE.md`.
+- **Til-Web-Raw-KK-v1** — moved from the Watchlist (previously listed as the
+  unverifiable "Til-Web-KK") to the main catalog (Text, NLP, and LLM) after
+  finding it listed in TilQazyna's public
+  [`til-web-crawls-and-archive`](https://huggingface.co/collections/TilQazyna/til-web-crawls-and-archive)
+  collection: a gated, 19.50 GB raw HTML mirror of two Kazakh educational/QA
+  sites (≈222,890 pages), createdAt 2026-06-22 per the HF API.
+
+### Removed
+
+- **Zerde-QA-Wiki-20K** watchlist entry — no dataset card, repository, or source
+  of any kind could be independently verified for this name, so there was
+  nothing left to responsibly list even as a Watchlist pointer.
+
+## 2026-08-20 — Coverage gap audit
+
+### Added
+
+17 new verified datasets closing the gaps the previous overhaul's closing note
+had flagged as unverified (HPLT, CulturaX, CC-100, OSCAR-family, SIB-200, and a
+broader sweep of Kazakhstani institutional repositories):
+
+- **HPLT 3.0 Kazakh** (`kaz_Cyrl` config) — ≈5.12M documents, ≈100.6M segments,
+  ≈7.34B tokens; CC0-1.0, open.
+- **CulturaX Kazakh** (`kk` config) — 2,733,982 documents, 2,802,485,195 tokens;
+  gated, license not reported (points to source mC4/OSCAR terms).
+- **CC-100 Kazakh** (`kk` config) — included with scale/storage left as "not
+  reported": it uses a loading script rather than a Parquet conversion, so an
+  exact Kazakh-only row count could not be confirmed via the Datasets Server API,
+  and the card lists its license as unknown.
+- **mOSCAR Kazakh** (`kaz_Cyrl` config) — 248,403 documents, ~548.6 MB; the
+  canonical OSCAR-family entry for this catalog (the global, all-language OSCAR
+  release is not separately catalogued).
+- **SIB-200 Kazakh** (`kaz_Cyrl` config) — 1,004 examples; catalogued as
+  `derivative_of: flores200-kazakh` rather than a new FLORES entry.
+- **KazBench-KK** — moved from the Watchlist to the main catalog after
+  independently verifying the public Hugging Face artifact
+  (`kz-transformers/kk-socio-cultural-bench-mc`).
+- Nine **TilQazyna** datasets: **Til-Corpus**, **Til-Instruct**, **Til-Books**,
+  **Til-Parallel**, **Til-Morphology**, **Til-Classification**,
+  **Til-Terminology** (Text, NLP, and LLM), plus **Til-Audio** (Speech and
+  audio) — replacing the previous generic "TilQazyna collections" Watchlist
+  entry with eight named, individually verified datasets.
+- Three **Al-Farabi Kazakh National University / farabi-lab** datasets:
+  **Kazakh Analytical RAG (Single-Document)**, **Content Moderation and Safety —
+  Kazakh**, and **Multi-Step Reasoning for Kazakh Context**.
+- New canonical task **Morphological analysis** (`MORPH`), used by
+  Til-Morphology.
+
+### Corrected during verification
+
+An earlier automated draft of this pass had assembled candidate entries via a
+base64/gzip-encoded payload that was corrupted in transit (see Infrastructure
+below); every figure in it was re-verified from scratch against the Hugging Face
+API rather than trusted as-is, and several did not match:
+
+- **Content Moderation and Safety — Kazakh** — example count corrected to
+  **17,827** (the corrupted draft read 7,827); access corrected to **gated**.
+- **Multi-Step Reasoning for Kazakh Context** — storage corrected to **39.0 MB**
+  (the corrupted draft read 407.8 MB, off by roughly 10x).
+- **Kazakh Analytical RAG (Single-Document)** — storage corrected to **33.4 MB**
+  (the corrupted draft read 0.35 MB); access corrected to **gated**.
+- **SIB-200 Kazakh** and **mOSCAR Kazakh** — row counts and storage that the
+  draft had left as "not reported" were filled in from the Hugging Face
+  Datasets Server size API.
+
+### Watchlist
+
+- **KazBench-KK** removed (moved to the main catalog).
+- Generic **TilQazyna collections** entry removed (superseded by the eight named
+  TilQazyna datasets added above).
+- **National Corpus of the Kazakh Language (QazCorpus)** added — verified to
+  exist, with a Main Corpus reporting 31,105,900 word usages and rich
+  morphological/semantic/lexical/phonetic annotation, but no independently
+  verifiable bulk-download artifact or reusable dataset license.
+- **Til-Web-KK** added — referenced in TilQazyna's own materials as a cleaned
+  Kazakh web-crawl release, but the repository returns HTTP 401 for anonymous
+  access and does not appear in the organization's public repository listing;
+  it could not be independently verified this pass, so — unlike the other eight
+  TilQazyna datasets — it was **not** added to the main catalog.
+- **Aqbileq** removed — no dataset card, repository, or paper could be
+  independently located under this name.
+- **Zerde-QA-Wiki-20K** and the announced 10B-token/10,000-speech-hour suite
+  retained unchanged.
+
+### Excluded / deduplicated (considered, not added)
+
+- `farabi-lab/kazakh-stt` — mirror of the existing KSD/SLR140 entry.
+- `Til-GEC` / `Til-GEC-v2` — deprecated.
+- `Til-Corpus-Additions-v2` — aggregate duplicate of Til-Corpus.
+- `Til-Web-Raw-KK-v1` — raw duplicate of the (unverified, watchlisted)
+  Til-Web-KK.
+- Til-Books source-specific shards, `datalake`, and other TilQazyna
+  experimental/task-specific repositories (e.g. `til-kk-title-v1`).
+- Smaller Farabi Lab instruction/safety variants
+  (`Content_Moderation_and_Safety_Kazakh_Context`) that duplicate the three
+  farabi-lab datasets added above.
+
+### Infrastructure and cleanup
+
+- Removed `.github/workflows/_finalize_catalog_once.yml`,
+  `scripts/_finalize_catalog_once.py`, and `scripts/_trigger_finalize.txt`. An
+  earlier session had committed a workflow that decoded a base64/gzip-encoded
+  Python payload on every push to `main` and used it to auto-commit and push
+  catalog changes under the `github-actions[bot]` identity, bypassing PR review.
+  This pass does the catalog work directly in a reviewable commit instead.
+- `scripts/validate_catalog.py` now hard-fails a main-catalog entry with
+  `access: unavailable` (belongs in the Watchlist) or `kind: mirror` (excluded
+  entirely), instead of only accepting them as valid-but-discouraged enum
+  values.
+- `.github/workflows/validate.yml` push trigger now also watches `README.md`
+  and `assets/**`, matching the existing `pull_request` trigger.
+- Fixed the per-section abbreviation glossary: cells wrapped their text in
+  `<sub>`, which visually shrank it and pulled it toward the bottom of the
+  cell; switched to plain `<strong>` text so `align="center" valign="middle"`
+  centers it correctly.
+- Contributing section: replaced "Hugging Face row/download counts drift" with
+  "Hugging Face row counts and reported storage sizes may change over time" —
+  the catalog does not report download counts.
+- Removed the previous entry's closing note flagging HPLT, CulturaX, CC-100,
+  OSCAR, SIB-200, and a broader institutional sweep as unverified — those gaps
+  are closed by this pass (CC-100 remains partially unverifiable at the field
+  level: exact Kazakh row count and license, not existence).
 
 ## 2026-08-19 — Table layout and audit trim
 
@@ -197,14 +386,57 @@ source. Notable corrections:
   unverifiable/announced resources; and a two-person Contributors section
   (Allessyer, creator/maintainer; Alen Issayev, editor).
 
-### Notes on this pass
+## 2026-08-14 — TurkicOCR-Cyrillic, calendar fixes
 
-Dataset discovery for this overhaul was originally planned as a large parallel
-multi-agent research sweep; that run hit an account-level usage limit partway
-through (26 of 27 research agents failed), so discovery was completed via direct,
-sequential primary-source verification instead. Coverage is solid for the
-explicitly named priority candidates and several major multilingual benchmarks
-(FineWeb2, FLORES-200, WikiANN), but a handful of sources named in the original
-research brief — HPLT, CulturaX, CC-100, OSCAR, SIB-200 Kazakh subsets, and a
-broader sweep of Kazakhstani university/government repositories — were not
-individually re-verified this round and remain good candidates for a future pass.
+### Added
+
+- **TurkicOCR-Cyrillic** — synthetic Turkic-Cyrillic OCR dataset spanning
+  Kazakh, Kyrgyz, Kazakh-Russian, and Kyrgyz-Russian text/layouts.
+
+### Fixed
+
+- Author attribution and the vision release-calendar rendering following the
+  TurkicOCR addition (`scripts/generate_timeline_plots.py` at the time).
+
+## 2026-08-12 – 2026-08-13 — Visualization suite, expanded coverage
+
+The visualization approach went through several iterations in a short span
+before settling: per-section dataset-size timeline plots
+(`scripts/generate_timeline_plots.py`) → reworked to separate storage from
+scale and add calendar-style plots → compacted to show only months with an
+actual release → rebuilt again as the release-calendar charts
+(`nlp_release_calendar.svg`, `speech_release_calendar.svg`,
+`cv_release_calendar.svg`) that later eras built on.
+
+### Added
+
+- **YO-CPT-kk** — YouTube-oriented Kazakh continual-pretraining corpus
+  (ASR/TTS/speaker-verification).
+- A general coverage-expansion pass ("Expand verified Kazakh dataset
+  coverage").
+- Cross-language (Kazakh/Russian/English) comparison plots
+  (`scripts/generate_language_comparisons.py`), an audited speech-task-hours
+  comparison chart, and a `speech_language_comparison.md` write-up of the
+  sourcing/deduplication methodology behind it.
+- PNG mirrors alongside every SVG chart, and a Kazakhstan flag in the README
+  header.
+
+Note: the timeline/comparison-plot scripts and `speech_language_comparison.md`
+from this era were superseded by the unified `scripts/generate_visualizations.py`
+during the 2026-08-19 catalog overhaul above — the release-calendar *concept*
+survived (as `data/datasets.yaml`-generated charts), the standalone scripts and
+markdown write-up didn't.
+
+## 2025-01-29 – 2025-02-26 — Initial catalog creation
+
+The repository began as a two-line README ("Datasets in kazakh language for
+different tasks") and grew, commit by commit, into a hand-maintained Markdown
+table — Date / Dataset / Title / Link / Task columns, no generator, no CI, no
+`data/datasets.yaml` — covering Text/NLP and Speech datasets as they were
+found (KazNERD, KazParC, KazQAD, MDBKD, KazEmoTTS, ISSAI SKIMMED,
+Belebele-FLEURS, and others; roughly 17 entries by the end of this period).
+Individual additions aren't itemized here — at this stage they were small,
+frequent, hand-edited README diffs rather than discrete, independently
+verifiable changes. The generator pipeline, validation, and generated visuals
+all arrived later, starting 2026-08-13.
+
