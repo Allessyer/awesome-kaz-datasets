@@ -72,16 +72,19 @@ TASK_ABBREV = {
     "Text deduplication / similarity": "STS",
     "Morphological analysis": "MORPH",
     "Target-speaker ASR / speech separation": "TS-ASR",
+    "Target-speaker ASR": "TS-ASR",
     "Speaker verification": "SV",
     "Speech translation": "ST",
     "Spoken QA": "SQA",
     "Keyword spotting": "KWS",
     "Audio question answering": "AQA",
+    "Audio captioning": "AC",
     "Cultural vision benchmark (text-to-image)": "T2I",
     "Audio-visual QA": "AVQA",
     "Layout analysis / document understanding": "DU",
     "Diagram QA": "DQA",
     "Visual speech recognition (lip reading)": "VSR",
+    "Visual question answering": "VQA",
 }
 
 
