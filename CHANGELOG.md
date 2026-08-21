@@ -5,6 +5,32 @@ catalog overhaul predate `data/datasets.yaml` and the generator pipeline;
 they're reconstructed from the git history for context, not from a
 contemporaneous changelog.
 
+## 2026-08-21 — Storage/license re-verification pass
+
+### Corrected
+
+Every entry still missing `storage.value` or `license` was re-checked against
+its live primary source (Hugging Face datasets-server API, GitHub license
+detection, Mendeley/Dataverse metadata, arXiv paper text) rather than left as
+an assumed gap:
+
+- Filled in real storage figures for **FineWeb2 Kazakh** (6.86 GB),
+  **WikiANN Kazakh** (0.21 MB), **HPLT 3.0 Kazakh** (8.76 GB), **CulturaX
+  Kazakh** (~9.07 GB, summed from its four `kk` parquet shards), **CC-100
+  Kazakh** (889 MB), **KSC** (19 GB), and **QazLip** (4.41 GB).
+- Filled in real licenses, sourced from arXiv paper text or the dataset's
+  GitHub/HF license tag where the HF card itself carried none: **KazParC**,
+  **KazEmoTTS**, **KazakhTTS**, **KazakhTTS2** (all CC-BY-4.0), **Kazakh
+  Speech MFA Punctuation** (MIT), **QazLip** (CC0-1.0).
+- **KSC**'s `links.dataset` repointed from the ISSAI project page (which now
+  renders KSC2 content, not this original 332h/153,000-utterance corpus) to
+  its OpenSLR mirror.
+- Everything else that was still null/"Not reported" was confirmed genuinely
+  unpublished at the source (e.g. WikiANN and CC-100's HF cards explicitly
+  declare `license: unknown`; several Mendeley DOIs carry no file-size
+  metadata at all) rather than an uncollected fact — left as-is with a note
+  recording what was checked.
+
 ## 2026-08-20 — README redesign, Watchlist audit
 
 ### Changed — README presentation redesign

@@ -13,7 +13,7 @@
   <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Allessyer/awesome-kaz-datasets?style=flat&color=eda100">
   <img alt="Datasets" src="https://img.shields.io/badge/Datasets-86-2a78d6">
   <img alt="Open access" src="https://img.shields.io/badge/Open_access-67%25-2ea44f">
-  <img alt="Last verified" src="https://img.shields.io/badge/Last_verified-2026--08--20-1baf7a">
+  <img alt="Last verified" src="https://img.shields.io/badge/Last_verified-2026--08--21-1baf7a">
 </p>
 <!-- BADGES:END -->
 
@@ -26,6 +26,10 @@
   <a href="#contributing">Contributing</a> ·
   <a href="#license">License</a>
 </p>
+
+
+
+> ### ✨ Explore Kazakh models across every domain — [awesome-kaz-models](https://github.com/alenisaw/awesome-kaz-models)
 
 ---
 
@@ -53,7 +57,6 @@ inclusion policy and [CHANGELOG.md](CHANGELOG.md) for what's new.
 ## Text, NLP, and LLM
 
 <!-- NLP_SECTION:START -->
-
 | ID | Released | Dataset | Task | Description | Storage | Samples |
 |---:|---|---|---|---|---|---|
 | 1 | 2026-06 | **[FreshQA Kazakh](https://huggingface.co/datasets/issai/freshqa_kazakh)**<br><sub>ISSAI researchers</sub><br><sub>Open</sub> | QA | Bilingual (English/Kazakh) benchmark of factual questions with false premises, for testing how models handle incorrect assumptions. | 0.4 MB | 600 |
@@ -77,12 +80,12 @@ inclusion policy and [CHANGELOG.md](CHANGELOG.md) for what's new.
 | 19 | 2026-02 | **[Multi-Step Reasoning for Kazakh Context](https://huggingface.co/datasets/farabi-lab/multi_step_reasoning_kazakh_context)**<br><sub>[Kadyrbek et al.](https://doi.org/10.3390/bdcc9050137)</sub><br><sub>Gated</sub> | QA | Kazakh question-answering and instruction collection centered on complex multi-step reasoning and culturally grounded analysis. | 39.0 MB | 10,981 examples; ≈6.65M words |
 | 20 | 2025-12 | **[MMLU-Pro Kazakh/Russian](https://huggingface.co/datasets/issai/MMLU-Pro_Kazakh_Russian)**<br><sub>ISSAI researchers</sub><br><sub>Open</sub> | MCQA | Machine-translated Kazakh/Russian version of MMLU-Pro, with more answer options and more challenging reasoning tasks than MMLU. | 11.4 MB | 24,064 rows; 12k per language |
 | 21 | 2025-10 | **[KazCulture](https://huggingface.co/datasets/issai/KazCulture)**<br><sub>ISSAI researchers</sub><br><sub>Gated</sub> | CQA | Human-written passage-question-answer triplets covering Kazakh traditions, music, beliefs, cuisine, games, clothing, and handicrafts. | 4.6 MB | 16,137 PQA triplets |
-| 22 | 2025-07 | **[HPLT 3.0 Kazakh](https://huggingface.co/datasets/HPLT/HPLT3.0)**<br><sub>HPLT project</sub><br><sub>Open</sub> | LM | Kazakh Cyrillic subset of HPLT 3.0, a large multilingual web-crawl corpus for language-model pretraining. | Not reported | ≈5.12M documents; ≈100.6M segments; ≈7.34B tokens |
+| 22 | 2025-07 | **[HPLT 3.0 Kazakh](https://huggingface.co/datasets/HPLT/HPLT3.0)**<br><sub>HPLT project</sub><br><sub>Open</sub> | LM | Kazakh Cyrillic subset of HPLT 3.0, a large multilingual web-crawl corpus for language-model pretraining. | 8.76 GB | ≈5.12M documents; ≈100.6M segments; ≈7.34B tokens |
 | 23 | 2025-05 | **[Qorgau](https://github.com/mbzuai-nlp/qorgau-kaz-ru-safety)**<br><sub>[MBZUAI NLP group](https://arxiv.org/abs/2502.13640)</sub><br><sub>Open</sub> | Safety | Kazakh/Russian bilingual LLM-safety evaluation benchmark spanning six high-level risk areas and 17 harm types. | 103.9 MB | 2,790 prompts |
 | 24 | 2025-03 | **[KazakhTextDuplicates v2.0](https://huggingface.co/datasets/Arailym-tleubayeva/KazakhTextDuplicates)**<br><sub>[Arailym Tleubayeva](https://www.mdpi.com/2306-5729/11/6/133)</sub><br><sub>Open</sub> | STS | Controlled multi-regime benchmark for semantic deduplication, semantic similarity, and retrieval in Kazakh, with seven deterministic duplication regimes. | 217 MB | 25,922 rows |
 | 25 | 2025-02 | **[Kazakh-IFT](https://huggingface.co/datasets/nurkhan5l/kazakh-ift)**<br><sub>[Laiyk et al.](https://arxiv.org/abs/2502.13647)</sub><br><sub>Gated</sub> | IFT | Instruction-following dataset covering Kazakhstani governance, legal process, cultural practice, and public-service knowledge, LLM-generated with GPT-4o. | 7.85 MB | ~10,600 samples |
 | 26 | 2025-01 | **[KazMMLU](https://huggingface.co/datasets/MBZUAI/KazMMLU)**<br><sub>[Togmanov et al.](https://arxiv.org/abs/2502.12829)</sub><br><sub>Open</sub> | MCQA | Kazakh/Russian multiple-choice benchmark covering regional knowledge of Kazakhstan across school and university subjects. | 17.4 MB | 23,000 total; 10,969 Kazakh |
-| 27 | 2025-01 | **[FineWeb2 Kazakh](https://huggingface.co/datasets/HuggingFaceFW/fineweb-2/viewer/kaz_Cyrl)**<br><sub>Hugging Face FineWeb team</sub><br><sub>Open</sub> | LM | Kazakh (kaz_Cyrl) configuration of FineWeb2, a deduplicated, quality-filtered multilingual web-crawl pretraining corpus. | Not reported | 3,380,000 rows (kaz_Cyrl) |
+| 27 | 2025-01 | **[FineWeb2 Kazakh](https://huggingface.co/datasets/HuggingFaceFW/fineweb-2/viewer/kaz_Cyrl)**<br><sub>Hugging Face FineWeb team</sub><br><sub>Open</sub> | LM | Kazakh (kaz_Cyrl) configuration of FineWeb2, a deduplicated, quality-filtered multilingual web-crawl pretraining corpus. | 6.86 GB | 3,380,000 rows (kaz_Cyrl) |
 | 28 | 2025 | **[KazBench-KK](https://huggingface.co/datasets/kz-transformers/kk-socio-cultural-bench-mc)**<br><sub>[KazBench-KK authors](https://aclanthology.org/2025.fieldmatters-1.4/)</sub><br><sub>Open</sub> | CQA · MCQA | Culturally grounded Kazakh multiple-choice benchmark spanning 17 domains of traditions, society, history, and contemporary knowledge. | 2.35 MB | 7,111 questions |
 | 29 | 2024-11 | **[Kazakh Dastur MC](https://huggingface.co/datasets/kz-transformers/kazakh-dastur-mc)**<br><sub>kz-transformers</sub><br><sub>Open</sub> | MCQA | Multiple-choice benchmark on Kazakh traditions and customs (dastur). | 0.3 MB | 1,005 |
 | 30 | 2024-11 | **[Kazakh Constitution MC](https://huggingface.co/datasets/kz-transformers/kazakh-constitution-mc)**<br><sub>kz-transformers</sub><br><sub>Open</sub> | MCQA | Multiple-choice benchmark on the Constitution of the Republic of Kazakhstan. | 0.1 MB | 414 |
@@ -97,15 +100,15 @@ inclusion policy and [CHANGELOG.md](CHANGELOG.md) for what's new.
 | 39 | 2024-03 | **[KazSAnDRA](https://huggingface.co/datasets/issai/kazsandra)**<br><sub>[ISSAI researchers](https://arxiv.org/abs/2403.19335)</sub><br><sub>Gated</sub> | SC | Kazakh Sentiment Analysis Dataset of Reviews and Attitudes, with numerically rated reviews supporting polarity and score classification. | 108 MB | 180,064 reviews |
 | 40 | 2024-02 | **[Kazakh–English KAZNU](https://huggingface.co/datasets/Dauren-Nur/kaz_eng_parallel)**<br><sub>Al-Farabi Kazakh National University researchers</sub><br><sub>Open</sub> | MT | Parallel Kazakh-English corpus collected from law documents and news sites. | 70.6 MB | 377,044 pairs |
 | 41 | 2023-11 | **[Kazakh Instruction v2](https://huggingface.co/datasets/AmanMussa/kazakh-instruction-v2)**<br><sub>Mussa & Mansurova</sub><br><sub>Open</sub> | IFT · QA | Kazakh instruction dataset built by machine-translating Stanford Alpaca with manual correction and added Kazakhstani names, places, history, and culture instructions. | 35.6 MB | 52,201 rows |
-| 42 | 2023-09 | **[CulturaX Kazakh](https://huggingface.co/datasets/uonlp/CulturaX)**<br><sub>[CulturaX authors](https://arxiv.org/abs/2309.09400)</sub><br><sub>Gated</sub> | LM | Kazakh subset of CulturaX, a cleaned and deduplicated multilingual web corpus for language-model pretraining. | Not reported | 2,733,982 documents; 2,802,485,195 tokens |
+| 42 | 2023-09 | **[CulturaX Kazakh](https://huggingface.co/datasets/uonlp/CulturaX)**<br><sub>[CulturaX authors](https://arxiv.org/abs/2309.09400)</sub><br><sub>Gated</sub> | LM | Kazakh subset of CulturaX, a cleaned and deduplicated multilingual web corpus for language-model pretraining. | 9.07 GB | 2,733,982 documents; 2,802,485,195 tokens |
 | 43 | 2023-09 | **[SIB-200 Kazakh](https://huggingface.co/datasets/Davlan/sib200)**<br><sub>[David Ifeoluwa Adelani](https://arxiv.org/abs/2309.07445)</sub><br><sub>Open</sub> | TC | Kazakh topic-classification configuration of SIB-200, derived from FLORES-200 and covering seven news topics. | 0.14 MB | 1,004 examples (701 train; 99 validation; 204 test) |
 | 44 | 2023-04 | **[MDBKD](https://huggingface.co/datasets/kz-transformers/multidomain-kazakh-dataset)**<br><sub>[Sagyndyk et al.](https://doi.org/10.36227/techrxiv.175942902.25827042/v1)</sub><br><sub>Open</sub> | LM | Multi-Domain Bilingual Kazakh Dataset combining CC100, Kazakh Wikipedia, kazakhBooks, Leipzig news, OSCAR CommonCrawl, and kazakhNews sources. | 24.7 GB | 24,883,808 texts; 2.09B tokens |
 | 45 | 2022-06 | **[FLORES-200 Kazakh](https://huggingface.co/datasets/facebook/flores)**<br><sub>NLLB / FLORES team</sub><br><sub>Open</sub> | MT | Kazakh (kaz_Cyrl) sentences within FLORES-200, a 200-language many-to-many machine-translation evaluation benchmark of professionally translated Wikipedia sentences. | Not reported | 3,001 sentences (dev + devtest) |
 | 46 | 2021-11 | **[KazNERD](https://huggingface.co/datasets/issai/kaznerd)**<br><sub>[Yeshpanov et al.](https://aclanthology.org/2022.lrec-1.44)</sub><br><sub>Gated</sub> | NER | Kazakh named-entity corpus of 112,702 sentences from television news text, annotated with 25 entity classes using IOB2. | 136.7 MB | 112,702 sentences; 136,333 entity annotations |
 | 47 | 2020-12 | **[KazNewsDataset](https://data.mendeley.com/datasets/hwj24p9gkh/1)**<br><sub>[Yakunin et al.](https://doi.org/10.3390/data6030031)</sub><br><sub>Open</sub> | TC · LM | Kazakhstani news corpus for social-significance identification with topic-modelling results, from open Kazakhstani news media and governmental development programs. | Not reported | 1,142,735 documents |
 | 48 | 2020-12 | **[KazRusNewsDataset](https://data.mendeley.com/datasets/2vz7vtbhn2/1)**<br><sub>[Yakunin et al.](https://doi.org/10.3390/data6030031)</sub><br><sub>Open</sub> | TC | Kazakhstani and Russian news corpus collected via web scraping from open Kazakhstani and Russian media. | Not reported | 6,261,953 documents |
-| 49 | 2020 | **[CC-100 Kazakh](https://huggingface.co/datasets/statmt/cc100)**<br><sub>[CC-Net / XLM-R team](https://arxiv.org/abs/1911.02116)</sub><br><sub>Open</sub> | LM | Explicit Kazakh (kk) monolingual subset of CC-100 reconstructed from Common Crawl for multilingual language modelling. | Not reported | Not reported |
-| 50 | 2019-06 | **[WikiANN Kazakh](https://huggingface.co/datasets/unimelb-nlp/wikiann)**<br><sub>Rahimi et al.</sub><br><sub>Open</sub> | NER | Kazakh (kk) split of WikiANN / PAN-X, a Wikipedia-derived multilingual named-entity-recognition dataset with LOC/PER/ORG IOB2 tags. | Not reported | Not reported (kk split) |
+| 49 | 2020 | **[CC-100 Kazakh](https://huggingface.co/datasets/statmt/cc100)**<br><sub>[CC-Net / XLM-R team](https://arxiv.org/abs/1911.02116)</sub><br><sub>Open</sub> | LM | Explicit Kazakh (kk) monolingual subset of CC-100 reconstructed from Common Crawl for multilingual language modelling. | 889 MB | Not reported |
+| 50 | 2019-06 | **[WikiANN Kazakh](https://huggingface.co/datasets/unimelb-nlp/wikiann)**<br><sub>Rahimi et al.</sub><br><sub>Open</sub> | NER | Kazakh (kk) split of WikiANN / PAN-X, a Wikipedia-derived multilingual named-entity-recognition dataset with LOC/PER/ORG IOB2 tags. | 0.21 MB | Not reported (kk split) |
 | 51 | 2015-06 | **[UD Kazakh KTB](https://universaldependencies.org/treebanks/kk_ktb/)**<br><sub>Makazhanov et al.</sub><br><sub>Open</sub> | POS | Kazakh Universal Dependencies treebank drawn from Wikipedia, folk tales, the UDHR, news, and phrasebook sentences. | 0.4 MB | 1,078 sentences; 10,536 tokens |
 | 52 | Not reported | **[kaz-text-for-lm-normalized](https://huggingface.co/datasets/farabi-lab/kaz-text-for-lm-normalized)**<br><sub>Al-Farabi Kazakh National University</sub><br><sub>Gated</sub> | LM | Normalized Kazakh language-modelling corpus combining news, literature, academic/dissertation text, and an August-2024 Kazakh Wikipedia snapshot. | 5.99 GB | Not reported |
 | 53 | Not reported | **[Uzbek-Kazakh Parallel Corpora](https://huggingface.co/datasets/Sanatbek/uzbek-kazakh-parallel-corpora)**<br><sub>[Sanatbek](https://doi.org/10.57967/hf/1748)</sub><br><sub>Open</sub> | MT | Expert-translated Uzbek-Kazakh parallel sentence corpus covering literature and web news. | 34.2 MB | 133,877 pairs |
@@ -114,7 +117,6 @@ inclusion policy and [CHANGELOG.md](CHANGELOG.md) for what's new.
 ## Speech and audio
 
 <!-- SPEECH_SECTION:START -->
-
 | ID | Released | Dataset | Task | Description | Storage | Samples |
 |---:|---|---|---|---|---|---|
 | 1 | 2026-08 | **[YO-CPT-kk](https://huggingface.co/datasets/NCSpeech/YO-CPT-kk)**<br><sub>NCSpeech</sub><br><sub>Open</sub> | ASR · TTS · SV | YouTube-oriented Kazakh continual-pretraining corpus spanning TTS-grade, ASR, and speaker-verification use cases. | 100.0 GB | 600 h; 156,903 utterances |
@@ -136,7 +138,7 @@ inclusion policy and [CHANGELOG.md](CHANGELOG.md) for what's new.
 | 17 | 2022-09 | **[Kazakh Speech Corpus 2 (KSC2)](https://huggingface.co/datasets/issai/Kazakh_Speech_Corpus_2)**<br><sub>[Mussakhojayeva et al.](https://www.isca-archive.org/interspeech_2022/mussakhojayeva22_interspeech.html)</sub><br><sub>Open</sub> | ASR | Industrial-scale open-source Kazakh speech corpus subsuming KSC and KazakhTTS2, with additional TV, radio, senate, and podcast data, including Kazakh-Russian code-switching. | 80.8 GB | ≈1,200 h; 600,000+ utterances |
 | 18 | 2022-01 | **[KazakhTTS2](https://issai.nu.edu.kz/tts2-eng/)**<br><sub>[ISSAI researchers](https://arxiv.org/abs/2201.05771)</sub><br><sub>Open</sub> | TTS | Expanded five-speaker Kazakh TTS corpus, extending the original KazakhTTS with more data, speakers, and topics. | 35.7 GB | 271 h; 5 speakers |
 | 19 | 2021-04 | **[KazakhTTS](https://huggingface.co/datasets/issai/KazakhTTS)**<br><sub>[Mussakhojayeva et al.](https://aclanthology.org/2022.lrec-1.578.pdf)</sub><br><sub>Open</sub> | TTS | Open-source Kazakh text-to-speech corpus, later expanded by KazakhTTS2. | 11.9 GB | ≈93 h; 42,000 utterances |
-| 20 | 2020-09 | **[Kazakh Speech Corpus (KSC)](https://issai.nu.edu.kz/kz-speech-corpus/)**<br><sub>[ISSAI researchers](https://arxiv.org/abs/2009.10334)</sub><br><sub>Open</sub> | ASR | Crowdsourced Kazakh speech corpus with an initial ASR baseline. | Not reported | ≈332 h; 153,000 utterances |
+| 20 | 2020-09 | **[Kazakh Speech Corpus (KSC)](https://openslr.org/102/)**<br><sub>[ISSAI researchers](https://arxiv.org/abs/2009.10334)</sub><br><sub>Open</sub> | ASR | Crowdsourced Kazakh speech corpus with an initial ASR baseline. | 19 GB | ≈332 h; 153,000 utterances |
 <!-- SPEECH_SECTION:END -->
 
 ### English-Russian-Kazakh comparison by speech task
@@ -155,7 +157,6 @@ language**, not language-only hours, and possible cross-corpus overlap remains.
 ## Vision, OCR, and multimodal
 
 <!-- VISION_SECTION:START -->
-
 | ID | Released | Dataset | Task | Description | Storage | Samples |
 |---:|---|---|---|---|---|---|
 | 1 | 2026-06 | **[Darmm Kazakh Cyrillic OCR](https://huggingface.co/datasets/Darmm/darmm-ocr-kazakh-cyrillic)**<br><sub>Rakhat Zhumabek</sub><br><sub>Open</sub> | OCR | Synthetic printed-text OCR dataset for Kazakh Cyrillic, rendered from Kazakh Wikipedia text with Kazakh-specific characters (Ә, Ғ, Қ, Ң, Ө, Ұ, Ү, Һ, І). | 2.3 GB | 200,000 images (100k word-level + 100k line-level) |
@@ -168,7 +169,7 @@ language**, not language-only hours, and possible cross-corpus overlap remains.
 | 8 | 2025-12 | **[AI2D Kazakh](https://huggingface.co/datasets/issai/AI2D_Kazakh)**<br><sub>ISSAI researchers</sub><br><sub>Open</sub> | DQA | Kazakh translation of AI2D diagram-question-answering data. | 465.0 MB | 3,088 |
 | 9 | 2025-12 | **[MathVista Kazakh](https://huggingface.co/datasets/issai/MathVista_Kazakh)**<br><sub>ISSAI researchers</sub><br><sub>Open</sub> | VMR | Kazakh translation of MathVista for visual math reasoning. | 52.6 MB | 1,000 |
 | 10 | 2025-12 | **[OCRBench Kazakh](https://huggingface.co/datasets/issai/OCRBench-Kazakh)**<br><sub>ISSAI researchers</sub><br><sub>Open</sub> | OCR · VQA | Kazakh OCR and visual-QA benchmark translated from OCRBench. | 28.7 MB | 441 |
-| 11 | 2025-12 | **[QazLip](https://doi.org/10.7910/DVN/VIP1J8)**<br><sub>[Zhalgas, A. et al.](https://doi.org/10.1038/s41597-025-06193-0)</sub><br><sub>Open</sub> | VSR | Kazakh lip-movement command corpus of 102 nouns recorded from 26 participants at 1080p/60fps for visual speech recognition. | Not reported | ≈34,000 videos; 1.2M frames |
+| 11 | 2025-12 | **[QazLip](https://doi.org/10.7910/DVN/VIP1J8)**<br><sub>[Zhalgas, A. et al.](https://doi.org/10.1038/s41597-025-06193-0)</sub><br><sub>Open</sub> | VSR | Kazakh lip-movement command corpus of 102 nouns recorded from 26 participants at 1080p/60fps for visual speech recognition. | 4.41 GB | ≈34,000 videos; 1.2M frames |
 | 12 | 2021-10 | **[KOHTD](https://github.com/abdoelsayed2016/KOHTD)**<br><sub>[Toiganbayeva et al.](https://doi.org/10.1016/j.image.2022.116827)</sub><br><sub>Application</sub> | HTR | Kazakh Offline Handwritten Text Dataset of exam papers (99% Kazakh, 1% Russian). | 2.6 MB | 3,000 exam papers; 140,335+ segmented images; ≈922,010 symbols |
 | 13 | 2020-07 | **[HKR](https://github.com/abdoelsayed2016/HKR_Dataset)**<br><sub>[Nurseitov et al.](https://doi.org/10.1007/s11042-021-11399-6)</sub><br><sub>Application</sub> | HTR | Handwritten Kazakh and Russian database (HKR), predominantly Russian (≈95%) with a Kazakh minority share (≈5%). | Not reported | 1,400+ forms; ≈63,000 sentences; ≈715,699 symbols (≈5% Kazakh) |
 <!-- VISION_SECTION:END -->
