@@ -1,0 +1,2166 @@
+# Canonical dataset registry for awesome-kaz-datasets.
+# README tables and visualizations are generated from this file — do not hand-edit the README's
+# generated blocks. See CONTRIBUTING.md for field definitions and the "released" date rule.
+#
+# access:  open | gated | application | paid | restricted | unavailable
+# kind:    original | benchmark | translation | derivative | multilingual | mirror
+# origin:  native | human-annotated | human-translated | machine-translated | synthetic | web-crawl | mixed
+# section: "Text, NLP, and LLM" | "Speech and audio" | "Vision, OCR, and multimodal"
+
+datasets:
+
+  # ---------------------------------------------------------------------
+  # Text, NLP, and LLM
+  # ---------------------------------------------------------------------
+
+  - id: kazmmlu
+    name: KazMMLU
+    released: "2025-01"
+    authors:
+      - name: Mukhammed Togmanov
+      - name: Nurdaulet Mukhituly
+      - name: Fajri Koto
+    organization:
+      - name: MBZUAI
+        url: https://mbzuai.ac.ae/
+    description: Kazakh/Russian multiple-choice benchmark covering regional knowledge of Kazakhstan across school and university subjects.
+    section: Text, NLP, and LLM
+    tasks: [Multiple-choice QA]
+    languages: [kk, ru]
+    scale: {value: "23,000 total; 10,969 Kazakh", unit: questions, scope: null}
+    storage: {value: 17.4, unit: MB, scope: null}
+    access: open
+    license: CC-BY-NC-SA-4.0
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/MBZUAI/KazMMLU
+      paper: https://arxiv.org/abs/2502.12829
+    paper: {title: "KazMMLU: Evaluating Language Models on Kazakh, Russian, and Regional Knowledge of Kazakhstan", venue: arXiv, year: 2025}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: qorgau
+    name: Qorgau
+    released: "2025-05"
+    authors:
+      - name: MBZUAI NLP group
+    organization:
+      - name: MBZUAI
+        url: https://mbzuai.ac.ae/
+    description: Kazakh/Russian bilingual LLM-safety evaluation benchmark spanning six high-level risk areas and 17 harm types.
+    section: Text, NLP, and LLM
+    tasks: [Safety evaluation]
+    languages: [kk, ru]
+    scale: {value: "2,790 prompts", unit: prompts, scope: null}
+    storage: {value: 103.9, unit: MB, scope: "GitHub repository"}
+    access: open
+    license: "Not reported"
+    kind: benchmark
+    origin: [native, human-annotated]
+    links:
+      dataset: https://github.com/mbzuai-nlp/qorgau-kaz-ru-safety
+      code: https://github.com/mbzuai-nlp/qorgau-kaz-ru-safety
+      paper: https://arxiv.org/abs/2502.13640
+    paper: {title: "Qorgau: Evaluating LLM Safety in Kazakh-Russian Bilingual Contexts", venue: arXiv, year: 2025}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Release date corrected: GitHub repo (the actual public artifact) was created 2025-05-24, ~3 months after the February 2025 arXiv paper submission that the previous entry used as the release date."
+
+  - id: kazculture
+    name: KazCulture
+    released: "2025-10"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Human-written passage-question-answer triplets covering Kazakh traditions, music, beliefs, cuisine, games, clothing, and handicrafts.
+    section: Text, NLP, and LLM
+    tasks: [Cultural QA]
+    languages: [kk]
+    scale: {value: "16,137 PQA triplets", unit: triplets, scope: null}
+    storage: {value: 4.6, unit: MB, scope: null}
+    access: gated
+    license: CC-BY-4.0
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/KazCulture
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Access corrected to gated (HF card requires accepting conditions); previously unmarked."
+
+  - id: ragbench-kazakh
+    name: RAGBench Kazakh
+    released: "2026-03"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Kazakh translation of RAGBench for evaluating retrieval-augmented-generation systems across biomedical, legal, financial, and general-knowledge domains.
+    section: Text, NLP, and LLM
+    tasks: [Retrieval / RAG]
+    languages: [kk]
+    scale: {value: "11,431", unit: examples, scope: null}
+    storage: {value: 31.2, unit: MB, scope: null}
+    access: open
+    license: CC-BY-4.0
+    kind: translation
+    origin: [machine-translated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/RAGBench_Kazakh
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Storage corrected to 31.2 MB (card-reported repo size) from a previously listed 58.3 MB."
+
+  - id: ifbench-kazakh
+    name: IFBench Kazakh
+    released: "2026-03"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Machine-translated Kazakh instruction-following benchmark evaluating adherence to explicit constraints.
+    section: Text, NLP, and LLM
+    tasks: [Instruction following]
+    languages: [kk]
+    scale: {value: "444", unit: examples, scope: null}
+    storage: {value: 1.3, unit: MB, scope: null}
+    access: open
+    license: Apache-2.0
+    kind: translation
+    origin: [machine-translated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/IFBench_Kazakh
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: freshqa-kazakh
+    name: FreshQA Kazakh
+    released: "2026-06"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Bilingual (English/Kazakh) benchmark of factual questions with false premises, for testing how models handle incorrect assumptions.
+    section: Text, NLP, and LLM
+    tasks: [Question answering]
+    languages: [kk, en]
+    scale: {value: "600", unit: questions, scope: null}
+    storage: {value: 0.4, unit: MB, scope: null}
+    access: open
+    license: "Not reported"
+    kind: translation
+    origin: [machine-translated, human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/freshqa_kazakh
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: defan-kazakh
+    name: DeFAn Kazakh
+    released: "2026-06"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Machine-translated Kazakh/English version of the DefAn hallucination benchmark for definitive question answering.
+    section: Text, NLP, and LLM
+    tasks: [Question answering]
+    languages: [kk, en]
+    scale: {value: "3,178 questions", unit: questions, scope: null}
+    storage: {value: 0.2, unit: MB, scope: null}
+    access: open
+    license: MIT
+    kind: translation
+    origin: [machine-translated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/defan_kazakh
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: kaz-open-retrieval-benchmark
+    name: Kazakh Open Retrieval Benchmark
+    released: "2026-06"
+    authors:
+      - name: Timur Seidalin
+    organization: []
+    description: Evidence-based Kazakh information-retrieval benchmark built from Kazakh Wikipedia, showing morphological stemming outperforms multilingual embeddings.
+    section: Text, NLP, and LLM
+    tasks: [Retrieval / RAG, Question answering]
+    languages: [kk]
+    scale: {value: "300 queries; 8,370 passages", unit: mixed, scope: null}
+    storage: {value: 14.6, unit: MB, scope: null}
+    access: open
+    license: CC-BY-SA-4.0
+    kind: original
+    origin: [native, web-crawl]
+    links:
+      dataset: https://huggingface.co/datasets/Tim2190/kaz-rag-search-benchmark
+      code: https://github.com/Tim2190/Kaz-RAG-search-benchmark
+      doi: https://doi.org/10.5281/zenodo.20605663
+    paper: {title: "Kazakh Open Retrieval Benchmark", venue: Zenodo preprint, year: 2026}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Added paper/code/DOI links, previously absent."
+
+  - id: kazlawbench
+    name: KazLawBench
+    released: "2026-05"
+    authors:
+      - name: Batyr Raiym
+    organization: []
+    description: First bilingual (Russian + Kazakh) legal-LLM benchmark for Kazakhstan, spanning statutory codes and de-identified Supreme Court judgments across seven task types.
+    section: Text, NLP, and LLM
+    tasks: [Legal QA]
+    languages: [kk, ru]
+    scale: {value: "3,098", unit: questions, scope: null}
+    storage: {value: 9.9, unit: MB, scope: null}
+    access: gated
+    license: CC-BY-NC-SA-4.0
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/raiym76/kazlawbench
+    paper: {title: "KazLawBench", venue: "under review, NLPCC 2026", year: 2026}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: zerde-qa-50k
+    name: Zerde-QA-50K
+    released: "2026-04"
+    authors:
+      - name: kurumikz
+    organization: []
+    description: Synthetic Kazakh QA collection spanning 20+ academic domains for instruction tuning and low-resource NLP research.
+    section: Text, NLP, and LLM
+    tasks: [Instruction tuning, Question answering]
+    languages: [kk]
+    scale: {value: "51,422 pairs", unit: pairs, scope: null}
+    storage: {value: 156.2, unit: MB, scope: null}
+    access: open
+    license: ODC-By-1.0
+    kind: original
+    origin: [synthetic]
+    links:
+      dataset: https://huggingface.co/datasets/kurumikz/Zerde-QA-50K
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: kazakh-dastur-mc
+    name: Kazakh Dastur MC
+    released: "2024-11"
+    authors: []
+    organization:
+      - name: kz-transformers
+    description: Multiple-choice benchmark on Kazakh traditions and customs (dastur).
+    section: Text, NLP, and LLM
+    tasks: [Multiple-choice QA]
+    languages: [kk]
+    scale: {value: "1,005", unit: questions, scope: null}
+    storage: {value: 0.3, unit: MB, scope: null}
+    access: open
+    license: Apache-2.0
+    kind: original
+    origin: [native]
+    links:
+      dataset: https://huggingface.co/datasets/kz-transformers/kazakh-dastur-mc
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: kazakh-constitution-mc
+    name: Kazakh Constitution MC
+    released: "2024-11"
+    authors: []
+    organization:
+      - name: kz-transformers
+    description: Multiple-choice benchmark on the Constitution of the Republic of Kazakhstan.
+    section: Text, NLP, and LLM
+    tasks: [Multiple-choice QA]
+    languages: [kk]
+    scale: {value: "414", unit: questions, scope: null}
+    storage: {value: 0.1, unit: MB, scope: null}
+    access: open
+    license: Apache-2.0
+    kind: original
+    origin: [native]
+    links:
+      dataset: https://huggingface.co/datasets/kz-transformers/kazakh-constitution-mc
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: kazakh-unt
+    name: Kazakh UNT
+    released: "2024-11"
+    authors: []
+    organization:
+      - name: kz-transformers
+    description: Multiple-choice benchmark built from the Kazakh Unified National Testing exam.
+    section: Text, NLP, and LLM
+    tasks: [Multiple-choice QA]
+    languages: [kk]
+    scale: {value: "14,850", unit: questions, scope: null}
+    storage: {value: 4.4, unit: MB, scope: null}
+    access: open
+    license: Apache-2.0
+    kind: original
+    origin: [native]
+    links:
+      dataset: https://huggingface.co/datasets/kz-transformers/kazakh-unified-national-testing-mc
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: mmlu-translated-kk
+    name: MMLU Translated KK
+    released: "2024-11"
+    authors: []
+    organization:
+      - name: kz-transformers
+    description: Machine-translated Kazakh version of MMLU.
+    section: Text, NLP, and LLM
+    tasks: [Multiple-choice QA]
+    languages: [kk]
+    scale: {value: "15,854", unit: questions, scope: null}
+    storage: {value: 11.4, unit: MB, scope: null}
+    access: open
+    license: Apache-2.0
+    kind: translation
+    origin: [machine-translated]
+    links:
+      dataset: https://huggingface.co/datasets/kz-transformers/mmlu-translated-kk
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: gsm8k-kk-translated
+    name: GSM8K Translated KK
+    released: "2024-11"
+    authors: []
+    organization:
+      - name: kz-transformers
+    description: Machine-translated Kazakh version of GSM8K grade-school math word problems.
+    section: Text, NLP, and LLM
+    tasks: [Math reasoning]
+    languages: [kk]
+    scale: {value: "8,792", unit: problems, scope: null}
+    storage: {value: 4.2, unit: MB, scope: null}
+    access: open
+    license: Apache-2.0
+    kind: translation
+    origin: [machine-translated]
+    links:
+      dataset: https://huggingface.co/datasets/kz-transformers/gsm8k-kk-translated
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: kazqad
+    name: KazQAD
+    released: "2024-04"
+    authors:
+      - name: Rustem Yeshpanov
+      - name: Pavel Efimov
+      - name: Leonid Boytsov
+      - name: Ardak Shalkarbayuli
+      - name: Pavel Braslavski
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Kazakh open-domain QA dataset supporting reading comprehension, full ODQA, and information-retrieval settings, built from translated Natural Questions and the Kazakh UNT exam.
+    section: Text, NLP, and LLM
+    tasks: [Question answering, Retrieval / RAG]
+    languages: [kk]
+    scale: {value: "6,000 questions; 12,700 passages", unit: mixed, scope: null}
+    storage: {value: 281.7, unit: MB, scope: null}
+    access: gated
+    license: CC-BY-SA-4.0
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/kazqad
+      paper: https://arxiv.org/abs/2404.04487
+    paper: {title: "KazQAD: Kazakh Open-Domain Question Answering Dataset", venue: arXiv, year: 2024}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Access corrected to gated (HF requires contact-info agreement); previously unmarked."
+
+  - id: kazparc
+    name: KazParC
+    released: "2024-03"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Kazakh parallel corpus covering Kazakh, English, Russian, and Turkish across proverbs, literature, news, TED talks, legal documents, and UN publications, plus a large synthetic (SynC) extension.
+    section: Text, NLP, and LLM
+    tasks: [Machine translation]
+    languages: [kk, en, ru, tr]
+    scale: {value: "372,000 sentence pairs (+ 1.8M synthetic)", unit: pairs, scope: null}
+    storage: {value: 25.9, unit: GB, scope: null}
+    access: gated
+    license: "Not reported"
+    kind: original
+    origin: [native, human-translated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/kazparc
+      code: https://github.com/IS2AI/KazParC
+      paper: https://arxiv.org/abs/2403.19399
+    paper: {title: "KazParC: Kazakh Parallel Corpus for Machine Translation", venue: arXiv, year: 2024}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Access corrected to gated (HF requires contact-info agreement); previously unmarked. Storage (25.9 GB) independently confirmed via HF API usedStorage."
+
+  - id: kaz-rus-kaznu
+    name: Kazakh–Russian KAZNU
+    released: "2024-03"
+    authors:
+      - name: Dauren-Nur
+    organization:
+      - name: Al-Farabi Kazakh National University
+    description: Parallel Kazakh-Russian corpus of governmental and official documents.
+    section: Text, NLP, and LLM
+    tasks: [Machine translation]
+    languages: [kk, ru]
+    scale: {value: "86,453 pairs", unit: pairs, scope: null}
+    storage: {value: 23.4, unit: MB, scope: null}
+    access: open
+    license: "Not reported"
+    kind: original
+    origin: [native]
+    links:
+      dataset: https://huggingface.co/datasets/Dauren-Nur/kaz_rus_parallel_corpora_KAZNU
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: kaz-eng-kaznu
+    name: Kazakh–English KAZNU
+    released: "2024-02"
+    authors:
+      - name: Al-Farabi Kazakh National University researchers
+    organization:
+      - name: Al-Farabi Kazakh National University
+    description: Parallel Kazakh-English corpus collected from law documents and news sites.
+    section: Text, NLP, and LLM
+    tasks: [Machine translation]
+    languages: [kk, en]
+    scale: {value: "377,044 pairs", unit: pairs, scope: null}
+    storage: {value: 70.6, unit: MB, scope: null}
+    access: open
+    license: "Not reported"
+    kind: original
+    origin: [native]
+    links:
+      dataset: https://huggingface.co/datasets/Dauren-Nur/kaz_eng_parallel
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Storage corrected to 70.6 MB (card-reported) from a previously listed 196.5 MB."
+
+  - id: mdbkd
+    name: MDBKD
+    released: "2023-04"
+    authors:
+      - name: Beksultan Sagyndyk
+      - name: Sanzhar Murzakhmetov
+      - name: Kirill Yakunin
+    organization:
+      - name: kz-transformers
+    description: Multi-Domain Bilingual Kazakh Dataset combining CC100, Kazakh Wikipedia, kazakhBooks, Leipzig news, OSCAR CommonCrawl, and kazakhNews sources.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk, ru]
+    scale: {value: "24,883,808 texts; 2.09B tokens", unit: texts, scope: null}
+    storage: {value: 24.7, unit: GB, scope: null}
+    access: open
+    license: Apache-2.0
+    kind: original
+    origin: [native, web-crawl, mixed]
+    links:
+      dataset: https://huggingface.co/datasets/kz-transformers/multidomain-kazakh-dataset
+      doi: https://doi.org/10.36227/techrxiv.175942902.25827042/v1
+    paper: {title: "Multi-Domain Bilingual Kazakh Dataset", venue: TechRxiv preprint, year: 2025}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Release date (2023-04) confirmed via HF API createdAt; an earlier read mistook the 2025 TechRxiv preprint/lastModified date for the release date."
+
+  - id: kaznerd
+    name: KazNERD
+    released: "2021-11"
+    authors:
+      - name: Rustem Yeshpanov
+      - name: Yerbolat Khassanov
+      - name: Huseyin Atakan Varol
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Kazakh named-entity corpus of 112,702 sentences from television news text, annotated with 25 entity classes using IOB2.
+    section: Text, NLP, and LLM
+    tasks: [Named entity recognition]
+    languages: [kk]
+    scale: {value: "112,702 sentences; 136,333 entity annotations", unit: mixed, scope: null}
+    storage: {value: 136.7, unit: MB, scope: null}
+    access: gated
+    license: CC-BY-4.0
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/kaznerd
+      code: https://github.com/IS2AI/KazNERD
+      paper: https://aclanthology.org/2022.lrec-1.44
+    paper: {title: "KazNERD: Kazakh Named Entity Recognition Dataset", venue: LREC, year: 2022}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Access corrected to gated (HF requires contact-info agreement); previously unmarked. Release date (2021-11) confirmed via GitHub repo created_at, independent of a later 2025 HF mirror upload."
+
+  - id: kaznewsdataset
+    name: KazNewsDataset
+    released: "2020-12"
+    authors:
+      - name: Kirill Yakunin
+      - name: Ravil Muhamedyev
+      - name: Rustam Mussabayev
+    organization: []
+    description: Kazakhstani news corpus for social-significance identification with topic-modelling results, from open Kazakhstani news media and governmental development programs.
+    section: Text, NLP, and LLM
+    tasks: [Text classification, Language modelling / pretraining]
+    languages: [kk, ru]
+    scale: {value: "1,142,735 documents", unit: documents, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: CC-BY-4.0
+    kind: original
+    origin: [native, web-crawl]
+    links:
+      dataset: https://data.mendeley.com/datasets/hwj24p9gkh/1
+      doi: https://doi.org/10.17632/hwj24p9gkh.1
+      paper: https://doi.org/10.3390/data6030031
+    paper: {title: "Corpus of Kazakh and Russian News Datasets", venue: "Data (MDPI)", year: 2021}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "MAJOR CORRECTION: scale was previously listed as 4,365 articles; the Mendeley record of record explicitly states 1,142,735 documents (12 x ~100,000-document CSV files)."
+
+  - id: kazrusnewsdataset
+    name: KazRusNewsDataset
+    released: "2020-12"
+    authors:
+      - name: Kirill Yakunin
+      - name: Ravil Muhamedyev
+      - name: Rustam Mussabayev
+    organization: []
+    description: Kazakhstani and Russian news corpus collected via web scraping from open Kazakhstani and Russian media.
+    section: Text, NLP, and LLM
+    tasks: [Text classification]
+    languages: [kk, ru]
+    scale: {value: "6,261,953 documents", unit: documents, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: CC-BY-4.0
+    kind: original
+    origin: [native, web-crawl]
+    links:
+      dataset: https://data.mendeley.com/datasets/2vz7vtbhn2/1
+      doi: https://doi.org/10.17632/2vz7vtbhn2.1
+      paper: https://doi.org/10.3390/data6030031
+    paper: {title: "Corpus of Kazakh and Russian News Datasets", venue: "Data (MDPI)", year: 2021}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "MAJOR CORRECTION: scale was previously listed as 20,409 articles; the Mendeley record of record explicitly states 6,261,953 documents (26 x ~250,000-document CSV files)."
+
+  - id: ud-kazakh-ktb
+    name: UD Kazakh KTB
+    released: "2015-06"
+    authors:
+      - name: Aibek Makazhanov
+      - name: Jonathan North Washington
+      - name: Francis Tyers
+    organization:
+      - name: Universal Dependencies
+        url: https://universaldependencies.org/
+    description: Kazakh Universal Dependencies treebank drawn from Wikipedia, folk tales, the UDHR, news, and phrasebook sentences.
+    section: Text, NLP, and LLM
+    tasks: [Dependency parsing / POS tagging]
+    languages: [kk]
+    scale: {value: "1,078 sentences; 10,536 tokens", unit: mixed, scope: null}
+    storage: {value: 0.4, unit: MB, scope: "GitHub repository"}
+    access: open
+    license: CC-BY-SA-4.0
+    kind: original
+    origin: [native, mixed]
+    links:
+      dataset: https://universaldependencies.org/treebanks/kk_ktb/
+      code: https://github.com/UniversalDependencies/UD_Kazakh-KTB
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: kazsandra
+    name: KazSAnDRA
+    released: "2024-03"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Kazakh Sentiment Analysis Dataset of Reviews and Attitudes, with numerically rated reviews supporting polarity and score classification.
+    section: Text, NLP, and LLM
+    tasks: [Sentiment classification]
+    languages: [kk]
+    scale: {value: "180,064 reviews", unit: reviews, scope: null}
+    storage: {value: 108, unit: MB, scope: null}
+    access: gated
+    license: CC-BY-4.0
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/kazsandra
+      paper: https://arxiv.org/abs/2403.19335
+    paper: {title: "KazSAnDRA: Kazakh Sentiment Analysis Dataset of Reviews and Attitudes", venue: arXiv, year: 2024}
+    added_to_catalog: "2026-08-19"
+    last_verified: "2026-08-19"
+
+  - id: movie-reviews-kz-100k
+    name: 100k Movie Reviews from Kazakhstan
+    released: "2026-05"
+    authors:
+      - name: Rustem Yeshpanov
+    organization: []
+    description: 100,502 kino.kz movie reviews (2001-2025) manually annotated for language ID and sentiment, capturing Russian, Kazakh, and code-switched Kazakh-Russian text.
+    section: Text, NLP, and LLM
+    tasks: [Sentiment classification]
+    languages: [kk, ru]
+    scale: {value: "100,502 reviews", unit: reviews, scope: null}
+    storage: {value: 57.7, unit: MB, scope: null}
+    access: gated
+    license: CC-BY-4.0
+    kind: original
+    origin: [native, mixed, human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/yeshpanovrustem/100k_movie_reviews_from_kz
+      paper: https://arxiv.org/abs/2605.08600
+    paper: {title: "100,000+ Movie Reviews from Kazakhstan: Russian, Kazakh, and Code-Switched Texts", venue: arXiv, year: 2026}
+    added_to_catalog: "2026-08-19"
+    last_verified: "2026-08-19"
+
+  - id: kazakh-ift
+    name: Kazakh-IFT
+    released: "2025-02"
+    authors:
+      - name: Nurkhan Laiyk
+      - name: Daniil Orel
+      - name: Rituraj Joshi
+      - name: Maiya Goloburda
+      - name: Yuxia Wang
+      - name: Preslav Nakov
+      - name: Fajri Koto
+    organization:
+      - name: MBZUAI
+        url: https://mbzuai.ac.ae/
+    description: Instruction-following dataset covering Kazakhstani governance, legal process, cultural practice, and public-service knowledge, LLM-generated with GPT-4o.
+    section: Text, NLP, and LLM
+    tasks: [Instruction tuning]
+    languages: [kk]
+    scale: {value: "~10,600 samples", unit: samples, scope: null}
+    storage: {value: 7.85, unit: MB, scope: null}
+    access: gated
+    license: CC-BY-NC-SA-4.0
+    kind: original
+    origin: [synthetic]
+    links:
+      dataset: https://huggingface.co/datasets/nurkhan5l/kazakh-ift
+      paper: https://arxiv.org/abs/2502.13647
+    paper: {title: "Instruction Tuning on Public Government and Cultural Data for Low-Resource Language: a Case Study in Kazakh", venue: arXiv, year: 2025}
+    added_to_catalog: "2026-08-19"
+    last_verified: "2026-08-19"
+
+  - id: kaz-text-for-lm-normalized
+    name: kaz-text-for-lm-normalized
+    released: "Not reported"
+    authors: []
+    organization:
+      - name: Al-Farabi Kazakh National University
+    description: Normalized Kazakh language-modelling corpus combining news, literature, academic/dissertation text, and an August-2024 Kazakh Wikipedia snapshot.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk]
+    scale: {value: "Not reported", unit: null, scope: null}
+    storage: {value: 5.99, unit: GB, scope: null}
+    access: gated
+    license: "Not reported"
+    kind: derivative
+    origin: [native, web-crawl, mixed]
+    derivative_of: mdbkd
+    links:
+      dataset: https://huggingface.co/datasets/farabi-lab/kaz-text-for-lm-normalized
+    paper: null
+    added_to_catalog: "2026-08-19"
+    last_verified: "2026-08-19"
+    notes: "HF card states this corpus extends kz-transformers/multidomain-kazakh-dataset (MDBKD); no independently verifiable release date found."
+
+  - id: kazakh-instruction-v2
+    name: Kazakh Instruction v2
+    released: "2023-11"
+    authors:
+      - name: Aman Mussa
+      - name: Madina Mansurova
+    organization:
+      - name: Al-Farabi Kazakh National University
+    description: Kazakh instruction dataset built by machine-translating Stanford Alpaca with manual correction and added Kazakhstani names, places, history, and culture instructions.
+    section: Text, NLP, and LLM
+    tasks: [Instruction tuning, Question answering]
+    languages: [kk]
+    scale: {value: "52,201 rows", unit: rows, scope: null}
+    storage: {value: 35.6, unit: MB, scope: null}
+    access: open
+    license: MIT
+    kind: translation
+    origin: [machine-translated, human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/AmanMussa/kazakh-instruction-v2
+    paper: {title: "Kazakh Instruction Dataset for Low-Resource LLM Fine-Tuning", venue: "International Congress on Information and Communication Technology", year: 2025}
+    added_to_catalog: "2026-08-19"
+    last_verified: "2026-08-19"
+
+  - id: kazakh-text-duplicates
+    name: KazakhTextDuplicates v2.0
+    released: "2025-03"
+    authors:
+      - name: Arailym Tleubayeva
+    organization: []
+    description: Controlled multi-regime benchmark for semantic deduplication, semantic similarity, and retrieval in Kazakh, with seven deterministic duplication regimes.
+    section: Text, NLP, and LLM
+    tasks: [Text deduplication / similarity]
+    languages: [kk]
+    scale: {value: "25,922 rows", unit: rows, scope: null}
+    storage: {value: 217, unit: MB, scope: null}
+    access: open
+    license: CC-BY-4.0
+    kind: benchmark
+    origin: [native, synthetic]
+    links:
+      dataset: https://huggingface.co/datasets/Arailym-tleubayeva/KazakhTextDuplicates
+      paper: https://www.mdpi.com/2306-5729/11/6/133
+    paper: {title: "KazakhTextDuplicates: A Controlled Multi-Regime Benchmark for Semantic Deduplication, Semantic Similarity, and Retrieval in Kazakh", venue: "Data (MDPI)", year: 2026}
+    added_to_catalog: "2026-08-19"
+    last_verified: "2026-08-19"
+
+  - id: textual-foundations-of-justice
+    name: Textual Foundations of Justice
+    released: "2024-05"
+    authors:
+      - name: Iskander Akhmetov
+      - name: Alikhan Zhamankhan
+      - name: Nur Zhetesov
+      - name: Aruzhan Kubaeva
+    organization:
+      - name: Kazakh-British Technical University
+    description: All current laws of the Republic of Kazakhstan as of 2024-04-01, in Russian and Kazakh, for legal-QA model training.
+    section: Text, NLP, and LLM
+    tasks: [Legal QA, Language modelling / pretraining]
+    languages: [kk, ru]
+    scale: {value: "Not reported", unit: laws, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: CC-BY-4.0
+    kind: original
+    origin: [native]
+    links:
+      dataset: https://data.mendeley.com/datasets/jdpc5658nh/3
+      doi: https://doi.org/10.17632/jdpc5658nh.3
+    paper: null
+    added_to_catalog: "2026-08-19"
+    last_verified: "2026-08-19"
+
+  - id: mmlu-pro-kazakh-russian
+    name: MMLU-Pro Kazakh/Russian
+    released: "2025-12"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Machine-translated Kazakh/Russian version of MMLU-Pro, with more answer options and more challenging reasoning tasks than MMLU.
+    section: Text, NLP, and LLM
+    tasks: [Multiple-choice QA]
+    languages: [kk, ru]
+    scale: {value: "24,064 rows; 12k per language", unit: rows, scope: null}
+    storage: {value: 11.4, unit: MB, scope: null}
+    access: open
+    license: MIT
+    kind: translation
+    origin: [machine-translated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/MMLU-Pro_Kazakh_Russian
+    paper: null
+    added_to_catalog: "2026-08-19"
+    last_verified: "2026-08-19"
+
+  - id: fineweb2-kazakh
+    name: FineWeb2 Kazakh
+    released: "2025-01"
+    authors:
+      - name: Hugging Face FineWeb team
+    organization:
+      - name: Hugging Face
+        url: https://huggingface.co/
+    description: Kazakh (kaz_Cyrl) configuration of FineWeb2, a deduplicated, quality-filtered multilingual web-crawl pretraining corpus.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk]
+    scale: {value: "3,380,000 rows (kaz_Cyrl)", unit: rows, scope: "Kazakh config only"}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: ODC-By-1.0
+    kind: multilingual
+    origin: [web-crawl]
+    links:
+      dataset: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2/viewer/kaz_Cyrl
+    paper: {title: "FineWeb2: A sparkling update with 1000s of languages", venue: "Hugging Face / arXiv", year: 2025}
+    added_to_catalog: "2026-08-19"
+    last_verified: "2026-08-19"
+    notes: "Included per the multilingual-with-genuine-Kazakh-subset policy: kaz_Cyrl is a directly loadable, identifiable config, not an inferred split."
+
+  - id: flores200-kazakh
+    name: FLORES-200 Kazakh
+    released: "2022-06"
+    authors:
+      - name: NLLB / FLORES team
+    organization:
+      - name: Meta AI
+        url: https://ai.meta.com/
+    description: Kazakh (kaz_Cyrl) sentences within FLORES-200, a 200-language many-to-many machine-translation evaluation benchmark of professionally translated Wikipedia sentences.
+    section: Text, NLP, and LLM
+    tasks: [Machine translation]
+    languages: [kk]
+    scale: {value: "3,001 sentences (dev + devtest)", unit: sentences, scope: "Kazakh config only"}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: CC-BY-SA-4.0
+    kind: multilingual
+    origin: [native, human-translated]
+    links:
+      dataset: https://huggingface.co/datasets/facebook/flores
+      code: https://github.com/facebookresearch/flores/tree/main/flores200
+    paper: {title: "No Language Left Behind: Scaling Human-Centered Machine Translation", venue: arXiv, year: 2022}
+    added_to_catalog: "2026-08-19"
+    last_verified: "2026-08-19"
+
+  - id: wikiann-kazakh
+    name: WikiANN Kazakh
+    released: "2019-06"
+    authors:
+      - name: Afshin Rahimi
+      - name: Yuan Ling
+      - name: Timothy Baldwin
+    organization: []
+    description: Kazakh (kk) split of WikiANN / PAN-X, a Wikipedia-derived multilingual named-entity-recognition dataset with LOC/PER/ORG IOB2 tags.
+    section: Text, NLP, and LLM
+    tasks: [Named entity recognition]
+    languages: [kk]
+    scale: {value: "Not reported (kk split)", unit: sentences, scope: "Kazakh config only"}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: "Not reported"
+    kind: multilingual
+    origin: [native, web-crawl]
+    links:
+      dataset: https://huggingface.co/datasets/unimelb-nlp/wikiann
+    paper: {title: "Massively Multilingual Transfer for NER", venue: ACL, year: 2019}
+    added_to_catalog: "2026-08-19"
+    last_verified: "2026-08-19"
+
+  - id: uzbek-kazakh-parallel-corpora
+    name: Uzbek-Kazakh Parallel Corpora
+    released: "Not reported"
+    authors:
+      - name: Sanatbek
+    organization: []
+    description: Expert-translated Uzbek-Kazakh parallel sentence corpus covering literature and web news.
+    section: Text, NLP, and LLM
+    tasks: [Machine translation]
+    languages: [kk, uz]
+    scale: {value: "133,877 pairs", unit: pairs, scope: null}
+    storage: {value: 34.2, unit: MB, scope: null}
+    access: open
+    license: "Not reported"
+    kind: original
+    origin: [human-translated]
+    links:
+      dataset: https://huggingface.co/datasets/Sanatbek/uzbek-kazakh-parallel-corpora
+      doi: https://doi.org/10.57967/hf/1748
+    paper: null
+    added_to_catalog: "2026-08-19"
+    last_verified: "2026-08-19"
+
+  - id: hplt-3-kazakh
+    name: HPLT 3.0 Kazakh
+    released: "2025-07"
+    authors:
+      - name: HPLT project
+    organization:
+      - name: HPLT
+        url: https://hplt-project.org/
+    description: Kazakh Cyrillic subset of HPLT 3.0, a large multilingual web-crawl corpus for language-model pretraining.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk]
+    scale: {value: "≈5.12M documents; ≈100.6M segments; ≈7.34B tokens", unit: mixed, scope: "kaz_Cyrl config"}
+    storage: {value: null, unit: null, scope: "Kazakh-config storage not reported"}
+    access: open
+    license: CC0-1.0
+    kind: multilingual
+    origin: [web-crawl]
+    links:
+      dataset: https://huggingface.co/datasets/HPLT/HPLT3.0
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Included because kaz_Cyrl is an explicitly published Kazakh artifact; global HPLT totals are not reused as Kazakh-only storage. Document/segment/token counts independently confirmed via the dataset card's own Kazakh-language statistics table."
+
+  - id: culturax-kazakh
+    name: CulturaX Kazakh
+    released: "2023-09"
+    authors:
+      - name: CulturaX authors
+    organization:
+      - name: University of Oregon NLP
+    description: Kazakh subset of CulturaX, a cleaned and deduplicated multilingual web corpus for language-model pretraining.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk]
+    scale: {value: "2,733,982 documents; 2,802,485,195 tokens", unit: mixed, scope: "kk config"}
+    storage: {value: null, unit: null, scope: "Kazakh-config storage not reported"}
+    access: gated
+    license: "Not reported"
+    kind: multilingual
+    origin: [web-crawl]
+    links:
+      dataset: https://huggingface.co/datasets/uonlp/CulturaX
+      paper: https://arxiv.org/abs/2309.09400
+    paper: {title: "CulturaX: Cleaned, Enormous, and Public Multilingual Dataset for Large Language Models", venue: arXiv, year: 2023}
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "The card points to source-dataset (mC4 + OSCAR) terms rather than a single repository-wide SPDX license, so license is not inferred. Document/token counts independently confirmed via the dataset card's per-language statistics table."
+
+  - id: cc100-kazakh
+    name: CC-100 Kazakh
+    released: "2020"
+    authors:
+      - name: CC-Net / XLM-R team
+    organization:
+      - name: Meta AI
+    description: Explicit Kazakh (kk) monolingual subset of CC-100 reconstructed from Common Crawl for multilingual language modelling.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk]
+    scale: {value: "Not reported", unit: null, scope: "kk config; exact row count not reported"}
+    storage: {value: null, unit: null, scope: "Kazakh-config storage not reported"}
+    access: open
+    license: "Not reported"
+    kind: multilingual
+    origin: [web-crawl]
+    links:
+      dataset: https://huggingface.co/datasets/statmt/cc100
+      paper: https://arxiv.org/abs/1911.02116
+    paper: {title: "Unsupervised Cross-lingual Representation Learning at Scale", venue: ACL, year: 2020}
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Hugging Face card lists the license as unknown; the dataset uses a loading script (not a Parquet conversion), so an exact Kazakh-only row count could not be independently confirmed via the Datasets Server API. No figure is guessed."
+
+  - id: moscar-kazakh
+    name: mOSCAR Kazakh
+    released: "2024-06"
+    authors:
+      - name: OSCAR project
+    organization:
+      - name: OSCAR corpus
+    description: Kazakh Cyrillic configuration of mOSCAR, the multimodal multilingual OSCAR web-crawl release.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk]
+    scale: {value: "248,403 documents", unit: documents, scope: "kaz_Cyrl config"}
+    storage: {value: 548.6, unit: MB, scope: "kaz_Cyrl config, Parquet size"}
+    access: open
+    license: CC-BY-4.0
+    kind: multilingual
+    origin: [web-crawl]
+    links:
+      dataset: https://huggingface.co/datasets/oscar-corpus/mOSCAR
+      paper: https://arxiv.org/abs/2406.08707
+    paper: {title: "mOSCAR: A Large-scale Multilingual and Multimodal Document-level Corpus", venue: arXiv, year: 2024}
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Canonical OSCAR-family entry for this catalog pass. Row count and Parquet size independently confirmed via the Hugging Face Datasets Server size API; global mOSCAR repository size is intentionally not reported as Kazakh-only storage."
+
+  - id: sib200-kazakh
+    name: SIB-200 Kazakh
+    released: "2023-09"
+    authors:
+      - name: David Ifeoluwa Adelani
+    organization:
+      - name: SIB-200 / Masakhane
+    description: Kazakh topic-classification configuration of SIB-200, derived from FLORES-200 and covering seven news topics.
+    section: Text, NLP, and LLM
+    tasks: [Text classification]
+    languages: [kk]
+    scale: {value: "1,004 examples (701 train; 99 validation; 204 test)", unit: examples, scope: "kaz_Cyrl config"}
+    storage: {value: 0.14, unit: MB, scope: "kaz_Cyrl config, Parquet size"}
+    access: open
+    license: CC-BY-SA-4.0
+    kind: derivative
+    derivative_of: flores200-kazakh
+    origin: [human-translated]
+    links:
+      dataset: https://huggingface.co/datasets/Davlan/sib200
+      paper: https://arxiv.org/abs/2309.07445
+    paper: {title: "SIB-200: A Simple, Inclusive, and Big Evaluation Dataset for Topic Classification in 200+ Languages and Dialects", venue: arXiv, year: 2023}
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Row counts and Parquet size independently confirmed via the Hugging Face Datasets Server size API. Catalogued as a derivative of the existing flores200-kazakh entry rather than a new FLORES artifact."
+
+  - id: kazbench-kk
+    name: KazBench-KK
+    released: "2025"
+    authors:
+      - name: KazBench-KK authors
+    organization:
+      - name: kz-transformers
+    description: Culturally grounded Kazakh multiple-choice benchmark spanning 17 domains of traditions, society, history, and contemporary knowledge.
+    section: Text, NLP, and LLM
+    tasks: [Cultural QA, Multiple-choice QA]
+    languages: [kk]
+    scale: {value: "7,111 questions", unit: questions, scope: null}
+    storage: {value: 2.35, unit: MB, scope: null}
+    access: open
+    license: CC-BY-4.0
+    kind: benchmark
+    origin: [native, human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/kz-transformers/kk-socio-cultural-bench-mc
+      paper: https://aclanthology.org/2025.fieldmatters-1.4/
+    paper: {title: "KazBench-KK", venue: "Field Matters", year: 2025}
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Moved from Watchlist after the public Hugging Face artifact (kz-transformers/kk-socio-cultural-bench-mc) was independently verified as open access."
+
+  - id: til-corpus
+    name: Til-Corpus
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Kazakh-centered, quality-tiered text corpus for language-model pretraining, with Russian, English, and mixed-language material.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk, ru, en]
+    scale: {value: "58,850,639 documents", unit: documents, scope: null}
+    storage: {value: 204.20, unit: GB, scope: null}
+    access: gated
+    license: Apache-2.0
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Corpus
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+
+  - id: til-instruct
+    name: Til-Instruct
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Unified, model-judged and quality-tiered Kazakh-focused instruction-tuning collection assembled from TilQazyna SFT sources.
+    section: Text, NLP, and LLM
+    tasks: [Instruction tuning]
+    languages: [kk, ru, en]
+    scale: {value: "2,563,966 raw; 2,114,016 clean; 1,581,787 premium (≈6.26M rows total)", unit: rows, scope: "tier configs"}
+    storage: {value: 8.35, unit: GB, scope: null}
+    access: gated
+    license: Apache-2.0
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Instruct
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+
+  - id: til-books
+    name: Til-Books
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Two-layer full-text book corpus with exact extraction/OCR and cleaned reading text for Kazakh language modelling.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk, ru, en]
+    scale: {value: "16,847 books; 13,194 Kazakh", unit: books, scope: null}
+    storage: {value: 2.02, unit: GB, scope: null}
+    access: gated
+    license: CC-BY-4.0
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Books
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Canonical book-family entry; source-specific Til-Books shards are excluded as constituent/duplicate packaging. Repo-detail API calls returned 401 during this pass (gated-tier restriction), but book count and storage were independently cross-checked against the TilQazyna organization's own repository listing."
+
+  - id: til-parallel
+    name: Til-Parallel
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Large quality-tiered multilingual corpus centered on Kazakh, with Russian and English material.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk, ru, en]
+    scale: {value: "23,294,865 rows", unit: rows, scope: null}
+    storage: {value: 72.16, unit: GB, scope: null}
+    access: gated
+    license: Apache-2.0
+    kind: multilingual
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Parallel
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Catalogued as multilingual pretraining text rather than machine translation because the verified card does not establish aligned source-target translation pairs."
+
+  - id: til-morphology
+    name: Til-Morphology
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Kazakh morphological-analysis collection with word segmentation and morpheme-count fields, quality-tiered by model judging.
+    section: Text, NLP, and LLM
+    tasks: [Morphological analysis]
+    languages: [kk]
+    scale: {value: "3,767,518 analyses", unit: rows, scope: null}
+    storage: {value: 207.8, unit: MB, scope: null}
+    access: gated
+    license: Apache-2.0
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Morphology
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+
+  - id: til-classification
+    name: Til-Classification
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Quality-tiered Kazakh-focused text-classification collection with labels, tasks, provenance, and model-judge scores.
+    section: Text, NLP, and LLM
+    tasks: [Text classification]
+    languages: [kk, ru, en]
+    scale: {value: "91,766 rows", unit: rows, scope: null}
+    storage: {value: 15.1, unit: MB, scope: null}
+    access: gated
+    license: Apache-2.0
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Classification
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+
+  - id: til-terminology
+    name: Til-Terminology
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Quality-tiered terminology-focused text collection for Kazakh language research and text generation/pretraining.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk, ru, en]
+    scale: {value: "317,277 rows", unit: rows, scope: null}
+    storage: {value: 5.7, unit: MB, scope: null}
+    access: gated
+    license: Apache-2.0
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Terminology
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+
+  - id: til-web-raw-kk-v1
+    name: Til-Web-Raw-KK-v1
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Raw HTML mirror of two Kazakh educational and Q&A websites (bilim-all.kz, surak.baribar.kz) — server-rendered pages, images, and attachments collected before text extraction/cleaning, as source material for the Til foundation-model program.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk]
+    scale: {value: "≈222,890 pages", unit: pages, scope: "raw mirror, before extraction/cleaning"}
+    storage: {value: 19.50, unit: GB, scope: null}
+    access: gated
+    license: "custom (non-commercial research use only)"
+    kind: original
+    origin: [web-crawl]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Web-Raw-KK-v1
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Previously a Watchlist entry as \"Til-Web-KK\" after a 401 on anonymous access; found and re-verified this pass as the actual public (gated) collection entry TilQazyna/Til-Web-Raw-KK-v1 — createdAt 2026-06-22 via the HF API. License tag is \"other\" on Hugging Face; recorded here per the dataset card's stated non-commercial research-use restriction rather than left unlabeled."
+
+  - id: farabi-kz-rag-single-docs
+    name: Kazakh Analytical RAG (Single-Document)
+    released: "2026-02"
+    authors:
+      - name: N. Kadyrbek
+      - name: Z. Tuimebayev
+      - name: M. Mansurova
+      - name: V. Viegas
+    organization:
+      - name: Al-Farabi Kazakh National University
+    description: High-density Kazakh analytical question-answering collection with single-document context, for retrieval-augmented generation research.
+    section: Text, NLP, and LLM
+    tasks: [Retrieval / RAG, Question answering]
+    languages: [kk]
+    scale: {value: "4,522 examples; ≈5.98M words", unit: mixed, scope: null}
+    storage: {value: 33.4, unit: MB, scope: null}
+    access: gated
+    license: MIT
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/farabi-lab/KZ-RAG-single-docs-final-gold
+      paper: https://doi.org/10.3390/bdcc9050137
+    paper: {title: "The Development of Small-Scale Language Models for Low-Resource Languages, with a Focus on Kazakh and Direct Preference Optimization", venue: "Big Data and Cognitive Computing (MDPI)", year: 2025}
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Storage and access independently confirmed via the Hugging Face repo file-listing API (33.4 MB Parquet, gated: manual); the dataset card's own summary figures otherwise matched."
+
+  - id: farabi-content-moderation-safety
+    name: Content Moderation and Safety — Kazakh
+    released: "2026-02"
+    authors:
+      - name: N. Kadyrbek
+      - name: Z. Tuimebayev
+      - name: M. Mansurova
+      - name: V. Viegas
+    organization:
+      - name: Al-Farabi Kazakh National University
+    description: Kazakh content-moderation and safety dataset with toxicity categories, severity labels, domain tags, and constructive de-escalating responses.
+    section: Text, NLP, and LLM
+    tasks: [Safety evaluation, Text classification]
+    languages: [kk]
+    scale: {value: "17,827 examples; ≈1.67M words", unit: mixed, scope: null}
+    storage: {value: 9.3, unit: MB, scope: null}
+    access: gated
+    license: CC-BY-NC-4.0
+    kind: original
+    origin: [human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/farabi-lab/Content-Moderation-and-Safety
+      paper: https://doi.org/10.3390/bdcc9050137
+    paper: {title: "The Development of Small-Scale Language Models for Low-Resource Languages, with a Focus on Kazakh and Direct Preference Optimization", venue: "Big Data and Cognitive Computing (MDPI)", year: 2025}
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "A smaller farabi-lab safety-dataset variant (Content_Moderation_and_Safety_Kazakh_Context) is not separately listed to avoid a near-duplicate catalog row. Example count, storage, and access independently confirmed via the Hugging Face repo file-listing API (17,827 rows; 9.3 MB; gated: manual)."
+
+  - id: farabi-multistep-reasoning-kazakh
+    name: Multi-Step Reasoning for Kazakh Context
+    released: "2026-02"
+    authors:
+      - name: N. Kadyrbek
+      - name: Z. Tuimebayev
+      - name: M. Mansurova
+      - name: V. Viegas
+    organization:
+      - name: Al-Farabi Kazakh National University
+    description: Kazakh question-answering and instruction collection centered on complex multi-step reasoning and culturally grounded analysis.
+    section: Text, NLP, and LLM
+    tasks: [Question answering]
+    languages: [kk]
+    scale: {value: "10,981 examples; ≈6.65M words", unit: mixed, scope: null}
+    storage: {value: 39.0, unit: MB, scope: null}
+    access: gated
+    license: MIT
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/farabi-lab/multi_step_reasoning_kazakh_context
+      paper: https://doi.org/10.3390/bdcc9050137
+    paper: {title: "The Development of Small-Scale Language Models for Low-Resource Languages, with a Focus on Kazakh and Direct Preference Optimization", venue: "Big Data and Cognitive Computing (MDPI)", year: 2025}
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Storage independently confirmed via the Hugging Face repo file-listing API at 39.0 MB (a preliminary read had this at 407.8 MB, off by 10x; the API-confirmed figure is used here)."
+
+  # ---------------------------------------------------------------------
+  # Speech and audio
+  # ---------------------------------------------------------------------
+
+  - id: mcskl-module-1
+    name: Multimedia Corpus of Modern Spoken Kazakh Language (Module 1)
+    released: "2026-02"
+    authors:
+      - name: Giorgia Troiani
+      - name: John W. Du Bois
+      - name: Andrey Filchenko
+    organization:
+      - name: Nazarbayev University
+        url: https://research.nu.edu.kz/en/projects/multimedia-corpus-of-modern-spoken-kazakh-language
+    description: First module of a corpus of naturally occurring spoken Kazakh conversations (2021-2023), with WAV audio, ELAN/EAF time-aligned transcriptions, verticalized TSV and linearized text, plus participant and speech-event metadata.
+    section: Speech and audio
+    tasks: [Automatic speech recognition (ASR)]
+    languages: [kk, ru]
+    scale: {value: "≈12 h; 33 speech events; 78 participants", unit: hours, scope: "Module 1"}
+    storage: {value: null, unit: null, scope: null}
+    access: open
+    license: CC-BY-NC-SA-4.0
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://github.com/gtroiani/MultCorSKL
+      paper: https://doi.org/10.5334/johd.529
+    paper: {title: "Introducing the First Module of the Multimedia Corpus of Spoken Kazakh Language", venue: Journal of Open Humanities Data, year: 2026}
+    added_to_catalog: null
+    last_verified: "2026-08-20"
+    notes: "Moved from the Watchlist after finding the actual downloadable Module 1 artifact (audio + EAF/TSV/linear transcriptions) on GitHub at github.com/gtroiani/MultCorSKL, under CC-BY-NC-SA-4.0 per its LICENSE.md — the dataset's own license, distinct from the JOHD paper's article-level CC-BY-4.0 license."
+
+  - id: kazmix-3
+    name: KazMix-3
+    released: "2026-07"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Kazakh three-speaker overlapping-speech dataset for target-speaker ASR, released with the Persona-ASR project; mixtures derived from KSD/SLR140 with enrollment utterances.
+    section: Speech and audio
+    tasks: [Target-speaker ASR / speech separation]
+    languages: [kk]
+    scale: {value: "89,775 rows (62.8k/13.5k/13.5k splits)", unit: rows, scope: null}
+    storage: {value: 256.3, unit: MB, scope: null}
+    access: open
+    license: CC-BY-4.0
+    kind: derivative
+    origin: [synthetic, mixed]
+    derivative_of: ksd-slr140
+    links:
+      dataset: https://huggingface.co/datasets/issai/KazMix-3
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "MAJOR CORRECTION: previously listed under Text, NLP, and LLM as a generic 'Kazakh instruction mixture'. It is actually a target-speaker-ASR / speech-separation corpus and belongs in Speech and audio."
+
+  - id: yo-cpt-kk
+    name: YO-CPT-kk
+    released: "2026-08"
+    authors:
+      - name: NCSpeech
+    organization: []
+    description: YouTube-oriented Kazakh continual-pretraining corpus spanning TTS-grade, ASR, and speaker-verification use cases.
+    section: Speech and audio
+    tasks: [Automatic speech recognition (ASR), Text-to-speech (TTS), Speaker verification]
+    languages: [kk, ru]
+    scale: {value: "600 h; 156,903 utterances", unit: mixed, scope: null}
+    storage: {value: 100.0, unit: GB, scope: null}
+    access: open
+    license: "custom (yo-cpt-kk)"
+    kind: original
+    origin: [web-crawl, mixed]
+    links:
+      dataset: https://huggingface.co/datasets/NCSpeech/YO-CPT-kk
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: ksc2-optimized
+    name: Kazakh Speech Dataset (optimized KSC2)
+    released: "2026-01"
+    authors:
+      - name: Flamme-VRM
+    organization: []
+    description: VAD-sliced and Whisper-Turbo re-transcribed derivative of KSC2 with quality filtering.
+    section: Speech and audio
+    tasks: [Automatic speech recognition (ASR), Text-to-speech (TTS)]
+    languages: [kk]
+    scale: {value: "≈726 h; 230,793 clips", unit: mixed, scope: null}
+    storage: {value: 54.5, unit: GB, scope: null}
+    access: open
+    license: CC-BY-4.0
+    kind: derivative
+    origin: [mixed]
+    derivative_of: ksc2
+    links:
+      dataset: https://huggingface.co/datasets/Flamme-VRM/kazakh-speech-dataset
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: kazakh-songs-asr
+    name: Kazakh Songs ASR
+    released: "2026-02"
+    authors:
+      - name: Rustem Yeshpanov
+    organization: []
+    description: Manually aligned Kazakh vocal-audio segments from commercially released songs, for studying whether sung speech improves low-resource ASR.
+    section: Speech and audio
+    tasks: [Automatic speech recognition (ASR)]
+    languages: [kk]
+    scale: {value: "≈4.5 h; 3,013 audio-text pairs (195 songs, 36 artists)", unit: mixed, scope: null}
+    storage: {value: 2.9, unit: GB, scope: null}
+    access: gated
+    license: "custom (non-commercial)"
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/yeshpanovrustem/kazakh_songs_asr
+      paper: https://arxiv.org/abs/2603.00961
+    paper: {title: "Kazakh Songs ASR", venue: "LREC", year: 2026}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: kazega
+    name: KazEGA
+    released: "2026-05"
+    authors:
+      - name: kazega0
+    organization: []
+    description: Kazakh speech corpus for paralinguistic classification, annotated for emotion (7 classes), gender, and age group; source audio extracted from YouTube.
+    section: Speech and audio
+    tasks: [Emotion / paralinguistic classification]
+    languages: [kk]
+    scale: {value: "96,582 utterances", unit: utterances, scope: null}
+    storage: {value: 38.1, unit: GB, scope: null}
+    access: gated
+    license: CC-BY-NC-4.0
+    kind: original
+    origin: [web-crawl, mixed]
+    links:
+      dataset: https://huggingface.co/datasets/kazega0/KazEGA
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Access corrected to gated: research-use agreement plus YouTube-ToS-restricted source audio; previously unmarked."
+
+  - id: ksc2
+    name: Kazakh Speech Corpus 2 (KSC2)
+    released: "2022-09"
+    authors:
+      - name: Saida Mussakhojayeva
+      - name: Yerbolat Khassanov
+      - name: Huseyin Atakan Varol
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Industrial-scale open-source Kazakh speech corpus subsuming KSC and KazakhTTS2, with additional TV, radio, senate, and podcast data, including Kazakh-Russian code-switching.
+    section: Speech and audio
+    tasks: [Automatic speech recognition (ASR)]
+    languages: [kk, ru]
+    scale: {value: "≈1,200 h; 600,000+ utterances", unit: mixed, scope: null}
+    storage: {value: 80.8, unit: GB, scope: null}
+    access: open
+    license: MIT
+    kind: derivative
+    origin: [native, mixed]
+    derivative_of: ksc
+    links:
+      dataset: https://huggingface.co/datasets/issai/Kazakh_Speech_Corpus_2
+      paper: https://www.isca-archive.org/interspeech_2022/mussakhojayeva22_interspeech.html
+    paper: {title: "A Study of Multilingual End-to-End Speech Recognition for Kazakh, Russian, and English", venue: Interspeech, year: 2022}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Release date (2022-09, Interspeech) retained over a 2025-01 HF-mirror re-upload date, consistent with the KazNERD/ISSAI re-upload pattern found across several ISSAI HF cards."
+
+  - id: kazakh-speech-mfa-punctuation
+    name: Kazakh Speech MFA Punctuation
+    released: "2026-02"
+    authors:
+      - name: Bekzat Uteulin
+    organization:
+      - name: Jeti Labs
+    description: Punctuation-restored, word-level-timestamped derivative of ISSAI KSC2, force-aligned with the Montreal Forced Aligner.
+    section: Speech and audio
+    tasks: [Automatic speech recognition (ASR)]
+    languages: [kk]
+    scale: {value: "408,010 utterances; ≈1,110 h", unit: mixed, scope: null}
+    storage: {value: 56.8, unit: GB, scope: null}
+    access: open
+    license: "Not reported"
+    kind: derivative
+    origin: [native, mixed]
+    derivative_of: ksc2
+    links:
+      dataset: https://huggingface.co/datasets/govnejri/kazakh_speech_mfa_punctuation
+    paper: null
+    added_to_catalog: "2026-08-19"
+    last_verified: "2026-08-19"
+
+  - id: material-kk-en
+    name: MATERIAL Kazakh–English Language Pack
+    released: "2025-04"
+    authors:
+      - name: Appen (for IARPA MATERIAL)
+    organization:
+      - name: IARPA MATERIAL program
+    description: Kazakh conversational telephone speech with English translations, transcripts, and query-relevance annotations, from Northern and Southern Kazakh dialect regions.
+    section: Speech and audio
+    tasks: [Speech translation, Retrieval / RAG]
+    languages: [kk, en]
+    scale: {value: "≈57 h", unit: hours, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: paid
+    license: "LDC membership / subscription tiers"
+    kind: original
+    origin: [native, human-translated]
+    links:
+      dataset: https://catalog.ldc.upenn.edu/LDC2025S03
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Access reclassified from a generic 'licensed' label to paid (LDC subscription/membership tiers)."
+
+  - id: belebele-fleurs
+    name: Belebele-FLEURS
+    released: "2024-11"
+    authors: []
+    organization:
+      - name: WüNLP
+    description: Spoken reading-comprehension benchmark combining Belebele and FLEURS audio/text across 99 languages.
+    section: Speech and audio
+    tasks: [Spoken QA, Automatic speech recognition (ASR)]
+    languages: [kk]
+    scale: {value: "870 Kazakh test examples", unit: examples, scope: "kaz_Cyrl config"}
+    storage: {value: 3.4, unit: GB, scope: "kaz_Cyrl config, download size"}
+    access: open
+    license: CC-BY-SA-4.0
+    kind: multilingual
+    origin: [native, mixed]
+    links:
+      dataset: https://huggingface.co/datasets/WueNLP/belebele-fleurs
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Scale corrected to 870 (verified kaz_Cyrl test-split count) from a previously listed 900. Storage rescoped to the Kazakh config (~3.4 GB) instead of an all-99-language total."
+
+  - id: kazemotts
+    name: KazEmoTTS
+    released: "2024-04"
+    authors:
+      - name: Adal Abilbekov
+      - name: Saida Mussakhojayeva
+      - name: Rustem Yeshpanov
+      - name: Huseyin Atakan Varol
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Kazakh emotional TTS corpus with six emotion classes (neutral, angry, happy, sad, scared, surprised) across male and female narrators.
+    section: Speech and audio
+    tasks: [Text-to-speech (TTS), Emotion / paralinguistic classification]
+    languages: [kk]
+    scale: {value: "74.85 h; 54,760 clips", unit: mixed, scope: null}
+    storage: {value: 10.5, unit: GB, scope: null}
+    access: application
+    license: "Not reported"
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/KazEmoTTS
+      code: https://github.com/IS2AI/KazEmoTTS
+      paper: https://arxiv.org/abs/2404.01033
+    paper: {title: "KazEmoTTS: A Dataset for Kazakh Emotional Text-to-Speech Synthesis", venue: arXiv, year: 2024}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Access corrected to application (dataset access requires completing a Google Form request); previously unmarked."
+
+  - id: issai-skimmed
+    name: ISSAI SKIMMED
+    released: "2024-01"
+    authors:
+      - name: Dauren-Nur
+    organization: []
+    description: Multimodal Kazakh audio-transcription dataset with train/test/dev splits.
+    section: Speech and audio
+    tasks: [Automatic speech recognition (ASR), Text-to-speech (TTS)]
+    languages: [kk]
+    scale: {value: "21,617 clips", unit: clips, scope: null}
+    storage: {value: 5.4, unit: GB, scope: null}
+    access: open
+    license: "Not reported"
+    kind: original
+    origin: [native]
+    links:
+      dataset: https://huggingface.co/datasets/Dauren-Nur/ISSAI_SKIMMED
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: ksd-slr140
+    name: Kazakh Speech Dataset (KSD / SLR140)
+    released: "2023-07"
+    authors:
+      - name: Madina Mansurova
+      - name: Nurgali Kadyrbek
+    organization:
+      - name: "Dept. of AI and Big Data, Al-Farabi Kazakh National University"
+    description: Open-source Kazakh speech corpus recorded on mobile devices across diverse regions, ages, and genders, verified by native speakers.
+    section: Speech and audio
+    tasks: [Automatic speech recognition (ASR)]
+    languages: [kk]
+    scale: {value: "554 h; 204,250 utterances", unit: mixed, scope: null}
+    storage: {value: 56, unit: GB, scope: null}
+    access: open
+    license: CC-BY-SA-3.0
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://openslr.org/140/
+      paper: https://doi.org/10.3390/bdcc7030132
+    paper: {title: "Kazakh Speech Dataset", venue: "Big Data and Cognitive Computing (MDPI)", year: 2023}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Storage corrected to ~56 GB (independently confirmed twice from the OpenSLR archive listing: audio2+3+4+5 zips) from a previously listed 141.9 GB."
+
+  - id: kazakh-speech-commands
+    name: Kazakh Speech Commands
+    released: "2023-04"
+    authors:
+      - name: Askat Kuzdeuov
+      - name: Shakhizat Nurgaliyev
+      - name: Diana Turmakhan
+      - name: Nurkhan Laiyk
+      - name: Huseyin Atakan Varol
+    organization:
+      - name: IS2AI
+    description: Kazakh speech-command recognition dataset built via synthetic TTS generation and speech-corpus scraping, with data augmentation.
+    section: Speech and audio
+    tasks: [Keyword spotting]
+    languages: [kk]
+    scale: {value: "≈1 h; 3,623 utterances", unit: mixed, scope: null}
+    storage: {value: 267.3, unit: MB, scope: null}
+    access: open
+    license: Apache-2.0
+    kind: original
+    origin: [synthetic, native]
+    links:
+      dataset: https://huggingface.co/datasets/issai/kazakh-speech-commands
+      code: https://github.com/IS2AI/Kazakh-Speech-Commands-Dataset
+      paper: https://ieeexplore.ieee.org/document/10601292
+    paper: {title: "Kazakh Speech Commands", venue: IEEE, year: 2024}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Release date corrected to 2023-04 (verified GitHub repo created_at) from a previously listed 2022-05."
+
+  - id: kazakhtts2
+    name: KazakhTTS2
+    released: "2022-01"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Expanded five-speaker Kazakh TTS corpus, extending the original KazakhTTS with more data, speakers, and topics.
+    section: Speech and audio
+    tasks: [Text-to-speech (TTS)]
+    languages: [kk]
+    scale: {value: "271 h; 5 speakers", unit: mixed, scope: null}
+    storage: {value: 35.7, unit: GB, scope: null}
+    access: open
+    license: "Not reported"
+    kind: original
+    origin: [native]
+    links:
+      dataset: https://issai.nu.edu.kz/tts2-eng/
+      paper: https://arxiv.org/abs/2201.05771
+    paper: {title: "KazakhTTS2: Extending the Open-Source Kazakh TTS Corpus With More Data, Speakers, and Topics", venue: arXiv, year: 2022}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: kazakhtts
+    name: KazakhTTS
+    released: "2021-04"
+    authors:
+      - name: Saida Mussakhojayeva
+      - name: Yerbolat Khassanov
+      - name: Huseyin Atakan Varol
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Open-source Kazakh text-to-speech corpus, later expanded by KazakhTTS2.
+    section: Speech and audio
+    tasks: [Text-to-speech (TTS)]
+    languages: [kk]
+    scale: {value: "≈93 h; 42,000 utterances", unit: mixed, scope: null}
+    storage: {value: 11.9, unit: GB, scope: null}
+    access: open
+    license: "Not reported"
+    kind: original
+    origin: [native]
+    links:
+      dataset: https://huggingface.co/datasets/issai/KazakhTTS
+      code: https://github.com/IS2AI/Kazakh_TTS
+      paper: https://aclanthology.org/2022.lrec-1.578.pdf
+    paper: {title: "A Study of Multilingual End-to-End Speech Recognition for Kazakh, Russian, and English", venue: LREC, year: 2022}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Storage kept at 11.9 GB with lower confidence: the current HF mirror reports ~49 GB but its card text appears to bundle KazakhTTS2 content, so the figure could not be cleanly attributed to KazakhTTS alone. Needs owner/maintainer re-verification."
+
+  - id: ksc
+    name: Kazakh Speech Corpus (KSC)
+    released: "2020-09"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Crowdsourced Kazakh speech corpus with an initial ASR baseline.
+    section: Speech and audio
+    tasks: [Automatic speech recognition (ASR)]
+    languages: [kk]
+    scale: {value: "≈332 h; 153,000 utterances", unit: mixed, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: CC-BY-4.0
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://issai.nu.edu.kz/kz-speech-corpus/
+      paper: https://arxiv.org/abs/2009.10334
+    paper: {title: "A Crowdsourced Open-Source Kazakh Speech Corpus and Initial Speech Recognition Baseline", venue: arXiv, year: 2020}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: common-voice-kk
+    name: Mozilla Common Voice Kazakh
+    released: "2025-12"
+    authors:
+      - name: Mozilla Foundation
+    organization:
+      - name: Mozilla Foundation
+        url: https://www.mozillafoundation.org/
+    description: Crowdsourced Kazakh voice recordings from the Common Voice Scripted Speech project.
+    section: Speech and audio
+    tasks: [Automatic speech recognition (ASR)]
+    languages: [kk]
+    scale: {value: "2,750 clips; 3.76 h recorded (2.39 h validated); 193 speakers", unit: mixed, scope: "Common Voice Scripted Speech 24.0"}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: CC0-1.0
+    kind: multilingual
+    origin: [native, human-annotated]
+    links:
+      dataset: https://datacollective.mozillafoundation.org/datasets/cmj8u3pbb00dhnxxbsqe4vbpc
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Re-sourced from the Mozilla Data Collective platform (successor to the commonvoice.mozilla.org datasets page): release date corrected to 2025-12 (Common Voice Scripted Speech 24.0 general release, 2025-12-05) with a precise, current hour/clip count, in place of a previously vague 'v25, storage only' entry."
+
+  - id: wavcapsqa-kazakh-russian
+    name: WavCapsQA Kazakh-Russian
+    released: "2026-03"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Machine-translated Kazakh/Russian adaptation of the WavCaps-QA test set for audio question answering over environmental sounds, music, and ambient scenes.
+    section: Speech and audio
+    tasks: [Audio question answering]
+    languages: [kk, ru]
+    scale: {value: "608 rows (304 Kazakh, 304 Russian)", unit: rows, scope: null}
+    storage: {value: 189, unit: MB, scope: null}
+    access: open
+    license: "Not reported"
+    kind: translation
+    origin: [machine-translated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/WavCapsQA_Kazakh_Russian
+    paper: null
+    added_to_catalog: "2026-08-19"
+    last_verified: "2026-08-19"
+
+  - id: til-audio
+    name: Til-Audio
+    released: "2026-06"
+    authors: []
+    organization:
+      - name: Til-Qazyna
+        url: https://tilqazyna.kz/
+    description: Kazakh audio-and-transcript collection for speech recognition, speech synthesis, and audio classification.
+    section: Speech and audio
+    tasks: [Automatic speech recognition (ASR), Text-to-speech (TTS)]
+    languages: [kk]
+    scale: {value: "380,068 audio/transcript rows", unit: rows, scope: "current default config"}
+    storage: {value: 249.77, unit: GB, scope: null}
+    access: gated
+    license: CC-BY-4.0
+    kind: original
+    origin: [mixed]
+    links:
+      dataset: https://huggingface.co/datasets/TilQazyna/Til-Audio
+    paper: null
+    added_to_catalog: "2026-08-20"
+    last_verified: "2026-08-20"
+    notes: "Uses the current ~380k-row release rather than an older ~248k-row figure still present in some descriptive text; row count and storage independently confirmed via the TilQazyna organization's own repository listing."
+
+  # ---------------------------------------------------------------------
+  # Vision, OCR, and multimodal
+  # ---------------------------------------------------------------------
+
+  - id: beynelebench
+    name: BeyneleBench
+    released: "2026-04"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Kazakh/English benchmark for cultural fidelity in text-to-image generation, pairing prompts with reference images and cultural taxonomy levels.
+    section: Vision, OCR, and multimodal
+    tasks: [Cultural vision benchmark (text-to-image)]
+    languages: [kk, en]
+    scale: {value: "750", unit: examples, scope: null}
+    storage: {value: 2.0, unit: GB, scope: null}
+    access: open
+    license: CC-BY-4.0
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/BeyneleBench
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: spokenmqa-kazakh
+    name: SpokenMQA Kazakh
+    released: "2026-04"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Machine-translated Kazakh adaptation of SpokenMQA for evaluating spoken mathematical reasoning in speech/audio-language models.
+    section: Vision, OCR, and multimodal
+    tasks: [Audio-visual QA]
+    languages: [kk]
+    scale: {value: "2,256", unit: examples, scope: null}
+    storage: {value: 1.4, unit: GB, scope: null}
+    access: open
+    license: "Not reported"
+    kind: translation
+    origin: [machine-translated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/SpokenMQA_Kazakh
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: mmbench-kazakh
+    name: MMBench Kazakh
+    released: "2026-03"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Kazakh translation of the MMBench validation split, evaluating perception, reasoning, and logic via multiple-choice VQA.
+    section: Vision, OCR, and multimodal
+    tasks: [Visual QA]
+    languages: [kk]
+    scale: {value: "4,329", unit: examples, scope: null}
+    storage: {value: 772.2, unit: MB, scope: null}
+    access: open
+    license: "Not reported"
+    kind: translation
+    origin: [machine-translated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/MMBench_Kazakh
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: mathvision-kazakh
+    name: MathVision Kazakh
+    released: "2026-03"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Machine-translated MathVision dataset for evaluating mathematical reasoning and visual understanding in multimodal LLMs.
+    section: Vision, OCR, and multimodal
+    tasks: [Visual math reasoning]
+    languages: [kk]
+    scale: {value: "3,040", unit: examples, scope: null}
+    storage: {value: 248.7, unit: MB, scope: null}
+    access: open
+    license: MIT
+    kind: translation
+    origin: [machine-translated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/MathVision_Kazakh
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: darmm-ocr-kazakh
+    name: Darmm Kazakh Cyrillic OCR
+    released: "2026-06"
+    authors:
+      - name: Rakhat Zhumabek
+    organization: []
+    description: Synthetic printed-text OCR dataset for Kazakh Cyrillic, rendered from Kazakh Wikipedia text with Kazakh-specific characters (Ә, Ғ, Қ, Ң, Ө, Ұ, Ү, Һ, І).
+    section: Vision, OCR, and multimodal
+    tasks: [OCR]
+    languages: [kk]
+    scale: {value: "200,000 images (100k word-level + 100k line-level)", unit: images, scope: null}
+    storage: {value: 2.3, unit: GB, scope: null}
+    access: open
+    license: Apache-2.0
+    kind: original
+    origin: [synthetic]
+    links:
+      dataset: https://huggingface.co/datasets/Darmm/darmm-ocr-kazakh-cyrillic
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: turkicocr-cyrillic
+    name: TurkicOCR-Cyrillic
+    released: "2026-06"
+    authors:
+      - name: Alen Issayev
+    organization: []
+    description: Synthetic Turkic-Cyrillic OCR dataset spanning Kazakh, Kyrgyz, Kazakh-Russian, and Kyrgyz-Russian text and layouts.
+    section: Vision, OCR, and multimodal
+    tasks: [OCR, Layout analysis / document understanding]
+    languages: [kk, ky, ru]
+    scale: {value: "100,000 unique pages; 175,000 nested-config rows", unit: pages, scope: null}
+    storage: {value: 66.7, unit: GB, scope: "62.2 GiB"}
+    access: open
+    license: CC-BY-4.0
+    kind: original
+    origin: [synthetic]
+    links:
+      dataset: https://huggingface.co/datasets/alenisaw/turkicocr-cyrillic
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Recently corrected and verified by the dataset's own maintainer (2026-08 commit); metadata preserved as-is per audit policy."
+
+  - id: kazakhocr
+    name: KazakhOCR
+    released: "2025-12"
+    authors:
+      - name: Henry Gagnier
+      - name: Sophie Gagnier
+      - name: Ashwin Kirubakaran
+    organization: []
+    description: Synthetic benchmark for evaluating multimodal models on Arabic-, Cyrillic-, and Latin-script Kazakh OCR.
+    section: Vision, OCR, and multimodal
+    tasks: [OCR]
+    languages: [kk]
+    scale: {value: "600 images", unit: images, scope: null}
+    storage: {value: 15.3, unit: GB, scope: null}
+    access: open
+    license: MIT
+    kind: original
+    origin: [synthetic]
+    links:
+      dataset: https://huggingface.co/datasets/henrygagnier/kazakh-ocr
+      paper: https://aclanthology.org/2026.abjadnlp-1.8/
+    paper: {title: "KazakhOCR: A Synthetic Benchmark for Low-Resource Kazakh Script OCR", venue: ABJADNLP, year: 2026}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: ai2d-kazakh
+    name: AI2D Kazakh
+    released: "2025-12"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Kazakh translation of AI2D diagram-question-answering data.
+    section: Vision, OCR, and multimodal
+    tasks: [Diagram QA]
+    languages: [kk]
+    scale: {value: "3,088", unit: examples, scope: null}
+    storage: {value: 465.0, unit: MB, scope: null}
+    access: open
+    license: "Not reported"
+    kind: translation
+    origin: [machine-translated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/AI2D_Kazakh
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: mathvista-kazakh
+    name: MathVista Kazakh
+    released: "2025-12"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Kazakh translation of MathVista for visual math reasoning.
+    section: Vision, OCR, and multimodal
+    tasks: [Visual math reasoning]
+    languages: [kk]
+    scale: {value: "1,000", unit: examples, scope: null}
+    storage: {value: 52.6, unit: MB, scope: null}
+    access: open
+    license: CC-BY-SA-4.0
+    kind: translation
+    origin: [machine-translated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/MathVista_Kazakh
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: ocrbench-kazakh
+    name: OCRBench Kazakh
+    released: "2025-12"
+    authors:
+      - name: ISSAI researchers
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: Kazakh OCR and visual-QA benchmark translated from OCRBench.
+    section: Vision, OCR, and multimodal
+    tasks: [OCR, Visual QA]
+    languages: [kk]
+    scale: {value: "441", unit: examples, scope: null}
+    storage: {value: 28.7, unit: MB, scope: null}
+    access: open
+    license: Apache-2.0
+    kind: translation
+    origin: [machine-translated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/OCRBench-Kazakh
+    paper: null
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+
+  - id: qazlip
+    name: QazLip
+    released: "2025-12"
+    authors:
+      - name: "Zhalgas, A. et al."
+    organization: []
+    description: Kazakh lip-movement command corpus of 102 nouns recorded from 26 participants at 1080p/60fps for visual speech recognition.
+    section: Vision, OCR, and multimodal
+    tasks: [Visual speech recognition (lip reading)]
+    languages: [kk]
+    scale: {value: "≈34,000 videos; 1.2M frames", unit: mixed, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: "Not reported"
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://doi.org/10.7910/DVN/VIP1J8
+      code: https://github.com/BatyrKenzh/QazLip
+      paper: https://doi.org/10.1038/s41597-025-06193-0
+    paper: {title: "A Kazakh Language Dataset of Lip Movements for Command Recognition", venue: "Scientific Data", year: 2025}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Added a code-repository link, previously absent."
+
+  - id: kohtd
+    name: KOHTD
+    released: "2021-10"
+    authors:
+      - name: Nazgul Toiganbayeva
+      - name: Mahmoud Kasem
+      - name: Galymzhan Abdimanap
+      - name: Kairat Bostanbekov
+      - name: Abdelrahman Abdallah
+      - name: Anel Alimova
+      - name: Daniyar Nurseitov
+    organization:
+      - name: Satbayev University
+      - name: Al-Farabi Kazakh National University
+    description: Kazakh Offline Handwritten Text Dataset of exam papers (99% Kazakh, 1% Russian).
+    section: Vision, OCR, and multimodal
+    tasks: [Handwriting recognition]
+    languages: [kk, ru]
+    scale: {value: "3,000 exam papers; 140,335+ segmented images; ≈922,010 symbols", unit: mixed, scope: null}
+    storage: {value: 2.6, unit: MB, scope: "GitHub repository"}
+    access: application
+    license: CC-BY-NC-ND-4.0
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://github.com/abdoelsayed2016/KOHTD
+      paper: https://doi.org/10.1016/j.image.2022.116827
+    paper: {title: "KOHTD: Kazakh Offline Handwritten Text Dataset", venue: "Signal Processing: Image Communication", year: 2022}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
+    notes: "Access corrected to application (application form + author email approval required); previously implied open via GitHub link alone."
+
+  - id: hkr
+    name: HKR
+    released: "2020-07"
+    authors:
+      - name: Daniyar Nurseitov
+      - name: Kairat Bostanbekov
+      - name: Daniyar Kurmankhojayev
+      - name: Anel Alimova
+      - name: Abdelrahman Abdallah
+      - name: Rassul Tolegenov
+    organization: []
+    description: Handwritten Kazakh and Russian database (HKR), predominantly Russian (≈95%) with a Kazakh minority share (≈5%).
+    section: Vision, OCR, and multimodal
+    tasks: [Handwriting recognition]
+    languages: [kk, ru]
+    scale: {value: "1,400+ forms; ≈63,000 sentences; ≈715,699 symbols (≈5% Kazakh)", unit: mixed, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: application
+    license: CC-BY-NC-ND-4.0
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://github.com/abdoelsayed2016/HKR_Dataset
+      paper: https://doi.org/10.1007/s11042-021-11399-6
+    paper: {title: "HKR For Handwritten Kazakh and Russian Database", venue: "Multimedia Tools and Applications", year: 2021}
+    added_to_catalog: null
+    last_verified: "2026-08-19"
