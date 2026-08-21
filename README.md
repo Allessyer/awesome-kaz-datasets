@@ -53,10 +53,6 @@ inclusion policy and [CHANGELOG.md](CHANGELOG.md) for what's new.
 ## Text, NLP, and LLM
 
 <!-- NLP_SECTION:START -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/nlp_release_heatmap-dark.svg">
-  <img src="assets/nlp_release_heatmap.svg" alt="Heatmap of Text, NLP, and LLM dataset releases by year (rows) and month (columns); darker cells mean more releases that month" width="100%">
-</picture>
 
 | ID | Released | Dataset | Task | Description | Storage | Samples |
 |---:|---|---|---|---|---|---|
@@ -118,10 +114,6 @@ inclusion policy and [CHANGELOG.md](CHANGELOG.md) for what's new.
 ## Speech and audio
 
 <!-- SPEECH_SECTION:START -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/speech_release_heatmap-dark.svg">
-  <img src="assets/speech_release_heatmap.svg" alt="Heatmap of Speech and audio dataset releases by year (rows) and month (columns); darker cells mean more releases that month" width="100%">
-</picture>
 
 | ID | Released | Dataset | Task | Description | Storage | Samples |
 |---:|---|---|---|---|---|---|
@@ -163,10 +155,6 @@ language**, not language-only hours, and possible cross-corpus overlap remains.
 ## Vision, OCR, and multimodal
 
 <!-- VISION_SECTION:START -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/cv_release_heatmap-dark.svg">
-  <img src="assets/cv_release_heatmap.svg" alt="Heatmap of Vision, OCR, and multimodal dataset releases by year (rows) and month (columns); darker cells mean more releases that month" width="100%">
-</picture>
 
 | ID | Released | Dataset | Task | Description | Storage | Samples |
 |---:|---|---|---|---|---|---|
