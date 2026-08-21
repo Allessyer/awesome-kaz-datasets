@@ -155,11 +155,11 @@
 <rect x="584" y="350" width="60" height="26" rx="5" fill="#f3f2ee" stroke="#e1e0d9" stroke-width="1"/>
 <rect x="650" y="350" width="60" height="26" rx="5" fill="#c6dbef"/>
 <rect x="716" y="350" width="60" height="26" rx="5" fill="#f3f2ee" stroke="#e1e0d9" stroke-width="1"/>
-<rect x="782" y="350" width="60" height="26" rx="5" fill="#c6dbef"/>
+<rect x="782" y="350" width="60" height="26" rx="5" fill="#08519c"/>
 <text x="46" y="399.0" text-anchor="end" class="axis-strong">2026</text>
 <rect x="56" y="382" width="60" height="26" rx="5" fill="#f3f2ee" stroke="#e1e0d9" stroke-width="1"/>
 <rect x="122" y="382" width="60" height="26" rx="5" fill="#6baed6"/>
-<rect x="188" y="382" width="60" height="26" rx="5" fill="#9ecae1"/>
+<rect x="188" y="382" width="60" height="26" rx="5" fill="#3182bd"/>
 <rect x="254" y="382" width="60" height="26" rx="5" fill="#c6dbef"/>
 <rect x="320" y="382" width="60" height="26" rx="5" fill="#9ecae1"/>
 <rect x="386" y="382" width="60" height="26" rx="5" fill="#08519c"/>

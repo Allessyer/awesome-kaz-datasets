@@ -12,6 +12,7 @@ default skeleton is used. If you edit DEFAULT_SKELETON itself, delete README.md
 before regenerating so the new skeleton text actually takes effect.
 """
 
+import difflib
 import sys
 from pathlib import Path
 
@@ -48,6 +49,7 @@ REPO = "Allessyer/awesome-kaz-datasets"
 TASK_ABBREV = {
     "Automatic speech recognition (ASR)": "ASR",
     "Multiple-choice QA": "MCQA",
+    "Mathematical reasoning": "MATH",
     "Question answering": "QA",
     "Text-to-speech (TTS)": "TTS",
     "Machine translation": "MT",
@@ -76,6 +78,7 @@ TASK_ABBREV = {
     "Spoken QA": "SQA",
     "Keyword spotting": "KWS",
     "Audio question answering": "AQA",
+    "Audio captioning": "AC",
     "Cultural vision benchmark (text-to-image)": "T2I",
     "Audio-visual QA": "AVQA",
     "Layout analysis / document understanding": "DU",
@@ -89,7 +92,10 @@ def task_tag(task):
 
 
 def task_glossary(rows, cols=6, label=True):
-    used = sorted({t for d in rows for t in d.get("tasks", [])}, key=lambda t: task_tag(t).lower())
+    used = sorted(
+        {t for d in rows for t in d.get("tasks", [])},
+        key=lambda t: (task_tag(t).lower(), t.lower()),
+    )
     # <strong>, not **bold** — this table is a multi-line HTML block, which GitHub
     # does not run markdown-inline parsing over (see the earlier badges bug).
     entries = [f"<strong>{task_tag(t)}</strong> — {t}" for t in used]
@@ -423,10 +429,17 @@ def main():
     new_content = apply_blocks(base, datasets)
 
     if check:
-        if README.exists() and README.read_text(encoding="utf-8") == new_content:
+        current = README.read_text(encoding="utf-8") if README.exists() else ""
+        if current == new_content:
             print("OK: README.md is up to date.")
             return 0
         print("STALE: README.md does not match generated output. Run scripts/generate_readme.py.")
+        print("".join(difflib.unified_diff(
+            current.splitlines(keepends=True),
+            new_content.splitlines(keepends=True),
+            fromfile="README.md",
+            tofile="generated README.md",
+        )))
         return 1
 
     README.write_text(new_content, encoding="utf-8")
