@@ -27,6 +27,10 @@
   <a href="#license">License</a>
 </p>
 
+
+
+> ### ✨ Explore Kazakh models across every domain — [awesome-kaz-models](https://github.com/alenisaw/awesome-kaz-models)
+
 ---
 
 ## About
@@ -53,7 +57,6 @@ inclusion policy and [CHANGELOG.md](CHANGELOG.md) for what's new.
 ## Text, NLP, and LLM
 
 <!-- NLP_SECTION:START -->
-
 | ID | Released | Dataset | Task | Description | Storage | Samples |
 |---:|---|---|---|---|---|---|
 | 1 | 2026-06 | **[FreshQA Kazakh](https://huggingface.co/datasets/issai/freshqa_kazakh)**<br><sub>ISSAI researchers</sub><br><sub>Open</sub> | QA | Bilingual (English/Kazakh) benchmark of factual questions with false premises, for testing how models handle incorrect assumptions. | 0.4 MB | 600 |
@@ -114,7 +117,6 @@ inclusion policy and [CHANGELOG.md](CHANGELOG.md) for what's new.
 ## Speech and audio
 
 <!-- SPEECH_SECTION:START -->
-
 | ID | Released | Dataset | Task | Description | Storage | Samples |
 |---:|---|---|---|---|---|---|
 | 1 | 2026-08 | **[YO-CPT-kk](https://huggingface.co/datasets/NCSpeech/YO-CPT-kk)**<br><sub>NCSpeech</sub><br><sub>Open</sub> | ASR · TTS · SV | YouTube-oriented Kazakh continual-pretraining corpus spanning TTS-grade, ASR, and speaker-verification use cases. | 100.0 GB | 600 h; 156,903 utterances |
@@ -155,7 +157,6 @@ language**, not language-only hours, and possible cross-corpus overlap remains.
 ## Vision, OCR, and multimodal
 
 <!-- VISION_SECTION:START -->
-
 | ID | Released | Dataset | Task | Description | Storage | Samples |
 |---:|---|---|---|---|---|---|
 | 1 | 2026-06 | **[Darmm Kazakh Cyrillic OCR](https://huggingface.co/datasets/Darmm/darmm-ocr-kazakh-cyrillic)**<br><sub>Rakhat Zhumabek</sub><br><sub>Open</sub> | OCR | Synthetic printed-text OCR dataset for Kazakh Cyrillic, rendered from Kazakh Wikipedia text with Kazakh-specific characters (Ә, Ғ, Қ, Ң, Ө, Ұ, Ү, Һ, І). | 2.3 GB | 200,000 images (100k word-level + 100k line-level) |

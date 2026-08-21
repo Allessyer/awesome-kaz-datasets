@@ -22,11 +22,6 @@ DATA = ROOT / "data" / "datasets.yaml"
 README = ROOT / "README.md"
 
 SECTIONS = ["Text, NLP, and LLM", "Speech and audio", "Vision, OCR, and multimodal"]
-SECTION_HEATMAP = {
-    "Text, NLP, and LLM": "nlp_release_heatmap",
-    "Speech and audio": "speech_release_heatmap",
-    "Vision, OCR, and multimodal": "cv_release_heatmap",
-}
 
 # (name, reason, source url or None) — hand-maintained. A resource lands here when it's
 # announced but unreleased, described with no downloadable artifact, license-conflicted,
@@ -348,17 +343,7 @@ def dataset_table(rows):
 
 def build_section(datasets, section):
     rows = [d for d in datasets if d["section"] == section]
-    heatmap_base = SECTION_HEATMAP[section]
-    lines = [
-        picture(
-            f"Heatmap of {section} dataset releases by year (rows) and month (columns); "
-            "darker cells mean more releases that month",
-            heatmap_base,
-        ),
-        "",
-        dataset_table(rows),
-    ]
-    return "\n".join(lines)
+    return dataset_table(rows)
 
 
 def build_landscape(datasets):
