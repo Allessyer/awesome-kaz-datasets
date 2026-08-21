@@ -369,7 +369,7 @@ def build_badges(datasets):
     badges = [
         ("Datasets", str(n), "2a78d6"),
         ("Open access", f"{open_pct}%25", "2ea44f"),
-        ("Last verified", "2026--08--20", "1baf7a"),
+        ("Last verified", "2026--08--21", "1baf7a"),
     ]
     parts = [stars] + [
         f'<img alt="{label}" src="https://img.shields.io/badge/{label.replace(" ", "_")}-{value}-{color}">'

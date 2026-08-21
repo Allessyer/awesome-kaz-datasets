@@ -413,7 +413,7 @@ datasets:
     scale: {value: "372,000 sentence pairs (+ 1.8M synthetic)", unit: pairs, scope: null}
     storage: {value: 25.9, unit: GB, scope: null}
     access: gated
-    license: "Not reported"
+    license: CC-BY-4.0
     kind: original
     origin: [native, human-translated]
     links:
@@ -422,7 +422,8 @@ datasets:
       paper: https://arxiv.org/abs/2403.19399
     paper: {title: "KazParC: Kazakh Parallel Corpus for Machine Translation", venue: arXiv, year: 2024}
     added_to_catalog: null
-    last_verified: "2026-08-19"
+    last_verified: "2026-08-21"
+    notes: "License confirmed CC-BY-4.0 from the arXiv paper text; neither the HF card nor the GitHub repo carry a machine-readable license tag."
     notes: "Access corrected to gated (HF requires contact-info agreement); previously unmarked. Storage (25.9 GB) independently confirmed via HF API usedStorage."
 
   - id: kaz-rus-kaznu
@@ -823,7 +824,7 @@ datasets:
     tasks: [Language modelling / pretraining]
     languages: [kk]
     scale: {value: "3,380,000 rows (kaz_Cyrl)", unit: rows, scope: "Kazakh config only"}
-    storage: {value: null, unit: null, scope: "Not reported"}
+    storage: {value: 6.86, unit: GB, scope: "kaz_Cyrl config"}
     access: open
     license: ODC-By-1.0
     kind: multilingual
@@ -832,8 +833,8 @@ datasets:
       dataset: https://huggingface.co/datasets/HuggingFaceFW/fineweb-2/viewer/kaz_Cyrl
     paper: {title: "FineWeb2: A sparkling update with 1000s of languages", venue: "Hugging Face / arXiv", year: 2025}
     added_to_catalog: "2026-08-19"
-    last_verified: "2026-08-19"
-    notes: "Included per the multilingual-with-genuine-Kazakh-subset policy: kaz_Cyrl is a directly loadable, identifiable config, not an inferred split."
+    last_verified: "2026-08-21"
+    notes: "Included per the multilingual-with-genuine-Kazakh-subset policy: kaz_Cyrl is a directly loadable, identifiable config, not an inferred split. Storage confirmed via the HF datasets-server /size API for the kaz_Cyrl config (6,863,626,227 bytes)."
 
   - id: flores200-kazakh
     name: FLORES-200 Kazakh
@@ -873,7 +874,7 @@ datasets:
     tasks: [Named entity recognition]
     languages: [kk]
     scale: {value: "Not reported (kk split)", unit: sentences, scope: "Kazakh config only"}
-    storage: {value: null, unit: null, scope: "Not reported"}
+    storage: {value: 0.21, unit: MB, scope: "Kazakh config only"}
     access: open
     license: "Not reported"
     kind: multilingual
@@ -882,7 +883,8 @@ datasets:
       dataset: https://huggingface.co/datasets/unimelb-nlp/wikiann
     paper: {title: "Massively Multilingual Transfer for NER", venue: ACL, year: 2019}
     added_to_catalog: "2026-08-19"
-    last_verified: "2026-08-19"
+    last_verified: "2026-08-21"
+    notes: "Storage confirmed via the HF datasets-server /size API for the kk config (217,890 bytes; 3,000 rows). License re-checked: HF cardData.license is explicitly 'unknown' at the source, not an omission on our end."
 
   - id: uzbek-kazakh-parallel-corpora
     name: Uzbek-Kazakh Parallel Corpora
@@ -920,7 +922,7 @@ datasets:
     tasks: [Language modelling / pretraining]
     languages: [kk]
     scale: {value: "≈5.12M documents; ≈100.6M segments; ≈7.34B tokens", unit: mixed, scope: "kaz_Cyrl config"}
-    storage: {value: null, unit: null, scope: "Kazakh-config storage not reported"}
+    storage: {value: 8.76, unit: GB, scope: "kaz_Cyrl config, compressed"}
     access: open
     license: CC0-1.0
     kind: multilingual
@@ -929,8 +931,8 @@ datasets:
       dataset: https://huggingface.co/datasets/HPLT/HPLT3.0
     paper: null
     added_to_catalog: "2026-08-20"
-    last_verified: "2026-08-20"
-    notes: "Included because kaz_Cyrl is an explicitly published Kazakh artifact; global HPLT totals are not reused as Kazakh-only storage. Document/segment/token counts independently confirmed via the dataset card's own Kazakh-language statistics table."
+    last_verified: "2026-08-21"
+    notes: "Included because kaz_Cyrl is an explicitly published Kazakh artifact; global HPLT totals are not reused as Kazakh-only storage. Document/segment/token counts and storage independently confirmed via the dataset card's own Kazakh-language statistics table."
 
   - id: culturax-kazakh
     name: CulturaX Kazakh
@@ -944,7 +946,7 @@ datasets:
     tasks: [Language modelling / pretraining]
     languages: [kk]
     scale: {value: "2,733,982 documents; 2,802,485,195 tokens", unit: mixed, scope: "kk config"}
-    storage: {value: null, unit: null, scope: "Kazakh-config storage not reported"}
+    storage: {value: 9.07, unit: GB, scope: "kk config, approx. — summed from the 4 kk parquet shards"}
     access: gated
     license: "Not reported"
     kind: multilingual
@@ -954,8 +956,8 @@ datasets:
       paper: https://arxiv.org/abs/2309.09400
     paper: {title: "CulturaX: Cleaned, Enormous, and Public Multilingual Dataset for Large Language Models", venue: arXiv, year: 2023}
     added_to_catalog: "2026-08-20"
-    last_verified: "2026-08-20"
-    notes: "The card points to source-dataset (mC4 + OSCAR) terms rather than a single repository-wide SPDX license, so license is not inferred. Document/token counts independently confirmed via the dataset card's per-language statistics table."
+    last_verified: "2026-08-21"
+    notes: "The card points to source-dataset (mC4 + OSCAR) terms rather than a single repository-wide SPDX license, so license is not inferred; access is gated behind custom acceptance terms rather than a named license. Document/token counts independently confirmed via the dataset card's per-language statistics table."
 
   - id: cc100-kazakh
     name: CC-100 Kazakh
@@ -969,7 +971,7 @@ datasets:
     tasks: [Language modelling / pretraining]
     languages: [kk]
     scale: {value: "Not reported", unit: null, scope: "kk config; exact row count not reported"}
-    storage: {value: null, unit: null, scope: "Kazakh-config storage not reported"}
+    storage: {value: 889, unit: MB, scope: "kk.txt.xz, compressed, via the canonical data.statmt.org/cc-100 mirror"}
     access: open
     license: "Not reported"
     kind: multilingual
@@ -979,8 +981,8 @@ datasets:
       paper: https://arxiv.org/abs/1911.02116
     paper: {title: "Unsupervised Cross-lingual Representation Learning at Scale", venue: ACL, year: 2020}
     added_to_catalog: "2026-08-20"
-    last_verified: "2026-08-20"
-    notes: "Hugging Face card lists the license as unknown; the dataset uses a loading script (not a Parquet conversion), so an exact Kazakh-only row count could not be independently confirmed via the Datasets Server API. No figure is guessed."
+    last_verified: "2026-08-21"
+    notes: "Hugging Face card lists the license as unknown; the dataset uses a loading script (not a Parquet conversion), so an exact Kazakh-only row count could not be independently confirmed via the Datasets Server API. No figure is guessed. Storage confirmed from the canonical data.statmt.org/cc-100/ directory listing (kk.txt.xz)."
 
   - id: moscar-kazakh
     name: mOSCAR Kazakh
@@ -1521,7 +1523,7 @@ datasets:
     scale: {value: "408,010 utterances; ≈1,110 h", unit: mixed, scope: null}
     storage: {value: 56.8, unit: GB, scope: null}
     access: open
-    license: "Not reported"
+    license: MIT
     kind: derivative
     origin: [native, mixed]
     derivative_of: ksc2
@@ -1529,7 +1531,8 @@ datasets:
       dataset: https://huggingface.co/datasets/govnejri/kazakh_speech_mfa_punctuation
     paper: null
     added_to_catalog: "2026-08-19"
-    last_verified: "2026-08-19"
+    last_verified: "2026-08-21"
+    notes: "License confirmed MIT via HF cardData/license tag."
 
   - id: material-kk-en
     name: MATERIAL Kazakh–English Language Pack
@@ -1596,7 +1599,7 @@ datasets:
     scale: {value: "74.85 h; 54,760 clips", unit: mixed, scope: null}
     storage: {value: 10.5, unit: GB, scope: null}
     access: application
-    license: "Not reported"
+    license: CC-BY-4.0
     kind: original
     origin: [native, human-annotated]
     links:
@@ -1605,8 +1608,8 @@ datasets:
       paper: https://arxiv.org/abs/2404.01033
     paper: {title: "KazEmoTTS: A Dataset for Kazakh Emotional Text-to-Speech Synthesis", venue: arXiv, year: 2024}
     added_to_catalog: null
-    last_verified: "2026-08-19"
-    notes: "Access corrected to application (dataset access requires completing a Google Form request); previously unmarked."
+    last_verified: "2026-08-21"
+    notes: "Access corrected to application (dataset access requires completing a Google Form request); previously unmarked. License confirmed CC-BY-4.0 from the arXiv paper text; neither the HF card nor the GitHub repo carry a machine-readable license tag."
 
   - id: issai-skimmed
     name: ISSAI SKIMMED
@@ -1701,7 +1704,7 @@ datasets:
     scale: {value: "271 h; 5 speakers", unit: mixed, scope: null}
     storage: {value: 35.7, unit: GB, scope: null}
     access: open
-    license: "Not reported"
+    license: CC-BY-4.0
     kind: original
     origin: [native]
     links:
@@ -1709,7 +1712,8 @@ datasets:
       paper: https://arxiv.org/abs/2201.05771
     paper: {title: "KazakhTTS2: Extending the Open-Source Kazakh TTS Corpus With More Data, Speakers, and Topics", venue: arXiv, year: 2022}
     added_to_catalog: null
-    last_verified: "2026-08-19"
+    last_verified: "2026-08-21"
+    notes: "License confirmed CC-BY-4.0 via the companion GitHub repo (IS2AI/Kazakh_TTS, which covers both KazakhTTS and KazakhTTS2); the cited ISSAI page itself does not state a license name directly."
 
   - id: kazakhtts
     name: KazakhTTS
@@ -1728,7 +1732,7 @@ datasets:
     scale: {value: "≈93 h; 42,000 utterances", unit: mixed, scope: null}
     storage: {value: 11.9, unit: GB, scope: null}
     access: open
-    license: "Not reported"
+    license: CC-BY-4.0
     kind: original
     origin: [native]
     links:
@@ -1737,8 +1741,8 @@ datasets:
       paper: https://aclanthology.org/2022.lrec-1.578.pdf
     paper: {title: "A Study of Multilingual End-to-End Speech Recognition for Kazakh, Russian, and English", venue: LREC, year: 2022}
     added_to_catalog: null
-    last_verified: "2026-08-19"
-    notes: "Storage kept at 11.9 GB with lower confidence: the current HF mirror reports ~49 GB but its card text appears to bundle KazakhTTS2 content, so the figure could not be cleanly attributed to KazakhTTS alone. Needs owner/maintainer re-verification."
+    last_verified: "2026-08-21"
+    notes: "Storage kept at 11.9 GB with lower confidence: the current HF mirror reports ~49 GB but its card text appears to bundle KazakhTTS2 content, so the figure could not be cleanly attributed to KazakhTTS alone. Needs owner/maintainer re-verification. License confirmed CC-BY-4.0 via the GitHub repo's detected SPDX license."
 
   - id: ksc
     name: Kazakh Speech Corpus (KSC)
@@ -1753,17 +1757,18 @@ datasets:
     tasks: [Automatic speech recognition (ASR)]
     languages: [kk]
     scale: {value: "≈332 h; 153,000 utterances", unit: mixed, scope: null}
-    storage: {value: null, unit: null, scope: "Not reported"}
+    storage: {value: 19, unit: GB, scope: null}
     access: open
     license: CC-BY-4.0
     kind: original
     origin: [native, human-annotated]
     links:
-      dataset: https://issai.nu.edu.kz/kz-speech-corpus/
+      dataset: https://openslr.org/102/
       paper: https://arxiv.org/abs/2009.10334
     paper: {title: "A Crowdsourced Open-Source Kazakh Speech Corpus and Initial Speech Recognition Baseline", venue: arXiv, year: 2020}
     added_to_catalog: null
-    last_verified: "2026-08-19"
+    last_verified: "2026-08-21"
+    notes: "links.dataset repointed from issai.nu.edu.kz/kz-speech-corpus/ to the OpenSLR mirror: the ISSAI page now renders KSC2 content (1.2k hours), not this original KSC (332h/153,000-utterance) corpus. Storage (19 GB) confirmed via the OpenSLR archive listing."
 
   - id: common-voice-kk
     name: Mozilla Common Voice Kazakh
@@ -2091,9 +2096,9 @@ datasets:
     tasks: [Visual speech recognition (lip reading)]
     languages: [kk]
     scale: {value: "≈34,000 videos; 1.2M frames", unit: mixed, scope: null}
-    storage: {value: null, unit: null, scope: "Not reported"}
+    storage: {value: 4.41, unit: GB, scope: null}
     access: open
-    license: "Not reported"
+    license: CC0-1.0
     kind: original
     origin: [native, human-annotated]
     links:
@@ -2102,8 +2107,8 @@ datasets:
       paper: https://doi.org/10.1038/s41597-025-06193-0
     paper: {title: "A Kazakh Language Dataset of Lip Movements for Command Recognition", venue: "Scientific Data", year: 2025}
     added_to_catalog: null
-    last_verified: "2026-08-19"
-    notes: "Added a code-repository link, previously absent."
+    last_verified: "2026-08-21"
+    notes: "Added a code-repository link, previously absent. Storage and license (CC0-1.0) confirmed via the Harvard Dataverse native API."
 
   - id: kohtd
     name: KOHTD
