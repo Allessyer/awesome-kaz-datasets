@@ -1990,7 +1990,7 @@ datasets:
     organization: [{name: ISSAI, url: https://issai.nu.edu.kz/}]
     description: Controlled Kazakh-English overlapping-speech benchmark for target-speaker ASR and target-presence detection.
     section: Speech and audio
-    tasks: [Target-speaker ASR]
+    tasks: [Target-speaker ASR / speech separation]
     languages: [kk, en]
     scale: {value: "9,978 mixtures", unit: mixtures, scope: null}
     storage: {value: null, unit: null, scope: "Not reported"}
@@ -2357,7 +2357,7 @@ datasets:
     organization: [{name: ISSAI, url: https://issai.nu.edu.kz/}]
     description: Machine-translated Kazakh BabyVision benchmark for child-intuitive visual perception, counting, shape recognition, and anomaly detection.
     section: Vision, OCR, and multimodal
-    tasks: [Visual question answering]
+    tasks: [Visual QA]
     languages: [kk]
     scale: {value: "388 rows", unit: rows, scope: null}
     storage: {value: null, unit: null, scope: "Not reported"}
@@ -2377,7 +2377,7 @@ datasets:
     organization: [{name: ISSAI, url: https://issai.nu.edu.kz/}]
     description: Machine-translated Kazakh and Russian MMStar benchmark for visual recognition and multimodal reasoning across 18 dimensions.
     section: Vision, OCR, and multimodal
-    tasks: [Visual question answering]
+    tasks: [Visual QA]
     languages: [kk, ru]
     scale: {value: "3,000 rows", unit: rows, scope: null}
     storage: {value: null, unit: null, scope: "Not reported"}
@@ -2397,7 +2397,7 @@ datasets:
     organization: [{name: ISSAI, url: https://issai.nu.edu.kz/}]
     description: Machine-translated Kazakh and Russian RealWorldQA benchmark for spatial understanding and reasoning over real-world images.
     section: Vision, OCR, and multimodal
-    tasks: [Visual question answering]
+    tasks: [Visual QA]
     languages: [kk, ru]
     scale: {value: "1,530 rows", unit: rows, scope: null}
     storage: {value: null, unit: null, scope: "Not reported"}
