@@ -94,7 +94,7 @@
 <text x="46" y="239.0" text-anchor="end" class="axis-strong">2026</text>
 <rect x="56" y="222" width="60" height="26" rx="5" fill="#f3f2ee" stroke="#e1e0d9" stroke-width="1"/>
 <rect x="122" y="222" width="60" height="26" rx="5" fill="#f3f2ee" stroke="#e1e0d9" stroke-width="1"/>
-<rect x="188" y="222" width="60" height="26" rx="5" fill="#9ecae1"/>
+<rect x="188" y="222" width="60" height="26" rx="5" fill="#6baed6"/>
 <rect x="254" y="222" width="60" height="26" rx="5" fill="#9ecae1"/>
 <rect x="320" y="222" width="60" height="26" rx="5" fill="#f3f2ee" stroke="#e1e0d9" stroke-width="1"/>
 <rect x="386" y="222" width="60" height="26" rx="5" fill="#9ecae1"/>
@@ -114,5 +114,5 @@
 <rect x="219" y="272" width="16" height="16" rx="4" fill="#3182bd"/>
 <text x="227" y="304" text-anchor="middle" class="legend">4</text>
 <rect x="243" y="272" width="16" height="16" rx="4" fill="#08519c"/>
-<text x="251" y="304" text-anchor="middle" class="legend">5</text>
+<text x="251" y="304" text-anchor="middle" class="legend">5+</text>
 </svg>

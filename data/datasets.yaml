@@ -1331,6 +1331,126 @@ datasets:
     last_verified: "2026-08-20"
     notes: "Storage independently confirmed via the Hugging Face repo file-listing API at 39.0 MB (a preliminary read had this at 407.8 MB, off by 10x; the API-confirmed figure is used here)."
 
+  - id: mmlu-redux-2-kazakh
+    name: MMLU-Redux 2.0 Kazakh
+    released: "2026-03"
+    authors: [{name: ISSAI researchers}]
+    organization: [{name: ISSAI, url: https://issai.nu.edu.kz/}]
+    description: Machine-translated Kazakh version of MMLU-Redux 2.0 for multiple-choice reasoning across 57 academic subjects.
+    section: Text, NLP, and LLM
+    tasks: [Multiple-choice QA]
+    languages: [kk]
+    scale: {value: "5,700 questions", unit: questions, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: CC-BY-4.0
+    kind: translation
+    origin: [machine-translated]
+    links: {dataset: https://huggingface.co/datasets/issai/MMLU_Redux_2.0_Kazakh}
+    paper: null
+    added_to_catalog: "2026-08-21"
+    last_verified: "2026-08-21"
+
+  - id: polymath-kazakh
+    name: PolyMath Kazakh
+    released: "2026-03"
+    authors: [{name: ISSAI researchers}]
+    organization: [{name: ISSAI, url: https://issai.nu.edu.kz/}]
+    description: Machine-translated Kazakh subset of PolyMath for evaluating multilingual mathematical reasoning.
+    section: Text, NLP, and LLM
+    tasks: [Mathematical reasoning]
+    languages: [kk]
+    scale: {value: "500 problems", unit: problems, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: "Not reported"
+    kind: translation
+    origin: [machine-translated]
+    links: {dataset: https://huggingface.co/datasets/issai/PolyMath_Kazakh}
+    paper: null
+    added_to_catalog: "2026-08-21"
+    last_verified: "2026-08-21"
+
+  - id: gsm8k-kazakh-russian
+    name: GSM8K Kazakh/Russian
+    released: "2025-12"
+    authors: [{name: ISSAI researchers}]
+    organization: [{name: ISSAI, url: https://issai.nu.edu.kz/}]
+    description: Machine-translated Kazakh and Russian test sets from GSM8K for grade-school mathematical reasoning.
+    section: Text, NLP, and LLM
+    tasks: [Mathematical reasoning]
+    languages: [kk, ru]
+    scale: {value: "2,638 rows", unit: rows, scope: "1,319 per language"}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: MIT
+    kind: translation
+    origin: [machine-translated]
+    links: {dataset: https://huggingface.co/datasets/issai/GSM8k_Kazakh_Russian}
+    paper: null
+    added_to_catalog: "2026-08-21"
+    last_verified: "2026-08-21"
+
+  - id: arc-kazakh-russian
+    name: ARC Kazakh/Russian
+    released: "2025-12"
+    authors: [{name: ISSAI researchers}]
+    organization: [{name: ISSAI, url: https://issai.nu.edu.kz/}]
+    description: Machine-translated Kazakh and Russian ARC test sets for elementary and middle-school science reasoning.
+    section: Text, NLP, and LLM
+    tasks: [Multiple-choice QA]
+    languages: [kk, ru]
+    scale: {value: "7,096 rows", unit: rows, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: CC-BY-SA-4.0
+    kind: translation
+    origin: [machine-translated]
+    links: {dataset: https://huggingface.co/datasets/issai/ARC_Kazakh_Russian}
+    paper: null
+    added_to_catalog: "2026-08-21"
+    last_verified: "2026-08-21"
+
+  - id: gpqa-kazakh-russian
+    name: GPQA Kazakh/Russian
+    released: "2025-12"
+    authors: [{name: ISSAI researchers}]
+    organization: [{name: ISSAI, url: https://issai.nu.edu.kz/}]
+    description: Machine-translated Kazakh and Russian GPQA benchmark for expert-level biology, physics, and chemistry questions.
+    section: Text, NLP, and LLM
+    tasks: [Multiple-choice QA]
+    languages: [kk, ru]
+    scale: {value: "2,384 rows", unit: rows, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: CC-BY-4.0
+    kind: translation
+    origin: [machine-translated]
+    links: {dataset: https://huggingface.co/datasets/issai/GPQA_Kazakh_Russian}
+    paper: null
+    added_to_catalog: "2026-08-21"
+    last_verified: "2026-08-21"
+
+  - id: mmlu-kazakh
+    name: MMLU Kazakh
+    released: "2025-12"
+    authors: [{name: ISSAI researchers}]
+    organization: [{name: ISSAI, url: https://issai.nu.edu.kz/}]
+    description: Machine-translated Kazakh MMLU test split for academic and professional knowledge evaluation.
+    section: Text, NLP, and LLM
+    tasks: [Multiple-choice QA]
+    languages: [kk]
+    scale: {value: "14,042 questions", unit: questions, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: MIT
+    kind: translation
+    origin: [machine-translated]
+    links: {dataset: https://huggingface.co/datasets/issai/MMLU_Kazakh}
+    paper: null
+    added_to_catalog: "2026-08-21"
+    last_verified: "2026-08-21"
+
   # ---------------------------------------------------------------------
   # Speech and audio
   # ---------------------------------------------------------------------
@@ -1843,6 +1963,66 @@ datasets:
     last_verified: "2026-08-20"
     notes: "Uses the current ~380k-row release rather than an older ~248k-row figure still present in some descriptive text; row count and storage independently confirmed via the TilQazyna organization's own repository listing."
 
+  - id: sakura-kazakh-russian
+    name: SAKURA Kazakh/Russian
+    released: "2026-04"
+    authors: [{name: ISSAI researchers}]
+    organization: [{name: ISSAI, url: https://issai.nu.edu.kz/}]
+    description: Machine-translated Kazakh and Russian SAKURA benchmark for single-hop perception and multi-hop reasoning over audio.
+    section: Speech and audio
+    tasks: [Audio question answering]
+    languages: [kk, ru]
+    scale: {value: "4,000 rows", unit: rows, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: "Not reported"
+    kind: translation
+    origin: [machine-translated]
+    links: {dataset: https://huggingface.co/datasets/issai/SAKURA_Kazakh_Russian}
+    paper: null
+    added_to_catalog: "2026-08-21"
+    last_verified: "2026-08-21"
+
+  - id: personamix
+    name: PersonaMix
+    released: "2026-04"
+    authors: [{name: ISSAI researchers}]
+    organization: [{name: ISSAI, url: https://issai.nu.edu.kz/}]
+    description: Controlled Kazakh-English overlapping-speech benchmark for target-speaker ASR and target-presence detection.
+    section: Speech and audio
+    tasks: [Target-speaker ASR]
+    languages: [kk, en]
+    scale: {value: "9,978 mixtures", unit: mixtures, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: CC-BY-4.0
+    kind: benchmark
+    origin: [native]
+    links: {dataset: https://huggingface.co/datasets/issai/PersonaMix}
+    paper: null
+    added_to_catalog: "2026-08-21"
+    last_verified: "2026-08-21"
+
+  - id: wavcaps-kazakh-russian
+    name: WavCaps Kazakh/Russian
+    released: "2026-03"
+    authors: [{name: ISSAI researchers}]
+    organization: [{name: ISSAI, url: https://issai.nu.edu.kz/}]
+    description: Machine-translated Kazakh and Russian WavCaps test set for free-form captioning of environmental audio and sound scenes.
+    section: Speech and audio
+    tasks: [Audio captioning]
+    languages: [kk, ru]
+    scale: {value: "3,460 rows", unit: rows, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: "Not reported"
+    kind: translation
+    origin: [machine-translated]
+    links: {dataset: https://huggingface.co/datasets/issai/WavCaps_Kazakh_Russian}
+    paper: null
+    added_to_catalog: "2026-08-21"
+    last_verified: "2026-08-21"
+
   # ---------------------------------------------------------------------
   # Vision, OCR, and multimodal
   # ---------------------------------------------------------------------
@@ -2169,3 +2349,63 @@ datasets:
     paper: {title: "HKR For Handwritten Kazakh and Russian Database", venue: "Multimedia Tools and Applications", year: 2021}
     added_to_catalog: null
     last_verified: "2026-08-19"
+
+  - id: babyvision-kazakh
+    name: BabyVision Kazakh
+    released: "2026-03"
+    authors: [{name: ISSAI researchers}]
+    organization: [{name: ISSAI, url: https://issai.nu.edu.kz/}]
+    description: Machine-translated Kazakh BabyVision benchmark for child-intuitive visual perception, counting, shape recognition, and anomaly detection.
+    section: Vision, OCR, and multimodal
+    tasks: [Visual question answering]
+    languages: [kk]
+    scale: {value: "388 rows", unit: rows, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: MIT
+    kind: translation
+    origin: [machine-translated]
+    links: {dataset: https://huggingface.co/datasets/issai/BabyVision_Kazakh}
+    paper: null
+    added_to_catalog: "2026-08-21"
+    last_verified: "2026-08-21"
+
+  - id: mmstar-kazakh-russian
+    name: MMStar Kazakh/Russian
+    released: "2025-12"
+    authors: [{name: ISSAI researchers}]
+    organization: [{name: ISSAI, url: https://issai.nu.edu.kz/}]
+    description: Machine-translated Kazakh and Russian MMStar benchmark for visual recognition and multimodal reasoning across 18 dimensions.
+    section: Vision, OCR, and multimodal
+    tasks: [Visual question answering]
+    languages: [kk, ru]
+    scale: {value: "3,000 rows", unit: rows, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: "Not reported"
+    kind: translation
+    origin: [machine-translated]
+    links: {dataset: https://huggingface.co/datasets/issai/MMstar_Kazakh_Russian}
+    paper: null
+    added_to_catalog: "2026-08-21"
+    last_verified: "2026-08-21"
+
+  - id: realworldqa-kazakh-russian
+    name: RealWorldQA Kazakh/Russian
+    released: "2025-12"
+    authors: [{name: ISSAI researchers}]
+    organization: [{name: ISSAI, url: https://issai.nu.edu.kz/}]
+    description: Machine-translated Kazakh and Russian RealWorldQA benchmark for spatial understanding and reasoning over real-world images.
+    section: Vision, OCR, and multimodal
+    tasks: [Visual question answering]
+    languages: [kk, ru]
+    scale: {value: "1,530 rows", unit: rows, scope: null}
+    storage: {value: null, unit: null, scope: "Not reported"}
+    access: open
+    license: CC-BY-4.0
+    kind: translation
+    origin: [machine-translated]
+    links: {dataset: https://huggingface.co/datasets/issai/RealWorldQA_Kazakh_Russian}
+    paper: null
+    added_to_catalog: "2026-08-21"
+    last_verified: "2026-08-21"

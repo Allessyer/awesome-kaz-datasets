@@ -48,6 +48,7 @@ REPO = "Allessyer/awesome-kaz-datasets"
 TASK_ABBREV = {
     "Automatic speech recognition (ASR)": "ASR",
     "Multiple-choice QA": "MCQA",
+    "Mathematical reasoning": "MATH",
     "Question answering": "QA",
     "Text-to-speech (TTS)": "TTS",
     "Machine translation": "MT",
