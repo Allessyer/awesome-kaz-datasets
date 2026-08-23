@@ -5,6 +5,13 @@ catalog overhaul predate `data/datasets.yaml` and the generator pipeline;
 they're reconstructed from the git history for context, not from a
 contemporaneous changelog.
 
+## 2026-08-24 — Contributors LinkedIn cards
+
+### Changed
+
+- Replaced the dynamic contrib.rocks widget with static contributor cards linking
+  directly to contributors' LinkedIn profiles.
+
 ## 2026-08-21 — Storage/license re-verification pass
 
 ### Corrected
