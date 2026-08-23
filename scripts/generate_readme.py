@@ -217,11 +217,22 @@ metadata, and PR format.
 
 ## Contributors
 
-<p align="center">
-  <a href="https://github.com/REPO_PLACEHOLDER/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=REPO_PLACEHOLDER" alt="Contributors to awesome-kaz-datasets">
-  </a>
-</p>
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://kz.linkedin.com/in/allessyer/en">
+        <img src="https://avatars.githubusercontent.com/u/71093827?v=4" width="80" height="80" alt="Assel Yermekova"><br>
+        <sub><b>Assel Yermekova</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/alen-issayev/">
+        <img src="https://avatars.githubusercontent.com/u/154399485?v=4" width="80" height="80" alt="Alen Issayev"><br>
+        <sub><b>Alen Issayev</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ## License
 
