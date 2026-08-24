@@ -5,6 +5,12 @@ catalog overhaul predate `data/datasets.yaml` and the generator pipeline;
 they're reconstructed from the git history for context, not from a
 contemporaneous changelog.
 
+## 2026-08-24 — KazCulture paper reference
+
+### Added
+
+- Added IEEE Access 2026 publication reference (`Introducing Cultural Knowledge in Language Models: KazCulture Dataset for Kazakh Culture`) and individual author attribution for **KazCulture** (#12).
+
 ## 2026-08-24 — Contributors LinkedIn cards
 
 ### Changed

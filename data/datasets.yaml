@@ -71,7 +71,13 @@ datasets:
     name: KazCulture
     released: "2025-10"
     authors:
-      - name: ISSAI researchers
+      - name: Akylbek Maxutov
+      - name: Batyr Arystanbekov
+      - name: Zhanat Makhataeva
+      - name: Adil Yergen
+      - name: Nurbek Taizhanov
+      - name: Guldana Nauryzbaikyzy
+      - name: Huseyin Atakan Varol
     organization:
       - name: ISSAI, Nazarbayev University
         url: https://issai.nu.edu.kz/
@@ -87,10 +93,11 @@ datasets:
     origin: [native, human-annotated]
     links:
       dataset: https://huggingface.co/datasets/issai/KazCulture
-    paper: null
+      paper: https://ieeexplore.ieee.org/document/11443272
+    paper: {title: "Introducing Cultural Knowledge in Language Models: KazCulture Dataset for Kazakh Culture", venue: "IEEE Access", year: 2026}
     added_to_catalog: null
-    last_verified: "2026-08-19"
-    notes: "Access corrected to gated (HF card requires accepting conditions); previously unmarked."
+    last_verified: "2026-08-24"
+    notes: "Added IEEE Access 2026 paper reference and author attribution."
 
   - id: ragbench-kazakh
     name: RAGBench Kazakh
