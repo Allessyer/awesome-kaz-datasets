@@ -84,6 +84,7 @@ TASK_ABBREV = {
     "Layout analysis / document understanding": "DU",
     "Diagram QA": "DQA",
     "Visual speech recognition (lip reading)": "VSR",
+    "Image classification": "IC",
 }
 
 

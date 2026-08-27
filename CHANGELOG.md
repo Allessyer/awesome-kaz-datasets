@@ -5,6 +5,12 @@ catalog overhaul predate `data/datasets.yaml` and the generator pipeline;
 they're reconstructed from the git history for context, not from a
 contemporaneous changelog.
 
+## 2026-08-27 — Central Asian Food Dataset (CAFD)
+
+### Added
+
+- Added **Central Asian Food Dataset (CAFD)** to Vision, OCR, and multimodal section (#13): 16,499 images across 42 food classes for food image recognition and dietary assessment, published in *Nutrients* (2023) by ISSAI researchers.
+
 ## 2026-08-24 — KazCulture paper reference
 
 ### Added

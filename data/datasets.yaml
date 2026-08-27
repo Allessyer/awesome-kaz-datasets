@@ -2297,6 +2297,35 @@ datasets:
     last_verified: "2026-08-21"
     notes: "Added a code-repository link, previously absent. Storage and license (CC0-1.0) confirmed via the Harvard Dataverse native API."
 
+  - id: cafd
+    name: Central Asian Food Dataset (CAFD)
+    released: "2023-03"
+    authors:
+      - name: Aknur Karabay
+      - name: Arman Bolatov
+      - name: Huseyin Atakan Varol
+      - name: Mei-Yen Chan
+    organization:
+      - name: ISSAI, Nazarbayev University
+        url: https://issai.nu.edu.kz/
+    description: 42-class image dataset comprising 16,499 images of Kazakh national and Central Asian cuisine dishes for food recognition and dietary assessment.
+    section: Vision, OCR, and multimodal
+    tasks: [Image classification]
+    languages: [kk]
+    scale: {value: "16,499 images (42 classes)", unit: images, scope: null}
+    storage: {value: 1.0, unit: GB, scope: null}
+    access: open
+    license: CC-BY-NC-4.0
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/issai/Central_Asian_Food_Dataset
+      code: https://github.com/IS2AI/Central-Asian-Food-Dataset
+      paper: https://doi.org/10.3390/nu15071728
+    paper: {title: "A Central Asian Food Dataset for Personalized Dietary Interventions", venue: Nutrients, year: 2023}
+    added_to_catalog: "2026-08-27"
+    last_verified: "2026-08-27"
+
   - id: kohtd
     name: KOHTD
     released: "2021-10"
