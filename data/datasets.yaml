@@ -1458,6 +1458,37 @@ datasets:
     added_to_catalog: "2026-08-21"
     last_verified: "2026-08-21"
 
+  - id: apertium-kaz-lexicon
+    name: Apertium Kazakh Morphological Lexicon
+    released: "2014-05"
+    authors:
+      - name: Jonathan North Washington
+      - name: Ilnar Salimzyanov
+      - name: Francis M. Tyers
+    organization:
+      - name: Apertium
+        url: https://apertium.org/
+    description: Curated open-source morphological dictionary for Kazakh containing 22,000+ lemmas with paradigm codes, stem-affix mapping, and morphophonological inflection rules.
+    section: Text, NLP, and LLM
+    tasks:
+      - Morphological analysis
+    languages: [kk]
+    scale: {value: "22,000+ lemmas", unit: lemmas, scope: null}
+    storage: {value: 2.5, unit: MB, scope: "Source lexicon XML/dix"}
+    access: open
+    license: GPL-3.0-or-later
+    kind: original
+    origin:
+      - native
+      - human-annotated
+    links:
+      dataset: https://github.com/apertium/apertium-kaz
+      paper: https://aclanthology.org/L14-1143/
+      code: https://github.com/apertium/apertium-kaz
+    paper: {title: "Finite-state morphological transducers for three Kypchak languages", venue: LREC, year: 2014}
+    added_to_catalog: "2026-08-28"
+    last_verified: "2026-08-28"
+
   # ---------------------------------------------------------------------
   # Speech and audio
   # ---------------------------------------------------------------------

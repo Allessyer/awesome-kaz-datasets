@@ -1,35 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="330" viewBox="0 0 1040 330">
-<rect width="1040" height="330" fill="#fcfcfb"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1110" height="330" viewBox="0 0 1110 330">
+<rect width="1110" height="330" fill="#fcfcfb"/>
 <style>text{font-family:"Segoe UI",Inter,Arial,sans-serif;fill:#0b0b0b}.title{font-size:22px;font-weight:700}.sub{font-size:12px;fill:#52514e}.muted{font-size:11px;fill:#898781}.axis{font-size:12px;fill:#898781}.grid{stroke:#e1e0d9;stroke-width:1}.legend{font-size:12px;fill:#52514e}.endlabel{font-size:12px;font-weight:700}</style>
-<line x1="50" y1="290.0" x2="890" y2="290.0" class="grid"/>
+<line x1="50" y1="290.0" x2="960" y2="290.0" class="grid"/>
 <text x="40" y="294.0" text-anchor="end" class="axis">0</text>
-<line x1="50" y1="226.140350877193" x2="890" y2="226.140350877193" class="grid"/>
-<text x="40" y="230.140350877193" text-anchor="end" class="axis">14</text>
-<line x1="50" y1="162.28070175438597" x2="890" y2="162.28070175438597" class="grid"/>
-<text x="40" y="166.28070175438597" text-anchor="end" class="axis">28</text>
-<line x1="50" y1="93.85964912280701" x2="890" y2="93.85964912280701" class="grid"/>
-<text x="40" y="97.85964912280701" text-anchor="end" class="axis">43</text>
-<line x1="50" y1="30.0" x2="890" y2="30.0" class="grid"/>
-<text x="40" y="34.0" text-anchor="end" class="axis">57</text>
-<text x="50.0" y="312" text-anchor="middle" class="axis">2015</text>
-<text x="126.36363636363636" y="312" text-anchor="middle" class="axis">2016</text>
-<text x="202.72727272727272" y="312" text-anchor="middle" class="axis">2017</text>
-<text x="279.09090909090907" y="312" text-anchor="middle" class="axis">2018</text>
-<text x="355.45454545454544" y="312" text-anchor="middle" class="axis">2019</text>
-<text x="431.8181818181818" y="312" text-anchor="middle" class="axis">2020</text>
-<text x="508.18181818181813" y="312" text-anchor="middle" class="axis">2021</text>
-<text x="584.5454545454545" y="312" text-anchor="middle" class="axis">2022</text>
-<text x="660.9090909090909" y="312" text-anchor="middle" class="axis">2023</text>
-<text x="737.2727272727274" y="312" text-anchor="middle" class="axis">2024</text>
-<text x="813.6363636363636" y="312" text-anchor="middle" class="axis">2025</text>
-<text x="890.0" y="312" text-anchor="middle" class="axis">2026</text>
-<polyline points="50.0,285.43859649122805 126.36363636363636,285.43859649122805 202.72727272727272,285.43859649122805 279.09090909090907,285.43859649122805 355.45454545454544,280.87719298245617 431.8181818181818,267.1929824561403 508.18181818181813,262.63157894736844 584.5454545454545,258.0701754385965 660.9090909090909,239.82456140350877 737.2727272727274,185.08771929824562 813.6363636363636,125.78947368421055 890.0,30.0" fill="none" stroke="#164a89" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="890.0" cy="30.0" r="4" fill="#164a89" stroke="#fcfcfb" stroke-width="2"/>
-<text x="900.0" y="34.0" class="endlabel" fill="#164a89">Text/NLP (57)</text>
-<polyline points="50.0,290.0 126.36363636363636,290.0 202.72727272727272,290.0 279.09090909090907,290.0 355.45454545454544,290.0 431.8181818181818,285.43859649122805 508.18181818181813,280.87719298245617 584.5454545454545,271.7543859649123 660.9090909090909,262.63157894736844 737.2727272727274,248.94736842105263 813.6363636363636,239.82456140350877 890.0,185.08771929824562" fill="none" stroke="#9a4422" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="890.0" cy="185.08771929824562" r="4" fill="#9a4422" stroke="#fcfcfb" stroke-width="2"/>
-<text x="900.0" y="189.08771929824562" class="endlabel" fill="#9a4422">Speech (23)</text>
-<polyline points="50.0,290.0 126.36363636363636,290.0 202.72727272727272,290.0 279.09090909090907,290.0 355.45454545454544,290.0 431.8181818181818,285.43859649122805 508.18181818181813,280.87719298245617 584.5454545454545,280.87719298245617 660.9090909090909,276.3157894736842 737.2727272727274,276.3157894736842 813.6363636363636,244.3859649122807 890.0,212.4561403508772" fill="none" stroke="#127250" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-<circle cx="890.0" cy="212.4561403508772" r="4" fill="#127250" stroke="#fcfcfb" stroke-width="2"/>
-<text x="900.0" y="216.4561403508772" class="endlabel" fill="#127250">Vision (17)</text>
+<line x1="50" y1="227.24137931034483" x2="960" y2="227.24137931034483" class="grid"/>
+<text x="40" y="231.24137931034483" text-anchor="end" class="axis">14</text>
+<line x1="50" y1="160.0" x2="960" y2="160.0" class="grid"/>
+<text x="40" y="164.0" text-anchor="end" class="axis">29</text>
+<line x1="50" y1="92.75862068965517" x2="960" y2="92.75862068965517" class="grid"/>
+<text x="40" y="96.75862068965517" text-anchor="end" class="axis">44</text>
+<line x1="50" y1="30.0" x2="960" y2="30.0" class="grid"/>
+<text x="40" y="34.0" text-anchor="end" class="axis">58</text>
+<text x="50.0" y="312" text-anchor="middle" class="axis">2014</text>
+<text x="125.83333333333333" y="312" text-anchor="middle" class="axis">2015</text>
+<text x="201.66666666666666" y="312" text-anchor="middle" class="axis">2016</text>
+<text x="277.5" y="312" text-anchor="middle" class="axis">2017</text>
+<text x="353.3333333333333" y="312" text-anchor="middle" class="axis">2018</text>
+<text x="429.1666666666667" y="312" text-anchor="middle" class="axis">2019</text>
+<text x="505.0" y="312" text-anchor="middle" class="axis">2020</text>
+<text x="580.8333333333334" y="312" text-anchor="middle" class="axis">2021</text>
+<text x="656.6666666666666" y="312" text-anchor="middle" class="axis">2022</text>
+<text x="732.5" y="312" text-anchor="middle" class="axis">2023</text>
+<text x="808.3333333333334" y="312" text-anchor="middle" class="axis">2024</text>
+<text x="884.1666666666666" y="312" text-anchor="middle" class="axis">2025</text>
+<text x="960.0" y="312" text-anchor="middle" class="axis">2026</text>
+<polyline points="50.0,285.51724137931035 125.83333333333333,281.0344827586207 201.66666666666666,281.0344827586207 277.5,281.0344827586207 353.3333333333333,281.0344827586207 429.1666666666667,276.55172413793105 505.0,263.1034482758621 580.8333333333334,258.62068965517244 656.6666666666666,254.13793103448276 732.5,236.20689655172413 808.3333333333334,182.41379310344826 884.1666666666666,124.13793103448273 960.0,30.0" fill="none" stroke="#164a89" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="960.0" cy="30.0" r="4" fill="#164a89" stroke="#fcfcfb" stroke-width="2"/>
+<text x="970.0" y="34.0" class="endlabel" fill="#164a89">Text/NLP (58)</text>
+<polyline points="50.0,290.0 125.83333333333333,290.0 201.66666666666666,290.0 277.5,290.0 353.3333333333333,290.0 429.1666666666667,290.0 505.0,285.51724137931035 580.8333333333334,281.0344827586207 656.6666666666666,272.0689655172414 732.5,263.1034482758621 808.3333333333334,249.6551724137931 884.1666666666666,240.68965517241378 960.0,186.8965517241379" fill="none" stroke="#9a4422" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="960.0" cy="186.8965517241379" r="4" fill="#9a4422" stroke="#fcfcfb" stroke-width="2"/>
+<text x="970.0" y="190.8965517241379" class="endlabel" fill="#9a4422">Speech (23)</text>
+<polyline points="50.0,290.0 125.83333333333333,290.0 201.66666666666666,290.0 277.5,290.0 353.3333333333333,290.0 429.1666666666667,290.0 505.0,285.51724137931035 580.8333333333334,281.0344827586207 656.6666666666666,281.0344827586207 732.5,276.55172413793105 808.3333333333334,276.55172413793105 884.1666666666666,245.17241379310343 960.0,213.79310344827587" fill="none" stroke="#127250" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="960.0" cy="213.79310344827587" r="4" fill="#127250" stroke="#fcfcfb" stroke-width="2"/>
+<text x="970.0" y="217.79310344827587" class="endlabel" fill="#127250">Vision (17)</text>
 </svg>

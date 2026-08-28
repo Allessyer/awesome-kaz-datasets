@@ -11,7 +11,7 @@
 <!-- BADGES:START -->
 <p align="center">
   <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/Allessyer/awesome-kaz-datasets?style=flat&color=eda100">
-  <img alt="Datasets" src="https://img.shields.io/badge/Datasets-99-2a78d6">
+  <img alt="Datasets" src="https://img.shields.io/badge/Datasets-100-2a78d6">
   <img alt="Open access" src="https://img.shields.io/badge/Open_access-72%25-2ea44f">
   <img alt="Last verified" src="https://img.shields.io/badge/Last_verified-2026--08--21-1baf7a">
 </p>
@@ -116,8 +116,9 @@ inclusion policy and [CHANGELOG.md](CHANGELOG.md) for what's new.
 | 55 | 2020 | **[CC-100 Kazakh](https://huggingface.co/datasets/statmt/cc100)**<br><sub>[CC-Net / XLM-R team](https://arxiv.org/abs/1911.02116)</sub><br><sub>Open</sub> | LM | Explicit Kazakh (kk) monolingual subset of CC-100 reconstructed from Common Crawl for multilingual language modelling. | 889 MB | Not reported |
 | 56 | 2019-06 | **[WikiANN Kazakh](https://huggingface.co/datasets/unimelb-nlp/wikiann)**<br><sub>Rahimi et al.</sub><br><sub>Open</sub> | NER | Kazakh (kk) split of WikiANN / PAN-X, a Wikipedia-derived multilingual named-entity-recognition dataset with LOC/PER/ORG IOB2 tags. | 0.21 MB | Not reported (kk split) |
 | 57 | 2015-06 | **[UD Kazakh KTB](https://universaldependencies.org/treebanks/kk_ktb/)**<br><sub>Makazhanov et al.</sub><br><sub>Open</sub> | POS | Kazakh Universal Dependencies treebank drawn from Wikipedia, folk tales, the UDHR, news, and phrasebook sentences. | 0.4 MB | 1,078 sentences; 10,536 tokens |
-| 58 | Not reported | **[kaz-text-for-lm-normalized](https://huggingface.co/datasets/farabi-lab/kaz-text-for-lm-normalized)**<br><sub>Al-Farabi Kazakh National University</sub><br><sub>Gated</sub> | LM | Normalized Kazakh language-modelling corpus combining news, literature, academic/dissertation text, and an August-2024 Kazakh Wikipedia snapshot. | 5.99 GB | Not reported |
-| 59 | Not reported | **[Uzbek-Kazakh Parallel Corpora](https://huggingface.co/datasets/Sanatbek/uzbek-kazakh-parallel-corpora)**<br><sub>[Sanatbek](https://doi.org/10.57967/hf/1748)</sub><br><sub>Open</sub> | MT | Expert-translated Uzbek-Kazakh parallel sentence corpus covering literature and web news. | 34.2 MB | 133,877 pairs |
+| 58 | 2014-05 | **[Apertium Kazakh Morphological Lexicon](https://github.com/apertium/apertium-kaz)**<br><sub>[Washington et al.](https://aclanthology.org/L14-1143/)</sub><br><sub>Open</sub> | MORPH | Curated open-source morphological dictionary for Kazakh containing 22,000+ lemmas with paradigm codes, stem-affix mapping, and morphophonological inflection rules. | 2.5 MB | 22,000+ lemmas |
+| 59 | Not reported | **[kaz-text-for-lm-normalized](https://huggingface.co/datasets/farabi-lab/kaz-text-for-lm-normalized)**<br><sub>Al-Farabi Kazakh National University</sub><br><sub>Gated</sub> | LM | Normalized Kazakh language-modelling corpus combining news, literature, academic/dissertation text, and an August-2024 Kazakh Wikipedia snapshot. | 5.99 GB | Not reported |
+| 60 | Not reported | **[Uzbek-Kazakh Parallel Corpora](https://huggingface.co/datasets/Sanatbek/uzbek-kazakh-parallel-corpora)**<br><sub>[Sanatbek](https://doi.org/10.57967/hf/1748)</sub><br><sub>Open</sub> | MT | Expert-translated Uzbek-Kazakh parallel sentence corpus covering literature and web news. | 34.2 MB | 133,877 pairs |
 <!-- NLP_SECTION:END -->
 
 ## Speech and audio

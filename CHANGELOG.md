@@ -5,6 +5,12 @@ catalog overhaul predate `data/datasets.yaml` and the generator pipeline;
 they're reconstructed from the git history for context, not from a
 contemporaneous changelog.
 
+## 2026-08-28 — Apertium Kazakh Morphological Lexicon
+
+### Added
+
+- Added **Apertium Kazakh Morphological Lexicon** to the Text, NLP, and LLM section: curated open-source dictionary of 22,000+ lemmas with inflection paradigms and morphophonological rules, published at LREC 2014 by Washington, Salimzyanov, and Tyers.
+
 ## 2026-08-27 — Central Asian Food Dataset (CAFD)
 
 ### Added
