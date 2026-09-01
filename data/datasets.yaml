@@ -1489,6 +1489,31 @@ datasets:
     added_to_catalog: "2026-08-28"
     last_verified: "2026-08-28"
 
+  - id: kazlit-parallel
+    name: KazLit-Parallel
+    released: "2024-06"
+    authors:
+      - name: Sagi Abdashim
+    organization: []
+    description: Multilingual literary parallel corpus of automatically aligned text segments across Kazakh, Russian, and English for machine translation and cross-lingual NLP.
+    section: Text, NLP, and LLM
+    tasks:
+      - Machine translation
+    languages: [kk, ru, en]
+    scale: {value: "71,096 pairs", unit: pairs, scope: null}
+    storage: {value: 13.7, unit: MB, scope: "Parquet"}
+    access: open
+    license: CC-BY-4.0
+    kind: multilingual
+    origin:
+      - native
+      - human-translated
+    links:
+      dataset: https://huggingface.co/datasets/SagiAbd/KazLit-Parallel
+    paper: null
+    added_to_catalog: "2026-09-01"
+    last_verified: "2026-09-01"
+
   # ---------------------------------------------------------------------
   # Speech and audio
   # ---------------------------------------------------------------------
