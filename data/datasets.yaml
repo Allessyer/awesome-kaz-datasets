@@ -1514,6 +1514,30 @@ datasets:
     added_to_catalog: "2026-09-01"
     last_verified: "2026-09-01"
 
+  - id: kk-corpus-v1
+    name: Kazakh Corpus v1
+    released: "2026-09"
+    authors:
+      - name: Tokhtobayev Salim
+    organization:
+      - name: KBTU
+    description: Large-scale Kazakh pretraining corpus derived and cleaned from sozkz v3, intended for language model pretraining, SLM training, and encoder pretraining.
+    section: Text, NLP, and LLM
+    tasks: [Language model pretraining]
+    languages: [kk]
+    scale: {value: "8,664,472 documents", unit: documents, scope: null}
+    storage: {value: 17.2, unit: GB, scope: null}
+    access: open
+    license: "Not reported"
+    kind: derivative
+    origin: [web-crawl, mixed]
+    derivative_of: sozkz-v3
+    links:
+      dataset: https://huggingface.co/datasets/salyamq/kk-corpus-v1
+    paper: null
+    added_to_catalog: "2026-09-08"
+    last_verified: "2026-09-08"
+
   # ---------------------------------------------------------------------
   # Speech and audio
   # ---------------------------------------------------------------------
