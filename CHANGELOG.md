@@ -5,6 +5,16 @@ catalog overhaul predate `data/datasets.yaml` and the generator pipeline;
 they're reconstructed from the git history for context, not from a
 contemporaneous changelog.
 
+## 2026-10-04 — SozKZ Corpus Clean v3 & Kazakh Corpus v1 lineage
+
+### Added
+
+- Added **SozKZ Corpus Clean v3** (`stukenov/sozkz-corpus-clean-v3`) to Text, NLP, and LLM section: cleaned and deduplicated Kazakh text corpus of ~13.46M documents (32.3 GB) assembled by Dias Stukenov from 18 public sources for language model pretraining.
+
+### Corrected
+
+- Updated **Kazakh Corpus v1** (`kk-corpus-v1`): resolved schema lineage (`derivative_of: sozkz-corpus-clean-v3`), updated license to `Apache-2.0`, canonicalized task label to `Language modelling / pretraining`, and regenerated README and visualization assets.
+
 ## 2026-09-01 — KazLit-Parallel
 
 ### Added

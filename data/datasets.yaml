@@ -1514,6 +1514,28 @@ datasets:
     added_to_catalog: "2026-09-01"
     last_verified: "2026-09-01"
 
+  - id: sozkz-corpus-clean-v3
+    name: SozKZ Corpus Clean v3
+    released: "2026-02"
+    authors:
+      - name: Dias Stukenov
+    organization: []
+    description: Large-scale cleaned and deduplicated Kazakh text corpus assembled from 18 public web and text sources, filtered for language-model pretraining.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk]
+    scale: {value: "13,463,018 documents", unit: documents, scope: null}
+    storage: {value: 32.3, unit: GB, scope: null}
+    access: open
+    license: Apache-2.0
+    kind: original
+    origin: [web-crawl, mixed]
+    links:
+      dataset: https://huggingface.co/datasets/stukenov/sozkz-corpus-clean-v3
+    paper: null
+    added_to_catalog: "2026-09-08"
+    last_verified: "2026-10-04"
+
   - id: kk-corpus-v1
     name: Kazakh Corpus v1
     released: "2026-09"
@@ -1523,20 +1545,20 @@ datasets:
       - name: KBTU
     description: Large-scale Kazakh pretraining corpus derived and cleaned from sozkz v3, intended for language model pretraining, SLM training, and encoder pretraining.
     section: Text, NLP, and LLM
-    tasks: [Language model pretraining]
+    tasks: [Language modelling / pretraining]
     languages: [kk]
     scale: {value: "8,664,472 documents", unit: documents, scope: null}
     storage: {value: 17.2, unit: GB, scope: null}
     access: open
-    license: "Not reported"
+    license: Apache-2.0
     kind: derivative
     origin: [web-crawl, mixed]
-    derivative_of: sozkz-v3
+    derivative_of: sozkz-corpus-clean-v3
     links:
       dataset: https://huggingface.co/datasets/salyamq/kk-corpus-v1
     paper: null
     added_to_catalog: "2026-09-08"
-    last_verified: "2026-09-08"
+    last_verified: "2026-10-04"
 
   # ---------------------------------------------------------------------
   # Speech and audio
