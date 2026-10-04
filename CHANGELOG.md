@@ -5,10 +5,13 @@ catalog overhaul predate `data/datasets.yaml` and the generator pipeline;
 they're reconstructed from the git history for context, not from a
 contemporaneous changelog.
 
-## 2026-10-04 — SozKZ Corpus Clean v3 & Kazakh Corpus v1 lineage
+## 2026-10-04 — New datasets addition & SozKZ lineage
 
 ### Added
 
+- Added **Darmm Kazakh OCR v2** (`darmm-ocr-kazakh-v2`): synthetic OCR dataset of 284k images (11.01 GB) for printed Kazakh Cyrillic, introducing degraded/hard scan crops and 12k multi-line document pages.
+- Added **Kazakh-Russian Child-Directed Language Corpus** (`kazakh-child-speech`): bilingual corpus of narrative texts and child-adult dialogue transcripts in Kazakh and Russian for language acquisition and low-resource NLP research (Mukusheva et al., 2026).
+- Added **KazakhLawCorpus-clean** (`kazakhlawcorpus-clean`): cleaned, Kazakh-only research corpus of 215,889 legislative records (1.0 GB) from the Adilet legal system by Arailym Tleubayeva.
 - Added **SozKZ Corpus Clean v3** (`stukenov/sozkz-corpus-clean-v3`) to Text, NLP, and LLM section: cleaned and deduplicated Kazakh text corpus of ~13.46M documents (32.3 GB) assembled by Dias Stukenov from 18 public sources for language model pretraining.
 
 ### Corrected

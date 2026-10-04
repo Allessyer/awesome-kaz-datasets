@@ -1560,6 +1560,52 @@ datasets:
     added_to_catalog: "2026-09-08"
     last_verified: "2026-10-04"
 
+  - id: kazakh-child-speech
+    name: Kazakh-Russian Child-Directed Language Corpus
+    released: "2026-08"
+    authors:
+      - name: Albina Mukusheva
+      - name: Achille Fusco
+      - name: Cristiano Chesi
+    organization: []
+    description: Bilingual corpus combining narrative texts (fairy tales, children's literature, educational texts) and child-adult dialogue transcripts in Kazakh and Russian for language acquisition and low-resource NLP research.
+    section: Text, NLP, and LLM
+    tasks: [Language modelling / pretraining]
+    languages: [kk, ru]
+    scale: {value: "Not reported", unit: null, scope: null}
+    storage: {value: 31.6, unit: MB, scope: null}
+    access: open
+    license: "Not reported"
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/esimijoq/Kazakh-Russian-Child-Directed-Speech-Corpus
+    paper: {title: "A Kazakh-Russian Corpus of Child-Directed Language for Low-Resource Languages", venue: "International Conference LAnguage TEchnologies for Low-resource Languages", year: 2026}
+    added_to_catalog: "2026-10-04"
+    last_verified: "2026-10-04"
+
+  - id: kazakhlawcorpus-clean
+    name: KazakhLawCorpus-clean
+    released: "2026-08"
+    authors:
+      - name: Arailym Tleubayeva
+    organization: []
+    description: Cleaned, Kazakh-only corpus of 215,889 legislative documents from the Republic of Kazakhstan (Adilet legal system) with 25 metadata fields for legal NLP, retrieval, and QA.
+    section: Text, NLP, and LLM
+    tasks: [Legal QA, Language modelling / pretraining]
+    languages: [kk]
+    scale: {value: "215,889 documents", unit: documents, scope: null}
+    storage: {value: 1005.0, unit: MB, scope: null}
+    access: open
+    license: CC-BY-4.0
+    kind: original
+    origin: [native, web-crawl]
+    links:
+      dataset: https://huggingface.co/datasets/Arailym-tleubayeva/KazakhLawCorpus-clean
+    paper: null
+    added_to_catalog: "2026-10-04"
+    last_verified: "2026-10-04"
+
   # ---------------------------------------------------------------------
   # Speech and audio
   # ---------------------------------------------------------------------
@@ -2253,6 +2299,29 @@ datasets:
     paper: null
     added_to_catalog: null
     last_verified: "2026-08-19"
+
+  - id: darmm-ocr-kazakh-v2
+    name: Darmm Kazakh OCR v2
+    released: "2026-08"
+    authors:
+      - name: Rakhat Zhumabek
+    organization: []
+    description: Synthetic OCR dataset for printed Kazakh Cyrillic text, adding a 70k "hard" tier (degraded print, shadows, perspective warp) and 12k multi-line document pages on top of the original clean crops.
+    section: Vision, OCR, and multimodal
+    tasks: [OCR]
+    languages: [kk]
+    scale: {value: "284,000 images", unit: images, scope: null}
+    storage: {value: 11.01, unit: GB, scope: null}
+    access: open
+    license: Apache-2.0
+    kind: derivative
+    origin: [synthetic]
+    derivative_of: darmm-ocr-kazakh
+    links:
+      dataset: https://huggingface.co/datasets/Darmm/darmm-ocr-kazakh-v2
+    paper: null
+    added_to_catalog: "2026-10-04"
+    last_verified: "2026-10-04"
 
   - id: turkicocr-cyrillic
     name: TurkicOCR-Cyrillic
