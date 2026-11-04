@@ -180,7 +180,7 @@
 <rect x="518" y="414" width="60" height="26" rx="5" fill="#2f83d6"/>
 <rect x="584" y="414" width="60" height="26" rx="5" fill="#2c5580"/>
 <rect x="650" y="414" width="60" height="26" rx="5" fill="#2f6bab"/>
-<rect x="716" y="414" width="60" height="26" rx="5" fill="#242422" stroke="#383835" stroke-width="1"/>
+<rect x="716" y="414" width="60" height="26" rx="5" fill="#2c5580"/>
 <rect x="782" y="414" width="60" height="26" rx="5" fill="#242422" stroke="#383835" stroke-width="1"/>
 <text x="56" y="475" class="legend">Releases/month:</text>
 <rect x="147" y="464" width="16" height="16" rx="4" fill="#2c5580"/>

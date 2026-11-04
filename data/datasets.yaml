@@ -1728,6 +1728,32 @@ datasets:
     added_to_catalog: "2026-11-04"
     last_verified: "2026-11-04"
 
+  - id: kazakh-body-wellbeing-lexicon
+    name: Kazakh body and well-being lexicon
+    released: "2026-11"
+    authors:
+      - name: Aizhan Li
+    organization:
+      - name: 108psy.com
+        url: https://108psy.com/
+    description: Parallel Kazakh/Russian/English lexicon of 83 women's health and body topics with life themes, search keywords and WHO-5 wording; Kazakh and English machine-translated from Russian and reviewed by the author.
+    section: Text, NLP, and LLM
+    tasks: [Lexicon / terminology]
+    languages: [kk, ru, en]
+    scale: {value: "83 topics; 1,913 keywords", unit: mixed, scope: null}
+    storage: {value: 0.2, unit: MB, scope: "CSV and JSONL"}
+    access: open
+    license: CC-BY-4.0
+    kind: translation
+    origin: [machine-translated]
+    links:
+      dataset: https://github.com/liaizhan/kazakh-body-wellbeing-lexicon
+      doi: https://doi.org/10.5281/zenodo.23961719
+    paper: null
+    derivative_of: null
+    added_to_catalog: "2026-11-05"
+    last_verified: "2026-11-05"
+
   # ---------------------------------------------------------------------
   # Speech and audio
   # ---------------------------------------------------------------------
