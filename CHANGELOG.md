@@ -5,6 +5,18 @@ catalog overhaul predate `data/datasets.yaml` and the generator pipeline;
 they're reconstructed from the git history for context, not from a
 contemporaneous changelog.
 
+## 2026-11-04 — Fall 2026 catalog update pass
+
+### Added
+
+- Added **Kazakh Text-to-SQL** (`kazakh-text-to-sql`): domain-rich dataset of Kazakh natural language questions paired with executable SQLite queries across 13 databases (3,744+ SFT pairs, independent test, and DPO preference splits) by Rakhat Masat.
+- Added **KSC2 Structured** (`ksc2-structured`): syntactically enhanced derivative of ISSAI KSC2 by Inflexion Lab (~1,200 hours, 76.8 GB) with full capitalization, punctuation, and formatting restored using Gemma 27B.
+- Added **KazAI-Detect Benchmark** (`kazai-detect`): multi-domain benchmark for detecting AI-generated text in Kazakh (human vs AI) across consumer reviews, news, and essays by Yerassyl.
+- Added **Kazakh Code-Switching ASR Benchmark** (`kazakh-codeswitch-asr`): speech benchmark of 31 spontaneous conversational clips (stand-up, interviews, vlogs) with dual independent reference transcriptions and code-switch phenomenon flags by Tim2190.
+- Added **KazSpam v1** (`kazspam-v1`): web-crawled dataset of 10,000 Kazakh texts annotated into four classes (normal, casino, porn, other) for spam detection and content safety by salyamq.
+- Added **Kazakh Lexical Complexity Classes** (`kazakh-lexical-complexity-classes`): CEFR-graded lexical resource of 4,561 lemma-POS entries mapped across five CEFR proficiency levels (A1–C1) by Gulnur.
+- Added **Kazakh Wiki RAG Dataset** (`kazakh-wiki-rag-dataset`): query-passage retrieval dataset built from Kazakh Wikipedia with hard-negative triplets for semantic search and embedding model training by Shyngys Kozhakhmetov.
+
 ## 2026-10-04 — New datasets addition & SozKZ lineage
 
 ### Added

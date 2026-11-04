@@ -1606,6 +1606,128 @@ datasets:
     added_to_catalog: "2026-10-04"
     last_verified: "2026-10-04"
 
+  - id: kazakh-text-to-sql
+    name: Kazakh Text-to-SQL
+    released: "2026-10"
+    authors:
+      - name: Rakhat Masat
+        url: https://github.com/RakhatMM
+    organization: []
+    description: Dataset of Kazakh natural language questions paired with executable SQLite queries across 13 relational databases, structured for SFT (3,744 pairs), independent evaluation, and DPO preference alignment.
+    section: Text, NLP, and LLM
+    tasks: [Question answering]
+    languages: [kk]
+    scale: {value: "3,744+ question-SQL pairs", unit: pairs, scope: null}
+    storage: {value: 5.1, unit: MB, scope: null}
+    access: open
+    license: Apache-2.0
+    kind: original
+    origin: [native, human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/RakhatM/kazakh-text-to-sql
+      code: https://github.com/RakhatMM/llm-finetuning-course
+    paper: null
+    derivative_of: null
+    added_to_catalog: "2026-11-04"
+    last_verified: "2026-11-04"
+
+  - id: kazai-detect
+    name: KazAI-Detect Benchmark
+    released: "2026-10"
+    authors:
+      - name: Yerassyl
+        url: https://huggingface.co/Yerassyl88
+    organization: []
+    description: Multi-domain benchmark dataset for detecting AI-generated text in Kazakh, featuring binary Human vs AI classification across consumer reviews (KazSAnDRA), essays, and news with in-domain and out-of-domain test splits.
+    section: Text, NLP, and LLM
+    tasks: [Text classification, Safety evaluation]
+    languages: [kk]
+    scale: {value: "Train, test, and OOD test splits", unit: samples, scope: null}
+    storage: {value: 1.7, unit: MB, scope: null}
+    access: open
+    license: MIT
+    kind: benchmark
+    origin: [native, synthetic, mixed]
+    links:
+      dataset: https://huggingface.co/datasets/Yerassyl88/kazakh-ai-detect
+    paper: null
+    derivative_of: null
+    added_to_catalog: "2026-11-04"
+    last_verified: "2026-11-04"
+
+  - id: kazspam-v1
+    name: KazSpam v1
+    released: "2026-08"
+    authors:
+      - name: salyamq
+        url: https://github.com/salyamq
+    organization: []
+    description: Web-crawled dataset of 10,000 Kazakh texts annotated into four classes (normal, casino, porn, and other) for spam detection, content filtering, and online safety.
+    section: Text, NLP, and LLM
+    tasks: [Text classification, Safety evaluation]
+    languages: [kk]
+    scale: {value: "10,000 examples", unit: examples, scope: null}
+    storage: {value: 105.9, unit: MB, scope: null}
+    access: open
+    license: Apache-2.0
+    kind: original
+    origin: [web-crawl, mixed]
+    links:
+      dataset: https://huggingface.co/datasets/salyamq/kazspam-v1
+      code: https://github.com/salyamq/kaz-datasets
+    paper: null
+    derivative_of: null
+    added_to_catalog: "2026-11-04"
+    last_verified: "2026-11-04"
+
+  - id: kazakh-lexical-complexity-classes
+    name: Kazakh Lexical Complexity Classes
+    released: "2026-03"
+    authors:
+      - name: Gulnur
+        url: https://huggingface.co/Gulnur7
+    organization: []
+    description: CEFR-graded lexical resource for the Kazakh language containing 4,561 lemma-POS entries mapped across five CEFR proficiency levels (A1 to C1) for lexical complexity and language learning.
+    section: Text, NLP, and LLM
+    tasks: [Text classification]
+    languages: [kk]
+    scale: {value: "4,561 lemma-POS entries", unit: entries, scope: null}
+    storage: {value: 0.33, unit: MB, scope: null}
+    access: open
+    license: CC-BY-4.0
+    kind: original
+    origin: [human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/Gulnur7/kazakh-lexical-complexity-classes
+    paper: null
+    derivative_of: null
+    added_to_catalog: "2026-11-04"
+    last_verified: "2026-11-04"
+
+  - id: kazakh-wiki-rag-dataset
+    name: Kazakh Wiki RAG Dataset
+    released: "2026-05"
+    authors:
+      - name: Shyngys Kozhakhmetov
+        url: https://huggingface.co/shyngys879
+    organization: []
+    description: Kazakh query-passage retrieval dataset constructed from Kazakh Wikipedia articles, providing query-passage pairs and hard-negative triplets for semantic search, RAG evaluation, and embedding model training (e.g. kazakh-e5-rag-embedding).
+    section: Text, NLP, and LLM
+    tasks: [Retrieval / RAG, Text deduplication / similarity]
+    languages: [kk]
+    scale: {value: "Train, dev, and test retrieval splits with triplets", unit: pairs, scope: null}
+    storage: {value: 85.2, unit: MB, scope: null}
+    access: open
+    license: CC-BY-SA-4.0
+    kind: original
+    origin: [web-crawl, synthetic]
+    links:
+      dataset: https://huggingface.co/datasets/shyngys879/Kazakh-Wiki-RAG-Dataset
+    paper: null
+    derivative_of: null
+    added_to_catalog: "2026-11-04"
+    last_verified: "2026-11-04"
+
   # ---------------------------------------------------------------------
   # Speech and audio
   # ---------------------------------------------------------------------
@@ -2177,6 +2299,55 @@ datasets:
     paper: null
     added_to_catalog: "2026-08-21"
     last_verified: "2026-08-21"
+
+  - id: ksc2-structured
+    name: KSC2 Structured
+    released: "2025-12"
+    authors:
+      - name: Inflexion Lab
+        url: https://huggingface.co/InflexionLab
+    organization: []
+    description: Syntactically enhanced derivative of ISSAI KSC2 with full capitalization, punctuation, and grammatical formatting restored using Gemma 27B while preserving strict audio alignment.
+    section: Speech and audio
+    tasks: [Automatic speech recognition (ASR)]
+    languages: [kk]
+    scale: {value: "≈1,200 hours", unit: hours, scope: null}
+    storage: {value: 76.8, unit: GB, scope: null}
+    access: open
+    license: CC-BY-4.0
+    kind: derivative
+    derivative_of: ksc2
+    origin: [synthetic]
+    links:
+      dataset: https://huggingface.co/datasets/InflexionLab/ISSAI-KSC2-Structured
+    paper: null
+    added_to_catalog: "2026-11-04"
+    last_verified: "2026-11-04"
+
+  - id: kazakh-codeswitch-asr
+    name: Kazakh Code-Switching ASR Benchmark
+    released: "2026-07"
+    authors:
+      - name: Tim2190
+        url: https://github.com/Tim2190
+    organization: []
+    description: Benchmark of 31 spontaneous conversational speech clips (~3.7 min) featuring everyday Kazakh-Russian code-switching from YouTube interviews, vlogs, and stand-up comedy, accompanied by dual independent reference transcriptions and code-switch flags.
+    section: Speech and audio
+    tasks: [Automatic speech recognition (ASR)]
+    languages: [kk, ru]
+    scale: {value: "31 clips (≈3.7 min)", unit: clips, scope: null}
+    storage: {value: 40.7, unit: MB, scope: null}
+    access: open
+    license: CC-BY-4.0
+    kind: benchmark
+    origin: [human-annotated]
+    links:
+      dataset: https://huggingface.co/datasets/Tim2190/kazakh-codeswitch-asr
+      code: https://github.com/Tim2190/Kaz-ASR-codeswitch-benchmark
+    paper: null
+    derivative_of: null
+    added_to_catalog: "2026-11-04"
+    last_verified: "2026-11-04"
 
   # ---------------------------------------------------------------------
   # Vision, OCR, and multimodal
