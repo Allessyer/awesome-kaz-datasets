@@ -1728,6 +1728,30 @@ datasets:
     added_to_catalog: "2026-11-04"
     last_verified: "2026-11-04"
 
+  - id: kazakh-news-articles-dataset
+    name: Kazakh News Articles Dataset
+    released: "2024"
+    authors:
+      - name: Salamat Kuantaiuly
+        url: https://github.com/salamqt
+    organization: []
+    description: Collection of news articles in the Kazakh language, parsed from Tengri News covering multiple topics for language modelling and text classification.
+    section: Text, NLP, and LLM
+    tasks: [Text classification, Language modelling / pretraining]
+    languages: [kk]
+    scale: {value: "27,000+ articles", unit: documents, scope: null}
+    storage: {value: 85.8, unit: MB, scope: null}
+    access: open
+    license: MIT
+    kind: original
+    origin: [native, web-crawl]
+    links:
+      dataset: https://www.kaggle.com/datasets/kuantaiulysalamat/kazakh-news-articles-dataset
+    paper: null
+    derivative_of: null
+    added_to_catalog: "2026-11-08"
+    last_verified: "2026-11-08"
+
   # ---------------------------------------------------------------------
   # Speech and audio
   # ---------------------------------------------------------------------
