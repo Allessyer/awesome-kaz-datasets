@@ -5,6 +5,15 @@ catalog overhaul predate `data/datasets.yaml` and the generator pipeline;
 they're reconstructed from the git history for context, not from a
 contemporaneous changelog.
 
+## 2026-11-11 — Community contributions & November 2026 catalog update
+
+### Added
+
+- Added **Kazakh body and well-being lexicon** (`kazakh-body-wellbeing-lexicon`): parallel Kazakh/Russian/English lexicon of 83 women's health and body topics with 1,913 keywords and WHO-5 wording (Aizhan Li, Zenodo, fixes #17).
+- Added **Kazakh News Articles Dataset** (`kazakh-news-articles-dataset`): collection of 27,000+ Kazakh news articles parsed from Tengri News for language modelling and text classification (Salamat Kuantaiuly, Kaggle, fixes #18).
+- Added **KAZ-NEWS-CORPUS** (`kaz-news-corpus`): cleaned news corpus of 11,814 articles and 3.4M words from Egemen Qazaqstan, BAQ.kz, and Azattyq by kurumikz.
+- Added **Kazakh Scientific Abstracts 2013–2026** (`kazakh-scientific-abstracts`): cleaned scientometric corpus of 9,813 peer-reviewed scientific publications with Kazakh-language abstracts, titles, and keywords across multiple disciplines by Arailym Tleubayeva.
+
 ## 2026-11-04 — Fall 2026 catalog update pass
 
 ### Added

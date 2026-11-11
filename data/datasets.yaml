@@ -1754,6 +1754,78 @@ datasets:
     added_to_catalog: "2026-11-05"
     last_verified: "2026-11-05"
 
+  - id: kazakh-news-articles-dataset
+    name: Kazakh News Articles Dataset
+    released: "2024"
+    authors:
+      - name: Salamat Kuantaiuly
+        url: https://github.com/salamqt
+    organization: []
+    description: Collection of news articles in the Kazakh language, parsed from Tengri News covering multiple topics for language modelling and text classification.
+    section: Text, NLP, and LLM
+    tasks: [Text classification, Language modelling / pretraining]
+    languages: [kk]
+    scale: {value: "27,000+ articles", unit: documents, scope: null}
+    storage: {value: 85.8, unit: MB, scope: null}
+    access: open
+    license: MIT
+    kind: original
+    origin: [native, web-crawl]
+    links:
+      dataset: https://www.kaggle.com/datasets/kuantaiulysalamat/kazakh-news-articles-dataset
+    paper: null
+    derivative_of: null
+    added_to_catalog: "2026-11-08"
+    last_verified: "2026-11-08"
+
+  - id: kaz-news-corpus
+    name: KAZ-NEWS-CORPUS
+    released: "2026-04"
+    authors:
+      - name: kurumikz
+        url: https://huggingface.co/kurumikz
+    organization: []
+    description: Cleaned news corpus in Kazakh from Egemen Qazaqstan, BAQ.kz, and Azattyq with stripped HTML, boilerplate reporter tags, and deduplicated articles.
+    section: Text, NLP, and LLM
+    tasks: [Text classification, Language modelling / pretraining]
+    languages: [kk]
+    scale: {value: "11,814 articles; 3.4M words", unit: documents, scope: null}
+    storage: {value: 153.2, unit: MB, scope: JSONL}
+    access: open
+    license: ODC-By
+    kind: original
+    origin: [native, web-crawl]
+    links:
+      dataset: https://huggingface.co/datasets/kurumikz/kaz-news-corpus
+    paper: null
+    derivative_of: null
+    added_to_catalog: "2026-11-11"
+    last_verified: "2026-11-11"
+
+  - id: kazakh-scientific-abstracts
+    name: Kazakh Scientific Abstracts 2013–2026
+    released: "2026-11"
+    authors:
+      - name: Arailym Tleubayeva
+        url: https://huggingface.co/Arailym-tleubayeva
+    organization: []
+    description: Cleaned scientometric corpus of 9,813 scientific publications with Kazakh-language abstracts, titles, and keywords across multiple research disciplines.
+    section: Text, NLP, and LLM
+    tasks: [Retrieval / RAG, Text classification]
+    languages: [kk]
+    scale: {value: "9,813 abstracts", unit: documents, scope: null}
+    storage: {value: 41.0, unit: MB, scope: CSV}
+    access: open
+    license: Apache-2.0
+    kind: original
+    origin: [native]
+    links:
+      dataset: https://huggingface.co/datasets/Arailym-tleubayeva/Kazakh-Scientific-Abstracts-2013-2026
+    paper: null
+    derivative_of: null
+    added_to_catalog: "2026-11-11"
+    last_verified: "2026-11-11"
+
   # ---------------------------------------------------------------------
   # Speech and audio
   # ---------------------------------------------------------------------
