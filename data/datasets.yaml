@@ -2610,7 +2610,7 @@ datasets:
     origin: [synthetic]
     links:
       dataset: https://huggingface.co/datasets/alenisaw/turkicocr-cyrillic
-    paper: null
+      paper: https://doi.org/10.1007/978-3-032-41546-2_22
     added_to_catalog: null
     last_verified: "2026-08-19"
     notes: "Recently corrected and verified by the dataset's own maintainer (2026-08 commit); metadata preserved as-is per audit policy."
